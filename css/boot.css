@@ -89,6 +89,14 @@
 }
 
 /* Text Wrapping and Overflow */
+.text-white {
+    color: #fff !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
 .text-wrap {
     white-space: normal !important;
 }

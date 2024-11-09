@@ -770,6 +770,7 @@ blockquote p {
 }
 
 .footer-inner {
+	/* height: 600px; */
 	position: relative;
 	display: block;
 	background: var(--black-color);
