@@ -586,7 +586,7 @@ function initEcrait() {
             speed: 1400,
             init: true,
             autoplay: {
-                delay:3500,
+                delay: 3500,
                 disableOnInteraction: false
             },
             coverflowEffect: {
@@ -611,7 +611,7 @@ function initEcrait() {
                 768: {
                     slidesPerView: 1,
                     centeredSlides: false,
-					effect: "slide",	
+                    effect: "slide",
                 },
             }
         });
@@ -765,7 +765,7 @@ function initEcrait() {
         $(this).parent(".toogle-item").find(".toglle-content").slideToggle(200);
         $(this).parent(".toogle-item").delay(200).toggleClass("toogle-item_vis");
     });
-    $(".shuffleLetter , .header-social a , .share-container a , .footer-contacts a , .footer-social a , .main-social a , .commentform button , .custom-form button   , .box_gallery-filters a strong   , .shb_init span , .offer-box_btn , .half-carousel-content h3 a , .hc_controls_link a , .team-social li a  , .home_services_btn_wrap a   , .testi-link  , .order-wrap_btn , .column-filters-item a , .aside-social li a").on({
+    $(".shuffleLetter , .header-social a , .share-container a , .footer-contacts a , .main-social a , .commentform button , .custom-form button   , .box_gallery-filters a strong   , .shb_init span , .offer-box_btn , .half-carousel-content h3 a , .hc_controls_link a , .team-social li a  , .home_services_btn_wrap a   , .testi-link  , .order-wrap_btn , .column-filters-item a").on({
         mouseenter: function () {
             $(this).shuffleLetters({});
         }
