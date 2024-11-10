@@ -1,4 +1,5 @@
 function initEcrait() {
+    
     //   loader -----
     "use strict";
     firstLoad();
