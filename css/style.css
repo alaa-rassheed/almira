@@ -472,8 +472,8 @@ blockquote p {
 
 .content-holder {
 	position: absolute;
-	top: 90px;
-	left: 90px;
+	top: 0;
+	left: 0;
 	right: 0;
 	bottom: 0;
 	z-index: 1;
@@ -528,6 +528,11 @@ blockquote p {
 	background: #000;
 	z-index: 30;
 	border-bottom: 1px solid var(--border-color2);
+}
+
+
+.main-header .full-height {
+	height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -537,18 +542,19 @@ blockquote p {
 	float: left;
 	width: 270px;
 	height: 100%;
-	line-height: 90px;
-	position: relative
+	/* line-height: 90px; */
+	position: relative;
+	overflow: hidden;
 }
 
 .logo-holder img {
 	width: 250px;
-	height: auto;
+	height: 100%;
 	position: relative;
 	z-index: 2;
 }
 
-.logo-holder:before {
+/* .logo-holder:before {
 	content: '';
 	position: absolute;
 	top: 100%;
@@ -558,7 +564,7 @@ blockquote p {
 	z-index: 1;
 	background: var(--black-color2);
 	transition: all .2s linear;
-}
+} */
 
 .logo-holder:hover:before {
 	top: 0;
@@ -597,7 +603,7 @@ blockquote p {
 	left: 0;
 	visibility: visible;
 	z-index: 20;
-	top: 0;
+	top: -10px;
 }
 
 .nav-holder nav {
@@ -606,7 +612,7 @@ blockquote p {
 	border-right: 0;
 	float: left;
 	height: 100%;
-	padding: 0 120px;
+	padding: 0px 120px;
 }
 
 .nav-holder nav li {
@@ -704,6 +710,8 @@ blockquote p {
 }
 
 .header-contacts {
+	position: relative;
+	top: -10px;
 	float: right;
 	height: 100%;
 	margin-right: 90px;
@@ -712,7 +720,7 @@ blockquote p {
 	padding-left: 50px;
 }
 
-.header-contacts:before {
+/* .header-contacts:before {
 	content: '';
 	position: absolute;
 	width: 30px;
@@ -720,7 +728,7 @@ blockquote p {
 	background: rgba(255, 255, 255, .27);
 	top: 50%;
 	right: -60px;
-}
+} */
 
 .header-contacts li {
 	float: left;
