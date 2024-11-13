@@ -528,6 +528,9 @@ blockquote p {
 	background: #000;
 	z-index: 30;
 	border-bottom: 1px solid var(--border-color2);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .logo-holder {
@@ -600,10 +603,10 @@ blockquote p {
 .nav-holder nav {
 	position: relative;
 	border-left: 1px solid var(--border-color2);
-	border-right: 1px solid var(--border-color2);
+	border-right: 0;
 	float: left;
 	height: 100%;
-	padding: 0 40px;
+	padding: 0 120px;
 }
 
 .nav-holder nav li {
@@ -741,6 +744,7 @@ blockquote p {
 }
 
 .main-footer {
+	height: 460px;
 	background: var(--black-color);
 	position: fixed;
 	bottom: 0;
@@ -983,6 +987,7 @@ blockquote p {
 
 .footer-box {
 	padding: 30px 40px 0;
+	margin-bottom: 100px;
 }
 
 .footer-social {
@@ -5981,7 +5986,7 @@ blockquote p {
 	}
 
 	.nav-holder nav {
-		padding: 0 20px;
+		padding: 0px 60px;
 	}
 
 	.header-contacts li {

@@ -1,5 +1,5 @@
 function initEcrait() {
-    
+
     //   loader -----
     "use strict";
     firstLoad();
@@ -296,7 +296,7 @@ function initEcrait() {
     var $window = $(window);
     function csselem() {
         $(".height-emulator").css({
-            height: $(".main-footer").outerHeight(true)
+            height: "450px",
         });
         $(".fslider-fw-item").css({
             height: $(".slider-fw").outerHeight(true)
