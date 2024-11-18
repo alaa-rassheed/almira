@@ -637,45 +637,45 @@ function initEcrait() {
             curnum2.html("0" + csli2).shuffleLetters({});
         });
     }
-    if ($(".half-carousel-conatiner").length > 0) {
-        const halfCarousel = new Swiper(".half-carousel .swiper-container", {
-            preloadImages: false,
-            loop: true,
-            centeredSlides: false,
-            freeMode: false,
-            slidesPerView: 2,
-            spaceBetween: 1,
-            grabCursor: true,
-            mousewheel: false,
-            parallax: false,
-            speed: 1400,
-            pagination: {
-                el: '.cen-slider-pagination',
-                clickable: true,
-                dynamicBullets: false,
-            },
-            navigation: {
-                nextEl: '.hcw-cont-next',
-                prevEl: '.hcw-cont-prev',
-            },
-            breakpoints: {
-                1258: {
-                    slidesPerView: 2,
-                },
-                1068: {
-                    slidesPerView: 1,
-                },
-            }
-        });
-        const totalSlides2 = $(".half-carousel .swiper-slide:not(.swiper-slide-duplicate) .half-carousel-item").length;
-        $('.total').html('0' + totalSlides2);
-        halfCarousel.on('slideChange', function () {
-            const csli2 = halfCarousel.realIndex + 1,
-                curnum2 = $('.current'),
-                curnumanm2 = $('.hs_counter .current');
-            curnum2.html('0' + csli2).shuffleLetters({});
-        });
-    }
+    // if ($(".half-carousel-conatiner").length > 0) {
+    //     const halfCarousel = new Swiper(".half-carousel .swiper-container", {
+    //         preloadImages: false,
+    //         loop: true,
+    //         centeredSlides: false,
+    //         freeMode: false,
+    //         slidesPerView: 2,
+    //         spaceBetween: 1,
+    //         grabCursor: true,
+    //         mousewheel: false,
+    //         parallax: false,
+    //         speed: 1400,
+    //         pagination: {
+    //             el: '.cen-slider-pagination',
+    //             clickable: true,
+    //             dynamicBullets: false,
+    //         },
+    //         navigation: {
+    //             nextEl: '.hcw-cont-next',
+    //             prevEl: '.hcw-cont-prev',
+    //         },
+    //         breakpoints: {
+    //             1258: {
+    //                 slidesPerView: 2,
+    //             },
+    //             1068: {
+    //                 slidesPerView: 1,
+    //             },
+    //         }
+    //     });
+    //     const totalSlides2 = $(".half-carousel .swiper-slide:not(.swiper-slide-duplicate) .half-carousel-item").length;
+    //     $('.total').html('0' + totalSlides2);
+    //     halfCarousel.on('slideChange', function () {
+    //         const csli2 = halfCarousel.realIndex + 1,
+    //             curnum2 = $('.current'),
+    //             curnumanm2 = $('.hs_counter .current');
+    //         curnum2.html('0' + csli2).shuffleLetters({});
+    //     });
+    // }
     $(".filter-button").on("click  ", function () {
         $(".hid-filter").slideToggle(500);
     });
@@ -1121,3 +1121,143 @@ document.addEventListener('gesturestart', function (e) {
 function readyFunctions() {
     initEcrait();
 }
+// Function to initialize half carousel
+function initHalfCarousel(elementId) {
+    if ($(elementId + " .half-carousel-conatiner").length > 0) {
+        const halfCarousel = new Swiper(elementId + " .half-carousel .swiper-container", {
+            preloadImages: false,
+            loop: true,
+            centeredSlides: false,
+            freeMode: false,
+            slidesPerView: 2,
+            spaceBetween: 1,
+            grabCursor: true,
+            mousewheel: false,
+            parallax: false,
+            speed: 1400,
+            pagination: {
+                el: elementId + ' .cen-slider-pagination',
+                clickable: true,
+                dynamicBullets: false,
+            },
+            navigation: {
+                nextEl: elementId + ' .hcw-cont-next',
+                prevEl: elementId + ' .hcw-cont-prev',
+            },
+            breakpoints: {
+                1258: {
+                    slidesPerView: 2,
+                },
+                1068: {
+                    slidesPerView: 1,
+                },
+            }
+        });
+
+        const totalSlides2 = $(elementId + " .half-carousel .swiper-slide:not(.swiper-slide-duplicate) .half-carousel-item").length;
+        $(elementId + ' .total').html('0' + totalSlides2);
+
+        halfCarousel.on('slideChange', function () {
+            const csli2 = halfCarousel.realIndex + 1;
+            const curnum2 = $(elementId + ' .current');
+            curnum2.html('0' + csli2).shuffleLetters({});
+        });
+    }
+}
+
+// Initialize multiple carousels
+$(document).ready(function () {
+    // First carousel
+    initHalfCarousel('#slider1');
+    // Second carousel
+    initHalfCarousel('#slider2');
+});
+// Store scroll position in session storage when page is unloaded
+window.addEventListener('beforeunload', function () {
+    sessionStorage.setItem('scrollPosition', window.scrollY);
+});
+
+// Handle ad visibility
+const adSection = document.querySelector('.img-ad');
+let adShown = false;
+
+// Function to check scroll position and show/hide ad
+function handleAdVisibility() {
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 400 && !adShown) {
+        adSection.classList.add('show');
+        adShown = true;
+    } else if (scrollPosition <= 400 && adShown) {
+        adSection.classList.remove('show');
+        adShown = false;
+    }
+}
+
+// Initial setup when DOM loads
+document.addEventListener('DOMContentLoaded', function () {
+    // Hide ad initially
+    adSection.style.cssText = `
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+        transition: all 0.3s ease-in-out;
+    `;
+
+    // Add show class styles
+    const styleSheet = document.createElement('style');
+    styleSheet.textContent = `
+        .img-ad.show {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateY(0) !important;
+        }
+    `;
+    document.head.appendChild(styleSheet);
+
+    // Add close button
+    const closeButton = document.createElement('button');
+    closeButton.innerHTML = '×';
+    closeButton.style.cssText = `
+        position: absolute;
+        top: 0;
+        right: 5px;
+        background: none;
+        border: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        color: #333;
+        padding: 0 10px;
+        z-index: 11;
+    `;
+
+    closeButton.addEventListener('click', function () {
+        adSection.style.display = 'none';
+    });
+
+    adSection.appendChild(closeButton);
+});
+
+// After page loads completely
+window.addEventListener('load', function () {
+    // Check stored scroll position
+    const storedScrollPosition = sessionStorage.getItem('scrollPosition');
+
+    // If there's a stored position and it's > 400, show ad immediately
+    if (storedScrollPosition && parseInt(storedScrollPosition) > 400) {
+        handleAdVisibility();
+    }
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleAdVisibility);
+
+    // Clear stored scroll position
+    sessionStorage.removeItem('scrollPosition');
+});
+
+// Hide ad during page transitions/reloads
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'hidden') {
+        adSection.classList.remove('show');
+    }
+});
