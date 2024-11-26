@@ -1172,10 +1172,6 @@ $(document).ready(function () {
     // Second carousel
     initHalfCarousel('#slider2');
 });
-// Store scroll position in session storage when page is unloaded
-window.addEventListener('beforeunload', function () {
-    sessionStorage.setItem('scrollPosition', window.scrollY);
-});
 
 // Handle ad visibility
 const adSection = document.querySelector('.img-ad');
@@ -1238,26 +1234,5 @@ document.addEventListener('DOMContentLoaded', function () {
     adSection.appendChild(closeButton);
 });
 
-// After page loads completely
-window.addEventListener('load', function () {
-    // Check stored scroll position
-    const storedScrollPosition = sessionStorage.getItem('scrollPosition');
-
-    // If there's a stored position and it's > 400, show ad immediately
-    if (storedScrollPosition && parseInt(storedScrollPosition) > 400) {
-        handleAdVisibility();
-    }
-
-    // Add scroll event listener
-    window.addEventListener('scroll', handleAdVisibility);
-
-    // Clear stored scroll position
-    sessionStorage.removeItem('scrollPosition');
-});
-
-// Hide ad during page transitions/reloads
-document.addEventListener('visibilitychange', function () {
-    if (document.visibilityState === 'hidden') {
-        adSection.classList.remove('show');
-    }
-});
+// Add scroll event listener
+window.addEventListener('scroll', handleAdVisibility);

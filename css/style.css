@@ -69,10 +69,10 @@ body {
 
 /*-Typography------------------*/
 p {
-	text-align: left;
-	font-size: 13px;
+	text-align: start;
+	font-size: 16px;
 	line-height: 24px;
-	padding-bottom: 10px;
+	padding-block-end: 10px;
 	font-weight: 400;
 	color: var(--black-color);
 }
@@ -186,12 +186,12 @@ blockquote p {
 	color: #fff;
 	transition: all .4s linear;
 	opacity: 0;
-	margin-top: 30px;
+	margin-block-start: 30px;
 	-webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.3, transparent), to(rgba(0, 0, 0, 0.2)));
 }
 
 .act-loader {
-	margin-top: 0;
+	margin-block-start: 0;
 	opacity: 1;
 }
 
@@ -352,7 +352,7 @@ blockquote p {
 
 #wrapper {
 	height: 100%;
-	margin-left: 0;
+	margin-inline-start: 0;
 	vertical-align: top;
 	position: absolute;
 	left: 0;
@@ -658,7 +658,7 @@ blockquote p {
 .nav-holder nav li ul li:hover>ul {
 	opacity: 1;
 	visibility: visible;
-	margin-right: 0px;
+	margin-inline-end: 0px;
 }
 
 .nav-holder nav li ul li {
@@ -675,8 +675,10 @@ blockquote p {
 	line-height: 90px;
 	position: relative;
 	padding: 0 20px;
-	text-align: left;
+	text-align: start;
 	color: #fff;
+	font-size: 1rem;
+	text-transform: capitalize;
 }
 
 .nav-holder nav li a:before {
@@ -700,7 +702,7 @@ blockquote p {
 	color: #fff;
 	float: left;
 	width: 100%;
-	text-align: left;
+	text-align: start;
 	padding: 0 25px;
 	line-height: 40px;
 }
@@ -714,10 +716,10 @@ blockquote p {
 	top: -10px;
 	float: right;
 	height: 100%;
-	margin-right: 90px;
+	margin-inline-end: 90px;
 	position: relative;
 	border-left: 1px solid var(--border-color2);
-	padding-left: 50px;
+	padding-inline-start: 50px;
 }
 
 /* .header-contacts:before {
@@ -732,8 +734,9 @@ blockquote p {
 
 .header-contacts li {
 	float: left;
-	margin-left: 40px;
+	margin-inline-start: 40px;
 	color: #fff;
+	font-size: 1rem;
 	line-height: 90px;
 	font-weight: 600;
 	text-transform: capitalize;
@@ -742,7 +745,7 @@ blockquote p {
 
 .header-contacts li a {
 	color: #fff;
-	margin-left: 30px;
+	margin-inline-start: 30px;
 }
 
 /*---  footer ---------*/
@@ -815,7 +818,7 @@ blockquote p {
 	line-height: 90px;
 	border-top: 1px solid var(--border-color2);
 	border-bottom: 1px solid var(--border-color2);
-	text-align: left;
+	text-align: start;
 	font-size: 1.4em;
 	color: #fff;
 	top: -90px;
@@ -868,7 +871,7 @@ blockquote p {
 	overflow: hidden;
 	cursor: pointer;
 	padding: 0 40px;
-	text-align: left;
+	text-align: start;
 	font-size: 1.1em;
 	font-weight: 500;
 	color: #000;
@@ -916,7 +919,7 @@ blockquote p {
 }
 
 .policy-box {
-	text-align: left;
+	text-align: start;
 	font-size: 1.1em;
 	font-weight: 800;
 	color: #fff;
@@ -942,13 +945,13 @@ blockquote p {
 
 .footer-contacts,
 .footer-about {
-	margin-top: 90px;
+	margin-block-start: 90px;
 }
 
 .footer-contacts li {
 	display: block;
 	margin: 28px 0;
-	text-align: left;
+	text-align: start;
 	line-height: 1px;
 	letter-spacing: 1px;
 	font-size: 1.1em;
@@ -958,7 +961,7 @@ blockquote p {
 
 .footer-contacts li span {
 	display: inline-block;
-	margin-right: 10px;
+	margin-inline-end: 10px;
 	min-width: 90px;
 	color: rgba(255, 255, 255, .7);
 }
@@ -973,8 +976,8 @@ blockquote p {
 }
 
 .footer-content-header {
-	margin-top: 90px;
-	text-align: left;
+	margin-block-start: 90px;
+	text-align: start;
 	font-size: 1.6em;
 	color: #fff;
 	text-transform: capitalize;
@@ -995,7 +998,7 @@ blockquote p {
 
 .footer-box {
 	padding: 30px 40px 0;
-	margin-bottom: 100px;
+	margin-block-end: 100px;
 }
 
 .footer-social {
@@ -1012,7 +1015,7 @@ blockquote p {
 
 .footer-social li {
 	float: left;
-	margin-right: 20px;
+	margin-inline-end: 20px;
 	text-transform: capitalize;
 }
 
@@ -1053,7 +1056,7 @@ blockquote p {
 
 .main-hero-carousel-wrap {
 	position: relative;
-	padding-bottom: 90px;
+	padding-block-end: 90px;
 }
 
 .main-hero-carousel {
@@ -1098,11 +1101,11 @@ blockquote p {
 	transition: all .4s ease-in-out;
 	opacity: 0;
 	visibility: hidden;
-	margin-top: 30px;
+	margin-block-start: 30px;
 }
 
 .main-hero-carousel .swiper-slide-active .main-hero-carousel-title {
-	margin-top: 0;
+	margin-block-start: 0;
 	opacity: 1;
 	transition-delay: 1.0s;
 	visibility: visible;
@@ -1128,7 +1131,7 @@ blockquote p {
 	opacity: 0;
 	width: 250px;
 	left: 50%;
-	margin-left: -125px;
+	margin-inline-start: -125px;
 	background: var(--black-color);
 	height: 70px;
 	line-height: 70px;
@@ -1175,7 +1178,7 @@ blockquote p {
 	width: 60px;
 	height: 1px;
 	top: -25px;
-	margin-left: -30px;
+	margin-inline-start: -30px;
 	background: #fff;
 }
 
@@ -1320,7 +1323,7 @@ blockquote p {
 	position: relative;
 	text-transform: capitalize;
 	font-size: 1.1em;
-	text-align: left;
+	text-align: start;
 	color: #fff;
 	background: rgba(0, 0, 0, .4);
 	border-right: 1px solid var(--border-color2);
@@ -1331,7 +1334,7 @@ blockquote p {
 	position: absolute;
 	top: 50%;
 	left: 100%;
-	margin-left: 100px;
+	margin-inline-start: 100px;
 	width: 100px;
 	height: 1px;
 	background: var(--border-color2);
@@ -1344,7 +1347,7 @@ blockquote p {
 	background: var(--main-color);
 	color: #000;
 	border-radius: 50%;
-	margin-right: 30px;
+	margin-inline-end: 30px;
 	font-size: .8em;
 	text-align: center;
 	transition: all .2s ease-in-out;
@@ -1352,7 +1355,7 @@ blockquote p {
 
 .hero-carousel_item {
 	position: relative;
-	text-align: left;
+	text-align: start;
 	padding: 50px 0;
 	z-index: 3;
 	top: 50%;
@@ -1393,7 +1396,7 @@ blockquote p {
 	right: 0;
 	width: 90px;
 	height: 180px;
-	margin-top: -90px;
+	margin-block-start: -90px;
 	z-index: 20;
 }
 
@@ -1424,13 +1427,13 @@ blockquote p {
 	transition: all .3s ease-in-out;
 	opacity: 0;
 	visibility: hidden;
-	margin-top: 20px;
+	margin-block-start: 20px;
 }
 
 .hs_btn:hover .hs_btn_wrap_preview {
 	opacity: 1;
 	visibility: visible;
-	margin-top: 0;
+	margin-block-start: 0;
 }
 
 .hs_btn:hover {
@@ -1465,7 +1468,7 @@ blockquote p {
 	text-transform: capitalize;
 	line-height: 70px;
 	padding: 20px 0;
-	text-align: left;
+	text-align: start;
 	font-family: var(--second-font);
 }
 
@@ -1493,19 +1496,19 @@ blockquote p {
 
 .hhw_header,
 .hero_section_content h4 {
-	text-align: left
+	text-align: start
 }
 
 .hero_section_content h4 {
 	max-width: 550px;
 	line-height: 30px;
 	font-size: 13px;
-	text-align: left;
+	text-align: start;
 }
 
 .hero_section_content .btn {
 	display: table;
-	margin-top: 40px;
+	margin-block-start: 40px;
 }
 
 .hero-carousel_item p {
@@ -1513,7 +1516,7 @@ blockquote p {
 }
 
 .hero-carousel_item .btn {
-	margin-top: 20px;
+	margin-block-start: 20px;
 }
 
 .dark-section .content-item.hero_section {
@@ -1542,7 +1545,7 @@ blockquote p {
 	line-height: 70px;
 	z-index: 100;
 	top: 50%;
-	margin-top: -35px;
+	margin-block-start: -35px;
 	background: var(--black-color);
 	color: #fff;
 	cursor: pointer;
@@ -1631,7 +1634,7 @@ blockquote p {
 	text-transform: capitalize;
 	font-weight: 800;
 	padding: 0 90px 0 50px;
-	text-align: left;
+	text-align: start;
 	border-bottom: 1px solid var(--border-color);
 	overflow: hidden;
 	font-size: 1.1em;
@@ -1691,7 +1694,7 @@ blockquote p {
 	position: relative;
 	left: 50%;
 	top: 6px;
-	margin-left: -2px;
+	margin-inline-start: -2px;
 	width: 4px;
 	height: 4px;
 	border-radius: 50%;
@@ -1856,7 +1859,7 @@ blockquote p {
 	overflow: hidden;
 	position: relative;
 	z-index: 4;
-	padding-right: calc(33.33333% + 100px)
+	padding-inline-end: calc(33.33333% + 100px)
 }
 
 .bg-wrap {
@@ -1875,7 +1878,7 @@ blockquote p {
 .main_section_title_container h2 {
 	font-size: 4.4em;
 	font-weight: 600;
-	text-align: left;
+	text-align: start;
 	color: var(--main-color);
 	position: relative;
 }
@@ -1883,7 +1886,7 @@ blockquote p {
 .main_section_title_container h4 {
 	font-size: 1.0em;
 	font-weight: 500;
-	text-align: left;
+	text-align: start;
 	text-transform: capitalize;
 	color: var(--main-color);
 	opacity: .5;
@@ -2027,7 +2030,7 @@ blockquote p {
 	color: #fff;
 	cursor: pointer;
 	transition: all .2s linear;
-	margin-top: -35px;
+	margin-block-start: -35px;
 }
 
 .ss-slider-cont-next {
@@ -2057,7 +2060,7 @@ blockquote p {
 	position: relative;
 	overflow: hidden;
 	letter-spacing: 2px;
-	text-align: left;
+	text-align: start;
 }
 
 .btn i {
@@ -2108,7 +2111,7 @@ blockquote p {
 	position: relative;
 	overflow: hidden;
 	height: 65vh;
-	margin-bottom: 90px;
+	margin-block-end: 90px;
 	z-index: 2;
 }
 
@@ -2149,7 +2152,7 @@ blockquote p {
 	width: 40px;
 	height: 40px;
 	top: 50%;
-	margin-top: -12px;
+	margin-block-start: -12px;
 	cursor: pointer;
 }
 
@@ -2182,7 +2185,7 @@ blockquote p {
 }
 
 .photo-info-btn:hover .sb-button_point:nth-child(2):before {
-	margin-left: 6px;
+	margin-inline-start: 6px;
 }
 
 .photo-info-btn_tooltip {
@@ -2213,7 +2216,7 @@ blockquote p {
 	position: absolute;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
 	opacity: 0;
-	margin-bottom: 0;
+	margin-block-end: 0;
 	visibility: hidden;
 	z-index: 16;
 	transition: all .3s linear;
@@ -2237,7 +2240,7 @@ blockquote p {
 }
 
 .tooltip-info h5 {
-	text-align: right;
+	text-align: end;
 	position: relative;
 	font-weight: 500;
 	font-size: .9em;
@@ -2302,7 +2305,7 @@ blockquote p {
 .featured_works-header h2 {
 	font-weight: 800;
 	color: #fff;
-	text-align: left;
+	text-align: start;
 	font-size: 3.4em;
 	text-transform: capitalize;
 	position: relative;
@@ -2311,15 +2314,15 @@ blockquote p {
 
 .featured_works-header h4 {
 	font-size: 13px;
-	text-align: left;
-	padding-top: 10px;
+	text-align: start;
+	padding-block-start: 10px;
 	font-weight: 400;
 	line-height: 22px;
 	position: relative;
 	z-index: 2;
 	max-width: 450px;
 	color: rgba(255, 255, 255, .8);
-	margin-top: 20px;
+	margin-block-start: 20px;
 }
 
 .half-carousel-conatiner,
@@ -2406,10 +2409,10 @@ blockquote p {
 }
 
 .hc-counter {
-	margin-bottom: 20px;
+	margin-block-end: 20px;
 	font-size: 1.4em;
 	font-weight: 800;
-	text-align: left;
+	text-align: start;
 	position: absolute;
 	top: 50px;
 	right: 40px;
@@ -2418,7 +2421,7 @@ blockquote p {
 
 .half-carousel-content h3 {
 	font-size: 2.4em;
-	text-align: left;
+	text-align: start;
 	text-transform: capitalize;
 	font-weight: 800;
 	font-family: var(--second-font);
@@ -2494,7 +2497,7 @@ blockquote p {
 	z-index: 2;
 	font-family: var(--second-font);
 	top: 50%;
-	margin-top: -35px;
+	margin-block-start: -35px;
 	overflow: hidden;
 }
 
@@ -2541,7 +2544,7 @@ blockquote p {
 	border: 1px solid var(--border-color2);
 	top: 0;
 	left: 50%;
-	margin-left: -45px;
+	margin-inline-start: -45px;
 }
 
 .cn_all:before {
@@ -2605,9 +2608,9 @@ blockquote p {
 }
 
 .content-nav li a.ln {
-	text-align: left;
+	text-align: start;
 	float: left;
-	padding-left: 120px;
+	padding-inline-start: 120px;
 }
 
 .content-nav li a.ln i {
@@ -2617,9 +2620,9 @@ blockquote p {
 }
 
 .content-nav li a.rn {
-	text-align: right;
+	text-align: end;
 	float: right;
-	padding-right: 120px;
+	padding-inline-end: 120px;
 }
 
 .content-nav li a.rn i {
@@ -2641,11 +2644,11 @@ blockquote p {
 }
 
 .content-nav li a.ln:hover span {
-	padding-left: 45px;
+	padding-inline-start: 45px;
 }
 
 .content-nav li a.rn:hover span {
-	padding-right: 45px;
+	padding-inline-end: 45px;
 }
 
 .content-nav-media {
@@ -2676,7 +2679,7 @@ blockquote p {
 	height: 450px;
 	overflow: hidden;
 	position: relative;
-	margin-top: 30px;
+	margin-block-start: 30px;
 }
 
 .pr-list {
@@ -2688,7 +2691,7 @@ blockquote p {
 }
 
 .pr-list ul li {
-	text-align: left;
+	text-align: start;
 	padding: 18px 0 18px 50px;
 	width: 50%;
 	float: left;
@@ -2699,7 +2702,7 @@ blockquote p {
 .pr-list ul li span {
 	color: #666;
 	display: block;
-	padding-bottom: 10px;
+	padding-block-end: 10px;
 }
 
 .gallery-fw_wrap {
@@ -2805,7 +2808,7 @@ blockquote p {
 
 .pb_container {
 	min-height: 50vh;
-	padding-bottom: 90px;
+	padding-block-end: 90px;
 }
 
 .pb_container:before {
@@ -2862,7 +2865,7 @@ blockquote p {
 
 .fw_gic {
 	background: var(--black-color);
-	padding-bottom: 90px;
+	padding-block-end: 90px;
 	min-height: 100vh;
 }
 
@@ -2988,7 +2991,7 @@ blockquote p {
 }
 
 #portfolio_horizontal_container.one-ver-columns .portfolio_item {
-	padding-bottom: 0;
+	padding-block-end: 0;
 }
 
 #portfolio_horizontal_container.two-ver-columns .portfolio_item {
@@ -3066,7 +3069,7 @@ blockquote p {
 	background: var(--main-color);
 	height: 80px;
 	line-height: 80px;
-	padding-left: 30px;
+	padding-inline-start: 30px;
 	transition: all .3s linear;
 	opacity: 0;
 	visibility: hidden;
@@ -3111,7 +3114,7 @@ blockquote p {
 .post-media .grid-det_category a {
 	color: var(--main-color);
 	float: left;
-	margin-right: 0px;
+	margin-inline-end: 0px;
 	text-transform: capitalize;
 	font-weight: 500;
 	font-size: .8em;
@@ -3131,7 +3134,7 @@ blockquote p {
 .grid-det_category a {
 	color: var(--main-color);
 	float: left;
-	margin-right: 10px;
+	margin-inline-end: 10px;
 	text-transform: capitalize;
 	font-weight: 500;
 	font-size: .8em;
@@ -3171,7 +3174,7 @@ blockquote p {
 	float: left;
 	font-weight: 800;
 	font-size: 1.2em;
-	text-align: left;
+	text-align: start;
 	line-height: 80px;
 	text-transform: capitalize;
 }
@@ -3247,7 +3250,7 @@ blockquote p {
 
 .column-filters-item {
 	position: relative;
-	padding-bottom: 90px;
+	padding-block-end: 90px;
 	border-bottom: 1px solid var(--border-color2);
 	overflow: hidden;
 }
@@ -3260,7 +3263,7 @@ blockquote p {
 }
 
 .inline-gallery-filters {
-	padding-left: 90px;
+	padding-inline-start: 90px;
 	overflow: hidden;
 	position: relative;
 	box-sizing: border-box;
@@ -3274,7 +3277,7 @@ blockquote p {
 	border-right: 1px solid var(--border-color);
 	padding: 0 90px;
 	float: left;
-	margin-left: 90px;
+	margin-inline-start: 90px;
 }
 
 .inline-gallery-filters a,
@@ -3283,7 +3286,7 @@ blockquote p {
 	font-weight: 600;
 	text-transform: capitalize;
 	letter-spacing: 1px;
-	text-align: left;
+	text-align: start;
 	box-sizing: border-box;
 	position: relative;
 	padding: 0 40px 0 0;
@@ -3407,7 +3410,7 @@ blockquote p {
 	background: var(--black-color2);
 	opacity: 0;
 	visibility: hidden;
-	margin-top: 10px;
+	margin-block-start: 10px;
 	left: 100%;
 	width: 270px;
 	height: 90px;
@@ -3421,7 +3424,7 @@ blockquote p {
 .share-button-wrap:hover .share-button_title {
 	opacity: 1;
 	visibility: visible;
-	margin-top: 0;
+	margin-block-start: 0;
 }
 
 .share-button {
@@ -3530,12 +3533,12 @@ blockquote p {
 	transition: all .4s ease-in-out;
 	opacity: 0;
 	visibility: hidden;
-	margin-bottom: 10px;
+	margin-block-end: 10px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .share-wrapper_vis {
-	margin-bottom: 0;
+	margin-block-end: 0;
 	opacity: 1;
 	visibility: visible;
 }
@@ -3546,8 +3549,8 @@ blockquote p {
 
 .share-container a {
 	display: block;
-	text-align: left;
-	margin-bottom: 20px;
+	text-align: start;
+	margin-block-end: 20px;
 	color: #fff;
 	font-weight: 600;
 	position: relative;
@@ -3555,7 +3558,7 @@ blockquote p {
 }
 
 .share-container a:before {
-	padding-right: 6px;
+	padding-inline-end: 6px;
 }
 
 .share-icon-facebook:before {
@@ -3592,7 +3595,7 @@ blockquote p {
 	border-bottom: 1px solid;
 	border-color: transparent;
 	cursor: pointer;
-	text-align: left;
+	text-align: start;
 	padding: 0 90px;
 	font-size: 1.2em;
 	font-weight: 800;
@@ -3632,7 +3635,7 @@ blockquote p {
 	position: relative;
 	overflow: hidden;
 	border: 1px solid var(--border-color);
-	margin-top: 30px;
+	margin-block-start: 30px;
 }
 
 .ps-facts-item {
@@ -3641,12 +3644,12 @@ blockquote p {
 	position: relative;
 	border-left: 1px solid var(--border-color);
 	padding: 30px 20px;
-	text-align: left;
+	text-align: start;
 }
 
 .ps-facts-item h4 {
 	font-weight: 800;
-	padding-bottom: 10px;
+	padding-block-end: 10px;
 	text-transform: capitalize;
 }
 
@@ -3654,7 +3657,7 @@ blockquote p {
 	font-weight: 600;
 	display: block;
 	position: relative;
-	padding-bottom: 10px;
+	padding-block-end: 10px;
 }
 
 .ps-facts-item h5 {
@@ -3786,25 +3789,25 @@ blockquote p {
 
 .post-item_content h3,
 .content_box_item h3 {
-	text-align: left;
+	text-align: start;
 	font-size: 1.7em;
 	font-weight: 800;
-	padding-bottom: 20px;
+	padding-block-end: 20px;
 	text-transform: capitalize;
 	font-family: var(--second-font);
 }
 
 .post-item_content h3 {
 	font-size: 1.4em;
-	padding-bottom: 10px;
+	padding-block-end: 10px;
 	text-transform: capitalize;
 	font-weight: 600;
 	font-family: var(--main-font);
 }
 
 .post-opt-header {
-	text-align: left;
-	margin-bottom: 15px;
+	text-align: start;
+	margin-block-end: 15px;
 }
 
 .post-opt-header a {
@@ -3818,12 +3821,12 @@ blockquote p {
 	border: 1px solid var(--border-color);
 	position: relative;
 	background: var(--main-color);
-	padding-left: 50px;
+	padding-inline-start: 50px;
 }
 
 .post-item_footer a {
 	display: block;
-	text-align: left;
+	text-align: start;
 	position: relative;
 	height: 70px;
 	line-height: 70px;
@@ -3884,7 +3887,7 @@ blockquote p {
 }
 
 .box-widget_title {
-	text-align: left;
+	text-align: start;
 	text-transform: capitalize;
 	font-size: 1.3em;
 	font-weight: 800;
@@ -3909,7 +3912,7 @@ blockquote p {
 }
 
 .box-widget_title span {
-	margin-right: 10px;
+	margin-inline-end: 10px;
 	color: #999;
 }
 
@@ -3943,7 +3946,7 @@ blockquote p {
 }
 
 .categories_widget li {
-	text-align: left;
+	text-align: start;
 	padding: 10px 0;
 	position: relative;
 	font-weight: 500;
@@ -3982,7 +3985,7 @@ blockquote p {
 	float: left;
 	width: 70%;
 	padding: 20px 0 0 20px;
-	text-align: left;
+	text-align: start;
 
 }
 
@@ -3995,7 +3998,7 @@ blockquote p {
 
 .widget-posts-date {
 	display: block;
-	margin-top: 10px;
+	margin-block-start: 10px;
 	color: #666;
 	font-weight: 600;
 }
@@ -4075,13 +4078,13 @@ blockquote p {
 
 .post-header span {
 	color: rgba(255, 255, 255, .9);
-	margin-right: 10px;
+	margin-inline-end: 10px;
 }
 
 .post-header a,
 .post-opt i {
 	color: #fff;
-	margin-right: 10px;
+	margin-inline-end: 10px;
 }
 
 .post-opt {
@@ -4117,12 +4120,12 @@ blockquote p {
 .single-tagcloud_title {
 	display: inline-block;
 	color: #fff;
-	margin-right: 10px;
+	margin-inline-end: 10px;
 }
 
 .post-item_single .post-item_content h3 {
 	font-size: 1.4em;
-	padding-bottom: 20px;
+	padding-block-end: 20px;
 }
 
 .post-item_single {
@@ -4141,12 +4144,12 @@ blockquote p {
 	height: 90px;
 	line-height: 90px;
 	border-bottom: 1px solid var(--border-color);
-	text-align: left;
+	text-align: start;
 	padding: 0 50px;
 	text-transform: capitalize;
 	font-size: 1.3em;
 	font-weight: 800;
-	margin-bottom: 40px;
+	margin-block-end: 40px;
 	background: var(--main-color);
 	position: relative;
 	font-family: var(--second-font);
@@ -4163,16 +4166,16 @@ blockquote p {
 
 .comment-item {
 	border: 1px solid var(--border-color);
-	margin-bottom: 50px;
+	margin-block-end: 50px;
 }
 
 .commnets-wrap.commnets-wrap_form {
-	padding-bottom: 50px;
+	padding-block-end: 50px;
 	border-bottom: 1px solid var(--border-color);
 }
 
 .comment-body {
-	padding-left: 90px;
+	padding-inline-start: 90px;
 	position: relative;
 }
 
@@ -4188,7 +4191,7 @@ blockquote p {
 .comment-author img {
 	width: 90px;
 	height: 90px;
-	margin-bottom: 20px;
+	margin-block-end: 20px;
 }
 
 .comment-author i {
@@ -4223,7 +4226,7 @@ blockquote p {
 .comment_author {
 	font-size: 1.2em;
 	font-weight: 600;
-	text-align: left;
+	text-align: start;
 	text-transform: capitalize;
 }
 
@@ -4251,7 +4254,7 @@ blockquote p {
 .commentform fieldset {
 	display: table;
 	width: 100%;
-	margin-top: 50px;
+	margin-block-start: 50px;
 	border: 1px solid var(--border-color);
 }
 
@@ -4376,7 +4379,7 @@ blockquote p {
 
 .block_text {
 	padding: 0 90px 0 0;
-	text-align: left;
+	text-align: start;
 
 }
 
@@ -4410,18 +4413,18 @@ blockquote p {
 }
 
 .block_text h2 {
-	text-align: left;
+	text-align: start;
 	font-weight: 800;
 	font-size: 2.3em;
 	line-height: 50px;
 	text-transform: capitalize;
-	padding-bottom: 30px;
+	padding-block-end: 30px;
 	font-family: var(--second-font);
 }
 
 .block_text .btn {
 	display: inline-block;
-	margin-top: 50px;
+	margin-block-start: 50px;
 }
 
 .block_img {
@@ -4521,7 +4524,7 @@ blockquote p {
 
 .section-title_content {
 	padding: 120px 90px;
-	width: 66.666666%;
+	width: 100%;
 	border-right: 1px solid var(--border-color);
 	position: relative;
 	z-index: 5;
@@ -4570,8 +4573,8 @@ blockquote p {
 .section-title_content h2 {
 	font-size: 3.4em;
 	font-weight: 800;
-	text-align: left;
-	padding-bottom: 20px;
+	text-align: start;
+	padding-block-end: 20px;
 	position: relative;
 	text-transform: capitalize;
 	font-family: var(--second-font);
@@ -4731,7 +4734,7 @@ blockquote p {
 .team-item_container h4 {
 	font-size: 1.4em;
 	font-weight: 800;
-	margin-bottom: 6px;
+	margin-block-end: 6px;
 	height: 30px;
 	line-height: 30px;
 	text-transform: capitalize;
@@ -4890,8 +4893,8 @@ blockquote p {
 	width: 100vw;
 	left: 50%;
 	right: 50%;
-	margin-left: -50vw;
-	margin-right: -50vw;
+	margin-inline-start: -50vw;
+	margin-inline-end: -50vw;
 	height: 90px;
 	border-top: 1px solid var(--border-color);
 	bottom: 0;
@@ -4936,11 +4939,11 @@ blockquote p {
 
 .resp-video {
 	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
+	padding-block-end: 56.25%;
+	padding-block-start: 30px;
 	height: 0;
 	overflow: hidden;
-	margin-bottom: 20px;
+	margin-block-end: 20px;
 }
 
 .resp-video iframe,
@@ -5015,7 +5018,7 @@ blockquote p {
 	overflow: hidden;
 	background: #fff;
 	border-bottom: 1px solid var(--border-color);
-	padding-left: 120px;
+	padding-inline-start: 120px;
 }
 
 .testi-avatar {
@@ -5037,7 +5040,7 @@ blockquote p {
 }
 
 .testi-header h3 {
-	text-align: left;
+	text-align: start;
 	font-weight: 800;
 	text-transform: capitalize;
 	line-height: 90px;
@@ -5059,7 +5062,7 @@ blockquote p {
 }
 
 .testimonilas-text {
-	text-align: left;
+	text-align: start;
 	padding: 50px 50px 90px;
 }
 
@@ -5100,7 +5103,7 @@ blockquote p {
 	top: 50%;
 	transform: translateY(-50%);
 	border-right: 1px solid var(--border-color);
-	margin-right: 20px;
+	margin-inline-end: 20px;
 }
 
 .testi-slider-pagination {
@@ -5169,7 +5172,7 @@ blockquote p {
 }
 
 .inline-facts {
-	text-align: left;
+	text-align: start;
 	padding: 0 90px;
 	position: relative;
 	z-index: 10;
@@ -5209,7 +5212,7 @@ blockquote p {
 	color: #fff;
 	font-weight: 500;
 	letter-spacing: 2px;
-	padding-top: 10px;
+	padding-block-start: 10px;
 }
 
 .section-title_content h2:before,
@@ -5230,7 +5233,7 @@ blockquote p {
 }
 
 .offer-box-wrap {
-	padding-bottom: 90px;
+	padding-block-end: 90px;
 	position: relative;
 	overflow: hidden;
 }
@@ -5250,7 +5253,7 @@ blockquote p {
 
 .offer-box {
 	padding: 90px 90px;
-	text-align: left;
+	text-align: start;
 	border-left: 1px solid var(--border-color);
 	position: relative;
 	transition: all .4s linear;
@@ -5287,7 +5290,7 @@ blockquote p {
 
 .offer-box i {
 	font-size: 1.9em;
-	margin-bottom: 60px;
+	margin-block-end: 60px;
 	color: #666;
 	font-weight: 100;
 	width: 60px;
@@ -5301,7 +5304,7 @@ blockquote p {
 .offer-box h4 {
 	font-size: 1.4em;
 	font-weight: 800;
-	margin-bottom: 30px;
+	margin-block-end: 30px;
 	text-transform: capitalize;
 	font-family: var(--second-font);
 }
@@ -5331,7 +5334,7 @@ blockquote p {
 	line-height: 90px;
 	border-bottom: 1px solid var(--border-color);
 	position: relative;
-	text-align: left;
+	text-align: start;
 	padding: 0 130px;
 	box-sizing: content-box;
 }
@@ -5477,7 +5480,7 @@ blockquote p {
 
 .services-container {
 	position: relative;
-	margin-bottom: 45px;
+	margin-block-end: 45px;
 }
 
 .services-container:before {
@@ -5515,7 +5518,7 @@ blockquote p {
 }
 
 .services-wrapper .services-container:last-child {
-	margin-bottom: 0;
+	margin-block-end: 0;
 }
 
 .serv-post {
@@ -5534,22 +5537,22 @@ blockquote p {
 .serv-title {
 	font-size: 2.0em;
 	font-weight: 800;
-	text-align: left;
-	padding-bottom: 50px;
+	text-align: start;
+	padding-block-end: 50px;
 	text-transform: capitalize;
 	font-family: var(--second-font);
 }
 
 .ser-list {
 	overflow: hidden;
-	margin-top: 30px;
+	margin-block-start: 30px;
 	border-top: 1px solid var(--border-color);
-	padding-top: 30px;
+	padding-block-start: 30px;
 }
 
 .ser-list li {
 	float: left;
-	margin-right: 30px;
+	margin-inline-end: 30px;
 	text-transform: capitalize;
 	font-weight: 800;
 }
@@ -5561,7 +5564,7 @@ blockquote p {
 	padding: 0 70px;
 	color: #fff;
 	background: var(--black-color);
-	margin-top: 50px;
+	margin-block-start: 50px;
 	letter-spacing: 2px;
 	text-transform: capitalize;
 }
@@ -5589,7 +5592,7 @@ blockquote p {
 .fixed-bar-content {
 	border-top: 1px solid var(--border-color);
 	position: relative;
-	margin-top: 90px;
+	margin-block-start: 90px;
 	padding: 0 0 90px;
 }
 
@@ -5664,7 +5667,7 @@ blockquote p {
 
 .fixed-bar_item_btn {
 	padding: 0 90px 0 50px;
-	text-align: left;
+	text-align: start;
 }
 
 .fixed-bar_item_btn i {
@@ -5685,13 +5688,13 @@ blockquote p {
 
 .awwards-list,
 .process-list {
-	text-align: left;
-	margin-top: 50px;
+	text-align: start;
+	margin-block-start: 50px;
 }
 
 .about_row_hero .awwards-list,
 .about_row_hero .process-list {
-	margin-top: 30px;
+	margin-block-start: 30px;
 	padding: 30px 0;
 	border-top: 1px solid var(--border-color);
 	border-bottom: 1px solid var(--border-color);
@@ -5704,7 +5707,7 @@ blockquote p {
 .awwards-list h6,
 .process-list h6 {
 	font-size: 1.6em;
-	margin-bottom: 20px;
+	margin-block-end: 20px;
 	font-weight: 800;
 	text-transform: capitalize;
 	font-family: var(--second-font);
@@ -5729,7 +5732,7 @@ blockquote p {
 }
 
 .awwards-list li span {
-	margin-bottom: 10px;
+	margin-block-end: 10px;
 	color: #666;
 	min-width: 100px;
 	display: table;
@@ -5739,7 +5742,7 @@ blockquote p {
 .process-list li {
 	position: relative;
 	overflow: hidden;
-	padding-right: 30px;
+	padding-inline-end: 30px;
 }
 
 .process-list li span {
@@ -5779,7 +5782,7 @@ blockquote p {
 	position: relative;
 	display: grid;
 	grid-template-columns: 66.666666% 33.333333%;
-	padding-top: 90px;
+	padding-block-start: 90px;
 }
 
 .contacts_title_wrap {
@@ -5818,17 +5821,17 @@ blockquote p {
 }
 
 .contacts_title_wrap h4 {
-	padding-bottom: 20px;
-	margin-bottom: 30px;
+	padding-block-end: 20px;
+	margin-block-end: 30px;
 	font-size: 2.4em;
-	text-align: left;
+	text-align: start;
 	font-weight: 800;
 	text-transform: capitalize;
 	font-family: var(--second-font);
 }
 
 .contact-form .comments-title {
-	margin-bottom: 0;
+	margin-block-end: 0;
 	border: none;
 	font-size: 1.4em;
 }
@@ -5844,8 +5847,8 @@ blockquote p {
 }
 
 .cont_num {
-	text-align: left;
-	padding-bottom: 20px;
+	text-align: start;
+	padding-block-end: 20px;
 	font-size: 1.3em;
 	font-weight: 600;
 }
@@ -5905,14 +5908,14 @@ blockquote p {
 
 .contact-item span,
 .contact-item a {
-	text-align: left;
+	text-align: start;
 
 	font-weight: 800;
 	text-transform: capitalize;
 }
 
 .contact-item a {
-	margin-top: 28px;
+	margin-block-start: 28px;
 	display: table;
 	font-size: 1.2em;
 	text-transform: capitalize;
@@ -5935,7 +5938,7 @@ blockquote p {
 	padding: 20px 50px;
 	font-weight: 500;
 	font-size: 1.1em;
-	text-align: left;
+	text-align: start;
 	background: var(--black-color);
 }
 
@@ -5984,14 +5987,14 @@ blockquote p {
 	font-weight: 600;
 	letter-spacing: 20px;
 	height: 1px;
-	margin-bottom: 180px;
+	margin-block-end: 180px;
 	font-family: var(--second-font);
 }
 
 .error-wrap p {
 	text-align: center;
 	color: #fff;
-	margin-bottom: 20px;
+	margin-block-end: 20px;
 }
 
 .nav-button_container {
@@ -6006,8 +6009,8 @@ blockquote p {
 
 	.header-contacts {
 		border-left: none;
-		padding-left: 0;
-		margin-right: 30px;
+		padding-inline-start: 0;
+		margin-inline-end: 30px;
 	}
 
 	.nav-holder nav {
@@ -6015,7 +6018,7 @@ blockquote p {
 	}
 
 	.header-contacts li {
-		margin-left: 10px;
+		margin-inline-start: 10px;
 		letter-spacing: 0;
 	}
 
@@ -6079,7 +6082,7 @@ blockquote p {
 	.nav-button span {
 		width: 100%;
 		float: left;
-		margin-bottom: 6px;
+		margin-block-end: 6px;
 		height: 2px;
 		background: #fff;
 		position: relative;
@@ -6180,11 +6183,11 @@ blockquote p {
 		font-size: 12px;
 		color: #fff;
 		line-height: 20px;
-		text-align: left;
+		text-align: start;
 	}
 
 	.menusb a.back {
-		padding-left: 24px;
+		padding-inline-start: 24px;
 	}
 
 	.menusb a.back:before {
@@ -6198,7 +6201,7 @@ blockquote p {
 	}
 
 	.header-contacts {
-		margin-right: 120px;
+		margin-inline-end: 120px;
 	}
 
 	.fixed-filters-nav .inline-gallery-filters {
@@ -6320,7 +6323,7 @@ blockquote p {
 	.testi-slider-pagination_wrap {
 		position: relative;
 		padding: 0 50px;
-		margin-right: 20px;
+		margin-inline-end: 20px;
 	}
 
 	.hc-pag_wrap {
@@ -6361,25 +6364,25 @@ blockquote p {
 		bottom: 0;
 		padding: 0 40px;
 		border: none;
-		margin-top: -80px;
+		margin-block-start: -80px;
 	}
 
 	.footer-contacts,
 	.footer-about,
 	.footer-content-header {
-		margin-top: 0;
+		margin-block-start: 0;
 	}
 
 	.subcribe-form {
-		margin-top: 110px;
+		margin-block-start: 110px;
 	}
 
 	.post-items {
-		margin-top: 90px;
+		margin-block-start: 90px;
 	}
 
 	.single-slider-wrap {
-		margin-top: 0;
+		margin-block-start: 0;
 	}
 
 	.footer-box {
@@ -6388,17 +6391,17 @@ blockquote p {
 	}
 
 	.subcribe-form {
-		padding-bottom: 90px;
+		padding-block-end: 90px;
 	}
 
 	.footer-content-header {
-		margin-bottom: 30px;
+		margin-block-end: 30px;
 	}
 
 	.inline-facts-wrap,
 	.about_row_hero .block_text {
 		border-left: none;
-		margin-bottom: 0
+		margin-block-end: 0
 	}
 
 	.inline-facts {
@@ -6415,7 +6418,7 @@ blockquote p {
 	}
 
 	.featured_works-header h4 {
-		margin-top: 14px;
+		margin-block-start: 14px;
 	}
 
 	.block_text h2 {
@@ -6436,8 +6439,8 @@ blockquote p {
 	}
 
 	.home_services_btn_wrap a {
-		text-align: left;
-		padding-left: 130px;
+		text-align: start;
+		padding-inline-start: 130px;
 	}
 
 	.home_services_btn_wrap a,
@@ -6489,8 +6492,8 @@ blockquote p {
 
 	.hero-promo-btn {
 		float: left;
-		text-align: left;
-		padding-left: 90px;
+		text-align: start;
+		padding-inline-start: 90px;
 	}
 
 	.hero-promo-btn i {
@@ -6515,11 +6518,11 @@ blockquote p {
 	}
 
 	.block_img {
-		margin-top: 40px;
+		margin-block-start: 40px;
 	}
 
 	.team-header {
-		margin-top: 20px;
+		margin-block-start: 20px;
 	}
 
 	.video_section_wrap {
@@ -6527,7 +6530,7 @@ blockquote p {
 	}
 
 	.fixed-bar-content {
-		margin-top: 0;
+		margin-block-start: 0;
 		padding: 0;
 	}
 
@@ -6546,11 +6549,11 @@ blockquote p {
 	}
 
 	.post-item {
-		margin-bottom: 0
+		margin-block-end: 0
 	}
 
 	.post-wrap .post-item:last-child {
-		margin-bottom: 50px;
+		margin-block-end: 50px;
 	}
 
 	.post-item_content h3,
@@ -6596,7 +6599,7 @@ blockquote p {
 		width: calc(100% - 270px);
 		left: 90px;
 		border-left: 1px solid var(--border-color);
-		text-align: left;
+		text-align: start;
 		text-transform: capitalize;
 		cursor: pointer;
 		z-index: 3;
@@ -6605,7 +6608,7 @@ blockquote p {
 	.inline-filters-nav .gallery-filter_btn {
 		width: calc(100% - 180px);
 		left: 0;
-		padding-left: 30px;
+		padding-inline-start: 30px;
 	}
 
 	.inline-filters-nav {
@@ -6626,7 +6629,7 @@ blockquote p {
 		line-height: inherit;
 		border-top: 1px solid var(--border-color2);
 		display: none;
-		margin-left: 0;
+		margin-inline-start: 0;
 	}
 
 	.inline-filters-nav .inline-gallery-filters {
@@ -6640,7 +6643,7 @@ blockquote p {
 		background: var(--black-color);
 		padding: 10px 0;
 		color: #fff;
-		text-align: left;
+		text-align: start;
 		position: relative;
 	}
 
@@ -6667,7 +6670,7 @@ blockquote p {
 	.services-modal-wrap_item {
 		top: 0;
 		transform: translateY(0);
-		margin-top: 140px;
+		margin-block-start: 140px;
 	}
 
 	.fw_gic2,
@@ -6725,7 +6728,7 @@ blockquote p {
 		top: 100%;
 		width: 182px;
 		height: 90px;
-		margin-top: -90px;
+		margin-block-start: -90px;
 		border-left: 1px solid var(--border-color2);
 	}
 
@@ -6748,7 +6751,7 @@ blockquote p {
 		width: 100%;
 		display: block;
 		top: 0;
-		margin-top: 0;
+		margin-block-start: 0;
 	}
 
 	.column-filters-wrap {
@@ -6831,7 +6834,7 @@ blockquote p {
 	}
 
 	.services-modal-wrap_item {
-		margin-top: 90px;
+		margin-block-start: 90px;
 	}
 
 	.team-item {
@@ -6867,7 +6870,7 @@ blockquote p {
 	}
 
 	.commentform.custom-form textarea {
-		padding-top: 30px;
+		padding-block-start: 30px;
 		height: 180px;
 	}
 
@@ -6877,11 +6880,11 @@ blockquote p {
 	}
 
 	.content-nav li a.ln {
-		padding-left: 100px;
+		padding-inline-start: 100px;
 	}
 
 	.content-nav li a.rn {
-		text-align: left;
+		text-align: start;
 		float: left;
 	}
 
@@ -6890,7 +6893,7 @@ blockquote p {
 	}
 
 	.pr-list ul li {
-		text-align: left;
+		text-align: start;
 		padding: 18px 0;
 	}
 
@@ -6899,8 +6902,8 @@ blockquote p {
 	}
 
 	.contacts_title_wrap h4 {
-		padding-bottom: 10px;
-		margin-bottom: 10px;
+		padding-block-end: 10px;
+		margin-block-end: 10px;
 		font-size: 2.2em;
 	}
 
@@ -6908,8 +6911,8 @@ blockquote p {
 		position: absolute;
 		top: -90px;
 		width: 100%;
-		text-align: left;
-		padding-left: 50px;
+		text-align: start;
+		padding-inline-start: 50px;
 		border-left: none;
 	}
 
@@ -6946,7 +6949,7 @@ blockquote p {
 
 	.process-list li {
 		width: 100%;
-		padding-right: 0;
+		padding-inline-end: 0;
 	}
 
 	.grid-det_link {
@@ -6979,7 +6982,7 @@ blockquote p {
 
 	.fw-carousel-wrap {
 		height: auto;
-		margin-bottom: 0;
+		margin-block-end: 0;
 	}
 
 	.fw-carousel .swiper-slide img,
@@ -7035,7 +7038,7 @@ blockquote p {
 	}
 
 	.menu-button-text {
-		margin-left: 15px;
+		margin-inline-start: 15px;
 	}
 
 	.nav-wrapper {
@@ -7061,7 +7064,7 @@ blockquote p {
 	.btn {
 		width: 100%;
 		padding: 0 40px;
-		text-align: left;
+		text-align: start;
 	}
 
 	.hc_btn_wrap {
@@ -7078,7 +7081,7 @@ blockquote p {
 	}
 
 	.hero-promo-btn {
-		padding-left: 40px;
+		padding-inline-start: 40px;
 	}
 
 	.about-img-hotifer {
@@ -7110,7 +7113,7 @@ blockquote p {
 		width: 40px;
 		height: 40px;
 		line-height: 40px;
-		margin-top: -20px;
+		margin-block-start: -20px;
 	}
 
 	.single-tagcloud {
@@ -7119,7 +7122,7 @@ blockquote p {
 	}
 
 	.comment-body {
-		padding-left: 0;
+		padding-inline-start: 0;
 	}
 
 	.comment-header {
@@ -7215,7 +7218,7 @@ blockquote p {
 	.error-wrap h2 {
 		font-size: 8.7em;
 		letter-spacing: 2px;
-		margin-bottom: 140px;
+		margin-block-end: 140px;
 	}
 
 	.pl-spinner {
