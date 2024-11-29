@@ -10,26 +10,41 @@
     <meta name="keywords" content="real estate, development, construction, property, Almira">
     <meta name="author" content="asksyntax.com">
 
-    <!-- Open Graph meta tags for social media sharing -->
     <meta property="og:title" content="Almira Development - Home">
     <meta property="og:description" content="Professional real estate development and construction services">
     <meta property="og:image" content="images/og.webp">
-    <meta property="og:image:width" content="1280">
-    <meta property="og:image:height" content="672">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://alaa-rassheed.github.io/almira/">
 
-    <!-- Twitter Card meta tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Almira Development - Home">
     <meta name="twitter:description" content="Professional real estate development and construction services">
-    <meta name="twitter:image" content="images/oge.webp">
+    <meta name="twitter:image" content="images/og.webp">
 
-    <title>Almira Development - Portfolio Details</title>
-    <link type="text/css" rel="stylesheet" href="css/plugins.min.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <!-- Add Apple touch icon -->
-    <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Saira:wght@400;600&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Saira:wght@400;600&display=swap"
+            rel="stylesheet">
+    </noscript>
+
+    <title>Almira Development - Home</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link type="text/css" rel="stylesheet" href="css/plugins.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/fancybox.css" media="print" onload="this.media='all'">
+    <link type="text/css" rel="stylesheet" href="css/style.min.css">
+
+    <style>
+        body {
+            overflow: hidden;
+            font-family: 'Saira', Arial, sans-serif;
+        }
+
+        /* Critical CSS */
+    </style>
 </head>
 
 <body>
@@ -577,9 +592,12 @@
     </div>
     <!-- Main end -->
     <!--  scripts  -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/scripts.js"></script>
+    <script defer src="js/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+    </script>
+    <script defer src="js/plugins.js"></script>
+    <script defer src="js/scripts.min.js"></script>
 </body>
 
 </html>
