@@ -1,30 +1,1248 @@
 @charset "utf-8";
-/*===============
- [ -Main Stylesheet-
-  ++root++
-  ++Typography++ 
-  ++general++
-  ++loader++ 
-  ++header++ 
-  ++portfolio++ 
-  ++content++ 
-  ++footer++
-  ++share++   
-  ++blog++ 
-  ++responsive++ 
-*/
-/*--Import fonts --------------*/
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&amp;family=Saira:wght@100;200;300;400;500;600;700;800&amp;display=swap);
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&amp;family=Saira:wght@100;200;300;400;500;600;700;800&amp;display=swap');
-@import url('boot.css');
+.text-start {
+	text-align: start !important
+}
+
+.text-center {
+	text-align: center !important
+}
+
+.text-end {
+	text-align: end !important
+}
+
+.text-justify {
+	text-align: justify !important
+}
+
+@media (min-width: 576px) {
+	.text-sm-start {
+		text-align: start !important
+	}
+
+	.text-sm-center {
+		text-align: center !important
+	}
+
+	.text-sm-end {
+		text-align: end !important
+	}
+
+	.text-sm-justify {
+		text-align: justify !important
+	}
+}
+
+@media (min-width: 768px) {
+	.text-md-start {
+		text-align: start !important
+	}
+
+	.text-md-center {
+		text-align: center !important
+	}
+
+	.text-md-end {
+		text-align: end !important
+	}
+
+	.text-md-justify {
+		text-align: justify !important
+	}
+}
+
+@media (min-width: 992px) {
+	.text-lg-start {
+		text-align: start !important
+	}
+
+	.text-lg-center {
+		text-align: center !important
+	}
+
+	.text-lg-end {
+		text-align: end !important
+	}
+
+	.text-lg-justify {
+		text-align: justify !important
+	}
+}
+
+@media (min-width: 1200px) {
+	.text-xl-start {
+		text-align: start !important
+	}
+
+	.text-xl-center {
+		text-align: center !important
+	}
+
+	.text-xl-end {
+		text-align: end !important
+	}
+
+	.text-xl-justify {
+		text-align: justify !important
+	}
+}
+
+.text-white {
+	color: #fff !important
+}
+
+.text-black {
+	color: #000 !important
+}
+
+.text-wrap {
+	white-space: normal !important
+}
+
+.text-nowrap {
+	white-space: nowrap !important
+}
+
+.text-break {
+	word-break: break-word !important
+}
+
+.text-truncate {
+	overflow: hidden !important;
+	text-overflow: ellipsis !important;
+	white-space: nowrap !important
+}
+
+.text-lowercase {
+	text-transform: lowercase !important
+}
+
+.text-uppercase {
+	text-transform: uppercase !important
+}
+
+.text-capitalize {
+	text-transform: capitalize !important
+}
+
+.p-0 {
+	padding: 0 !important
+}
+
+.p-1 {
+	padding: calc(var(--spacing-unit) * 1) !important
+}
+
+.p-2 {
+	padding: calc(var(--spacing-unit) * 2) !important
+}
+
+.p-3 {
+	padding: calc(var(--spacing-unit) * 3) !important
+}
+
+.p-4 {
+	padding: calc(var(--spacing-unit) * 4) !important
+}
+
+.p-5 {
+	padding: calc(var(--spacing-unit) * 5) !important
+}
+
+.pt-0 {
+	padding-top: 0 !important
+}
+
+.pt-1 {
+	padding-top: calc(var(--spacing-unit) * 1) !important
+}
+
+.pt-2 {
+	padding-top: calc(var(--spacing-unit) * 2) !important
+}
+
+.pt-3 {
+	padding-top: calc(var(--spacing-unit) * 3) !important
+}
+
+.pt-4 {
+	padding-top: calc(var(--spacing-unit) * 4) !important
+}
+
+.pt-5 {
+	padding-top: calc(var(--spacing-unit) * 5) !important
+}
+
+.pb-0 {
+	padding-bottom: 0 !important
+}
+
+.pb-1 {
+	padding-bottom: calc(var(--spacing-unit) * 1) !important
+}
+
+.pb-2 {
+	padding-bottom: calc(var(--spacing-unit) * 2) !important
+}
+
+.pb-3 {
+	padding-bottom: calc(var(--spacing-unit) * 3) !important
+}
+
+.pb-4 {
+	padding-bottom: calc(var(--spacing-unit) * 4) !important
+}
+
+.pb-5 {
+	padding-bottom: calc(var(--spacing-unit) * 5) !important
+}
+
+.pl-0 {
+	padding-left: 0 !important
+}
+
+.pl-1 {
+	padding-left: calc(var(--spacing-unit) * 1) !important
+}
+
+.pl-2 {
+	padding-left: calc(var(--spacing-unit) * 2) !important
+}
+
+.pl-3 {
+	padding-left: calc(var(--spacing-unit) * 3) !important
+}
+
+.pl-4 {
+	padding-left: calc(var(--spacing-unit) * 4) !important
+}
+
+.pl-5 {
+	padding-left: calc(var(--spacing-unit) * 5) !important
+}
+
+.pr-0 {
+	padding-right: 0 !important
+}
+
+.pr-1 {
+	padding-right: calc(var(--spacing-unit) * 1) !important
+}
+
+.pr-2 {
+	padding-right: calc(var(--spacing-unit) * 2) !important
+}
+
+.pr-3 {
+	padding-right: calc(var(--spacing-unit) * 3) !important
+}
+
+.pr-4 {
+	padding-right: calc(var(--spacing-unit) * 4) !important
+}
+
+.pr-5 {
+	padding-right: calc(var(--spacing-unit) * 5) !important
+}
+
+.px-0 {
+	padding-left: 0 !important;
+	padding-right: 0 !important
+}
+
+.px-1 {
+	padding-left: calc(var(--spacing-unit) * 1) !important;
+	padding-right: calc(var(--spacing-unit) * 1) !important
+}
+
+.px-2 {
+	padding-left: calc(var(--spacing-unit) * 2) !important;
+	padding-right: calc(var(--spacing-unit) * 2) !important
+}
+
+.px-3 {
+	padding-left: calc(var(--spacing-unit) * 3) !important;
+	padding-right: calc(var(--spacing-unit) * 3) !important
+}
+
+.px-4 {
+	padding-left: calc(var(--spacing-unit) * 4) !important;
+	padding-right: calc(var(--spacing-unit) * 4) !important
+}
+
+.px-5 {
+	padding-left: calc(var(--spacing-unit) * 5) !important;
+	padding-right: calc(var(--spacing-unit) * 5) !important
+}
+
+.py-0 {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important
+}
+
+.py-1 {
+	padding-top: calc(var(--spacing-unit) * 1) !important;
+	padding-bottom: calc(var(--spacing-unit) * 1) !important
+}
+
+.py-2 {
+	padding-top: calc(var(--spacing-unit) * 2) !important;
+	padding-bottom: calc(var(--spacing-unit) * 2) !important
+}
+
+.py-3 {
+	padding-top: calc(var(--spacing-unit) * 3) !important;
+	padding-bottom: calc(var(--spacing-unit) * 3) !important
+}
+
+.py-4 {
+	padding-top: calc(var(--spacing-unit) * 4) !important;
+	padding-bottom: calc(var(--spacing-unit) * 4) !important
+}
+
+.py-5 {
+	padding-top: calc(var(--spacing-unit) * 5) !important;
+	padding-bottom: calc(var(--spacing-unit) * 5) !important
+}
+
+.m-0 {
+	margin: 0 !important
+}
+
+.m-1 {
+	margin: calc(var(--spacing-unit) * 1) !important
+}
+
+.m-2 {
+	margin: calc(var(--spacing-unit) * 2) !important
+}
+
+.m-3 {
+	margin: calc(var(--spacing-unit) * 3) !important
+}
+
+.m-4 {
+	margin: calc(var(--spacing-unit) * 4) !important
+}
+
+.m-5 {
+	margin: calc(var(--spacing-unit) * 5) !important
+}
+
+.m-auto {
+	margin: auto !important
+}
+
+.mt-0 {
+	margin-top: 0 !important
+}
+
+.mt-1 {
+	margin-top: calc(var(--spacing-unit) * 1) !important
+}
+
+.mt-2 {
+	margin-top: calc(var(--spacing-unit) * 2) !important
+}
+
+.mt-3 {
+	margin-top: calc(var(--spacing-unit) * 3) !important
+}
+
+.mt-4 {
+	margin-top: calc(var(--spacing-unit) * 4) !important
+}
+
+.mt-5 {
+	margin-top: calc(var(--spacing-unit) * 5) !important
+}
+
+.mt-auto {
+	margin-top: auto !important
+}
+
+.mb-0 {
+	margin-bottom: 0 !important
+}
+
+.mb-1 {
+	margin-bottom: calc(var(--spacing-unit) * 1) !important
+}
+
+.mb-2 {
+	margin-bottom: calc(var(--spacing-unit) * 2) !important
+}
+
+.mb-3 {
+	margin-bottom: calc(var(--spacing-unit) * 3) !important
+}
+
+.mb-4 {
+	margin-bottom: calc(var(--spacing-unit) * 4) !important
+}
+
+.mb-5 {
+	margin-bottom: calc(var(--spacing-unit) * 5) !important
+}
+
+.mb-auto {
+	margin-bottom: auto !important
+}
+
+.ml-0 {
+	margin-left: 0 !important
+}
+
+.ml-1 {
+	margin-left: calc(var(--spacing-unit) * 1) !important
+}
+
+.ml-2 {
+	margin-left: calc(var(--spacing-unit) * 2) !important
+}
+
+.ml-3 {
+	margin-left: calc(var(--spacing-unit) * 3) !important
+}
+
+.ml-4 {
+	margin-left: calc(var(--spacing-unit) * 4) !important
+}
+
+.ml-5 {
+	margin-left: calc(var(--spacing-unit) * 5) !important
+}
+
+.ml-auto {
+	margin-left: auto !important
+}
+
+.mr-0 {
+	margin-right: 0 !important
+}
+
+.mr-1 {
+	margin-right: calc(var(--spacing-unit) * 1) !important
+}
+
+.mr-2 {
+	margin-right: calc(var(--spacing-unit) * 2) !important
+}
+
+.mr-3 {
+	margin-right: calc(var(--spacing-unit) * 3) !important
+}
+
+.mr-4 {
+	margin-right: calc(var(--spacing-unit) * 4) !important
+}
+
+.mr-5 {
+	margin-right: calc(var(--spacing-unit) * 5) !important
+}
+
+.mr-auto {
+	margin-right: auto !important
+}
+
+.mx-0 {
+	margin-left: 0 !important;
+	margin-right: 0 !important
+}
+
+.mx-1 {
+	margin-left: calc(var(--spacing-unit) * 1) !important;
+	margin-right: calc(var(--spacing-unit) * 1) !important
+}
+
+.mx-2 {
+	margin-left: calc(var(--spacing-unit) * 2) !important;
+	margin-right: calc(var(--spacing-unit) * 2) !important
+}
+
+.mx-3 {
+	margin-left: calc(var(--spacing-unit) * 3) !important;
+	margin-right: calc(var(--spacing-unit) * 3) !important
+}
+
+.mx-4 {
+	margin-left: calc(var(--spacing-unit) * 4) !important;
+	margin-right: calc(var(--spacing-unit) * 4) !important
+}
+
+.mx-5 {
+	margin-left: calc(var(--spacing-unit) * 5) !important;
+	margin-right: calc(var(--spacing-unit) * 5) !important
+}
+
+.mx-auto {
+	margin-left: auto !important;
+	margin-right: auto !important
+}
+
+.my-0 {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important
+}
+
+.my-1 {
+	margin-top: calc(var(--spacing-unit) * 1) !important;
+	margin-bottom: calc(var(--spacing-unit) * 1) !important
+}
+
+.my-2 {
+	margin-top: calc(var(--spacing-unit) * 2) !important;
+	margin-bottom: calc(var(--spacing-unit) * 2) !important
+}
+
+.my-3 {
+	margin-top: calc(var(--spacing-unit) * 3) !important;
+	margin-bottom: calc(var(--spacing-unit) * 3) !important
+}
+
+.my-4 {
+	margin-top: calc(var(--spacing-unit) * 4) !important;
+	margin-bottom: calc(var(--spacing-unit) * 4) !important
+}
+
+.my-5 {
+	margin-top: calc(var(--spacing-unit) * 5) !important;
+	margin-bottom: calc(var(--spacing-unit) * 5) !important
+}
+
+.my-auto {
+	margin-top: auto !important;
+	margin-bottom: auto !important
+}
+
+.-m-1 {
+	margin: calc(var(--spacing-unit) * -1) !important
+}
+
+.-m-2 {
+	margin: calc(var(--spacing-unit) * -2) !important
+}
+
+.-m-3 {
+	margin: calc(var(--spacing-unit) * -3) !important
+}
+
+.-m-4 {
+	margin: calc(var(--spacing-unit) * -4) !important
+}
+
+.-m-5 {
+	margin: calc(var(--spacing-unit) * -5) !important
+}
+
+.-mt-1 {
+	margin-top: calc(var(--spacing-unit) * -1) !important
+}
+
+.-mt-2 {
+	margin-top: calc(var(--spacing-unit) * -2) !important
+}
+
+.-mt-3 {
+	margin-top: calc(var(--spacing-unit) * -3) !important
+}
+
+.-mt-4 {
+	margin-top: calc(var(--spacing-unit) * -4) !important
+}
+
+.-mt-5 {
+	margin-top: calc(var(--spacing-unit) * -5) !important
+}
+
+.-mb-1 {
+	margin-bottom: calc(var(--spacing-unit) * -1) !important
+}
+
+.-mb-2 {
+	margin-bottom: calc(var(--spacing-unit) * -2) !important
+}
+
+.-mb-3 {
+	margin-bottom: calc(var(--spacing-unit) * -3) !important
+}
+
+.-mb-4 {
+	margin-bottom: calc(var(--spacing-unit) * -4) !important
+}
+
+.-mb-5 {
+	margin-bottom: calc(var(--spacing-unit) * -5) !important
+}
+
+.-ml-1 {
+	margin-left: calc(var(--spacing-unit) * -1) !important
+}
+
+.-ml-2 {
+	margin-left: calc(var(--spacing-unit) * -2) !important
+}
+
+.-ml-3 {
+	margin-left: calc(var(--spacing-unit) * -3) !important
+}
+
+.-ml-4 {
+	margin-left: calc(var(--spacing-unit) * -4) !important
+}
+
+.-ml-5 {
+	margin-left: calc(var(--spacing-unit) * -5) !important
+}
+
+.-mr-1 {
+	margin-right: calc(var(--spacing-unit) * -1) !important
+}
+
+.-mr-2 {
+	margin-right: calc(var(--spacing-unit) * -2) !important
+}
+
+.-mr-3 {
+	margin-right: calc(var(--spacing-unit) * -3) !important
+}
+
+.-mr-4 {
+	margin-right: calc(var(--spacing-unit) * -4) !important
+}
+
+.-mr-5 {
+	margin-right: calc(var(--spacing-unit) * -5) !important
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+.row-no-gutters {
+	margin-right: 0;
+	margin-left: 0
+}
+
+.row-no-gutters>[class*=col-] {
+	padding-right: 0;
+	padding-left: 0
+}
+
+[class*=col-] {
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px
+}
+
+.col {
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%
+}
+
+.col-auto {
+	flex: 0 0 auto;
+	width: auto;
+	max-width: 100%
+}
+
+.col-1 {
+	flex: 0 0 8.333333%;
+	max-width: 8.333333%
+}
+
+.col-2 {
+	flex: 0 0 16.666667%;
+	max-width: 16.666667%
+}
+
+.col-3 {
+	flex: 0 0 25%;
+	max-width: 25%
+}
+
+.col-4 {
+	flex: 0 0 33.333333%;
+	max-width: 33.333333%
+}
+
+.col-5 {
+	flex: 0 0 41.666667%;
+	max-width: 41.666667%
+}
+
+.col-6 {
+	flex: 0 0 50%;
+	max-width: 50%
+}
+
+.col-7 {
+	flex: 0 0 58.333333%;
+	max-width: 58.333333%
+}
+
+.col-8 {
+	flex: 0 0 66.666667%;
+	max-width: 66.666667%
+}
+
+.col-9 {
+	flex: 0 0 75%;
+	max-width: 75%
+}
+
+.col-10 {
+	flex: 0 0 83.333333%;
+	max-width: 83.333333%
+}
+
+.col-11 {
+	flex: 0 0 91.666667%;
+	max-width: 91.666667%
+}
+
+.col-12 {
+	flex: 0 0 100%;
+	max-width: 100%
+}
+
+@media (min-width: 576px) {
+	.col-sm {
+		flex-basis: 0;
+		flex-grow: 1;
+		max-width: 100%
+	}
+
+	.col-sm-auto {
+		flex: 0 0 auto;
+		width: auto;
+		max-width: 100%
+	}
+
+	.col-sm-1 {
+		flex: 0 0 8.333333%;
+		max-width: 8.333333%
+	}
+
+	.col-sm-2 {
+		flex: 0 0 16.666667%;
+		max-width: 16.666667%
+	}
+
+	.col-sm-3 {
+		flex: 0 0 25%;
+		max-width: 25%
+	}
+
+	.col-sm-4 {
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%
+	}
+
+	.col-sm-5 {
+		flex: 0 0 41.666667%;
+		max-width: 41.666667%
+	}
+
+	.col-sm-6 {
+		flex: 0 0 50%;
+		max-width: 50%
+	}
+
+	.col-sm-7 {
+		flex: 0 0 58.333333%;
+		max-width: 58.333333%
+	}
+
+	.col-sm-8 {
+		flex: 0 0 66.666667%;
+		max-width: 66.666667%
+	}
+
+	.col-sm-9 {
+		flex: 0 0 75%;
+		max-width: 75%
+	}
+
+	.col-sm-10 {
+		flex: 0 0 83.333333%;
+		max-width: 83.333333%
+	}
+
+	.col-sm-11 {
+		flex: 0 0 91.666667%;
+		max-width: 91.666667%
+	}
+
+	.col-sm-12 {
+		flex: 0 0 100%;
+		max-width: 100%
+	}
+}
+
+@media (min-width: 768px) {
+	.col-md {
+		flex-basis: 0;
+		flex-grow: 1;
+		max-width: 100%
+	}
+
+	.col-md-auto {
+		flex: 0 0 auto;
+		width: auto;
+		max-width: 100%
+	}
+
+	.col-md-1 {
+		flex: 0 0 8.333333%;
+		max-width: 8.333333%
+	}
+
+	.col-md-2 {
+		flex: 0 0 16.666667%;
+		max-width: 16.666667%
+	}
+
+	.col-md-3 {
+		flex: 0 0 25%;
+		max-width: 25%
+	}
+
+	.col-md-4 {
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%
+	}
+
+	.col-md-5 {
+		flex: 0 0 41.666667%;
+		max-width: 41.666667%
+	}
+
+	.col-md-6 {
+		flex: 0 0 50%;
+		max-width: 50%
+	}
+
+	.col-md-7 {
+		flex: 0 0 58.333333%;
+		max-width: 58.333333%
+	}
+
+	.col-md-8 {
+		flex: 0 0 66.666667%;
+		max-width: 66.666667%
+	}
+
+	.col-md-9 {
+		flex: 0 0 75%;
+		max-width: 75%
+	}
+
+	.col-md-10 {
+		flex: 0 0 83.333333%;
+		max-width: 83.333333%
+	}
+
+	.col-md-11 {
+		flex: 0 0 91.666667%;
+		max-width: 91.666667%
+	}
+
+	.col-md-12 {
+		flex: 0 0 100%;
+		max-width: 100%
+	}
+}
+
+@media (min-width: 992px) {
+	.col-lg {
+		flex-basis: 0;
+		flex-grow: 1;
+		max-width: 100%
+	}
+
+	.col-lg-auto {
+		flex: 0 0 auto;
+		width: auto;
+		max-width: 100%
+	}
+
+	.col-lg-1 {
+		flex: 0 0 8.333333%;
+		max-width: 8.333333%
+	}
+
+	.col-lg-2 {
+		flex: 0 0 16.666667%;
+		max-width: 16.666667%
+	}
+
+	.col-lg-3 {
+		flex: 0 0 25%;
+		max-width: 25%
+	}
+
+	.col-lg-4 {
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%
+	}
+
+	.col-lg-5 {
+		flex: 0 0 41.666667%;
+		max-width: 41.666667%
+	}
+
+	.col-lg-6 {
+		flex: 0 0 50%;
+		max-width: 50%
+	}
+
+	.col-lg-7 {
+		flex: 0 0 58.333333%;
+		max-width: 58.333333%
+	}
+
+	.col-lg-8 {
+		flex: 0 0 66.666667%;
+		max-width: 66.666667%
+	}
+
+	.col-lg-9 {
+		flex: 0 0 75%;
+		max-width: 75%
+	}
+
+	.col-lg-10 {
+		flex: 0 0 83.333333%;
+		max-width: 83.333333%
+	}
+
+	.col-lg-11 {
+		flex: 0 0 91.666667%;
+		max-width: 91.666667%
+	}
+
+	.col-lg-12 {
+		flex: 0 0 100%;
+		max-width: 100%
+	}
+}
+
+@media (min-width: 1200px) {
+	.col-xl {
+		flex-basis: 0;
+		flex-grow: 1;
+		max-width: 100%
+	}
+
+	.col-xl-auto {
+		flex: 0 0 auto;
+		width: auto;
+		max-width: 100%
+	}
+
+	.col-xl-1 {
+		flex: 0 0 8.333333%;
+		max-width: 8.333333%
+	}
+
+	.col-xl-2 {
+		flex: 0 0 16.666667%;
+		max-width: 16.666667%
+	}
+
+	.col-xl-3 {
+		flex: 0 0 25%;
+		max-width: 25%
+	}
+
+	.col-xl-4 {
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%
+	}
+
+	.col-xl-5 {
+		flex: 0 0 41.666667%;
+		max-width: 41.666667%
+	}
+
+	.col-xl-6 {
+		flex: 0 0 50%;
+		max-width: 50%
+	}
+
+	.col-xl-7 {
+		flex: 0 0 58.333333%;
+		max-width: 58.333333%
+	}
+
+	.col-xl-8 {
+		flex: 0 0 66.666667%;
+		max-width: 66.666667%
+	}
+
+	.col-xl-9 {
+		flex: 0 0 75%;
+		max-width: 75%
+	}
+
+	.col-xl-10 {
+		flex: 0 0 83.333333%;
+		max-width: 83.333333%
+	}
+
+	.col-xl-11 {
+		flex: 0 0 91.666667%;
+		max-width: 91.666667%
+	}
+
+	.col-xl-12 {
+		flex: 0 0 100%;
+		max-width: 100%
+	}
+}
+
+.offset-1 {
+	margin-left: 8.333333%
+}
+
+.offset-2 {
+	margin-left: 16.666667%
+}
+
+.offset-3 {
+	margin-left: 25%
+}
+
+.offset-4 {
+	margin-left: 33.333333%
+}
+
+.offset-5 {
+	margin-left: 41.666667%
+}
+
+.offset-6 {
+	margin-left: 50%
+}
+
+.offset-7 {
+	margin-left: 58.333333%
+}
+
+.offset-8 {
+	margin-left: 66.666667%
+}
+
+.offset-9 {
+	margin-left: 75%
+}
+
+.offset-10 {
+	margin-left: 83.333333%
+}
+
+.offset-11 {
+	margin-left: 91.666667%
+}
+
+@media (min-width: 576px) {
+	.offset-sm-1 {
+		margin-left: 8.333333%
+	}
+
+	.offset-sm-2 {
+		margin-left: 16.666667%
+	}
+
+	.offset-sm-3 {
+		margin-left: 25%
+	}
+
+	.offset-sm-4 {
+		margin-left: 33.333333%
+	}
+
+	.offset-sm-5 {
+		margin-left: 41.666667%
+	}
+
+	.offset-sm-6 {
+		margin-left: 50%
+	}
+
+	.offset-sm-7 {
+		margin-left: 58.333333%
+	}
+
+	.offset-sm-8 {
+		margin-left: 66.666667%
+	}
+
+	.offset-sm-9 {
+		margin-left: 75%
+	}
+
+	.offset-sm-10 {
+		margin-left: 83.333333%
+	}
+
+	.offset-sm-11 {
+		margin-left: 91.666667%
+	}
+}
+
+@media (min-width: 768px) {
+	.offset-md-1 {
+		margin-left: 8.333333%
+	}
+
+	.offset-md-2 {
+		margin-left: 16.666667%
+	}
+
+	.offset-md-3 {
+		margin-left: 25%
+	}
+
+	.offset-md-4 {
+		margin-left: 33.333333%
+	}
+
+	.offset-md-5 {
+		margin-left: 41.666667%
+	}
+
+	.offset-md-6 {
+		margin-left: 50%
+	}
+
+	.offset-md-7 {
+		margin-left: 58.333333%
+	}
+
+	.offset-md-8 {
+		margin-left: 66.666667%
+	}
+
+	.offset-md-9 {
+		margin-left: 75%
+	}
+
+	.offset-md-10 {
+		margin-left: 83.333333%
+	}
+
+	.offset-md-11 {
+		margin-left: 91.666667%
+	}
+}
+
+@media (min-width: 992px) {
+	.offset-lg-1 {
+		margin-left: 8.333333%
+	}
+
+	.offset-lg-2 {
+		margin-left: 16.666667%
+	}
+
+	.offset-lg-3 {
+		margin-left: 25%
+	}
+
+	.offset-lg-4 {
+		margin-left: 33.333333%
+	}
+
+	.offset-lg-5 {
+		margin-left: 41.666667%
+	}
+
+	.offset-lg-6 {
+		margin-left: 50%
+	}
+
+	.offset-lg-7 {
+		margin-left: 58.333333%
+	}
+
+	.offset-lg-8 {
+		margin-left: 66.666667%
+	}
+
+	.offset-lg-9 {
+		margin-left: 75%
+	}
+
+	.offset-lg-10 {
+		margin-left: 83.333333%
+	}
+
+	.offset-lg-11 {
+		margin-left: 91.666667%
+	}
+}
+
+@media (min-width: 1200px) {
+	.offset-xl-1 {
+		margin-left: 8.333333%
+	}
+
+	.offset-xl-2 {
+		margin-left: 16.666667%
+	}
+
+	.offset-xl-3 {
+		margin-left: 25%
+	}
+
+	.offset-xl-4 {
+		margin-left: 33.333333%
+	}
+
+	.offset-xl-5 {
+		margin-left: 41.666667%
+	}
+
+	.offset-xl-6 {
+		margin-left: 50%
+	}
+
+	.offset-xl-7 {
+		margin-left: 58.333333%
+	}
+
+	.offset-xl-8 {
+		margin-left: 66.666667%
+	}
+
+	.offset-xl-9 {
+		margin-left: 75%
+	}
+
+	.offset-xl-10 {
+		margin-left: 83.333333%
+	}
+
+	.offset-xl-11 {
+		margin-left: 91.666667%
+	}
+}
 
 @font-face {
 	font-family: 'Reey Regular';
 	font-style: normal;
-	font-weight: normal;
-	src: local('Reey Regular'), url('../reey-webfont/Reey-Regular.woff') format('woff');
+	font-weight: 400;
+	src: local('Reey Regular'), url(../reey-webfont/Reey-Regular.woff) format('woff')
 }
-
 
 :root {
 	--main-color: #fff;
@@ -35,12 +1253,12 @@
 	--border-color2: rgba(255, 255, 255, .17);
 	--main-font: 'Saira', sans-serif;
 	--second-font: 'Orbitron', sans-serif;
-	--spacing-unit: 0.25rem;
+	--spacing-unit: 0.25rem
 }
 
 html {
 	overflow-x: hidden !important;
-	height: 100%;
+	height: 100%
 }
 
 body {
@@ -52,29 +1270,28 @@ body {
 	background: var(--black-color);
 	height: 100%;
 	text-align: center;
-	color: var(--black-color);
+	color: var(--black-color)
 }
 
 @-o-viewport {
-	width: device-width;
+	width: device-width
 }
 
 @-ms-viewport {
-	width: device-width;
+	width: device-width
 }
 
 @viewport {
-	width: device-width;
+	width: device-width
 }
 
-/*-Typography------------------*/
 p {
 	text-align: start;
 	font-size: 16px;
 	line-height: 24px;
 	padding-block-end: 10px;
 	font-weight: 400;
-	color: var(--black-color);
+	color: var(--black-color)
 }
 
 blockquote {
@@ -82,23 +1299,22 @@ blockquote {
 	padding: 10px 20px 0;
 	margin: 0 0 20px;
 	border-left: 10px solid #eee;
-	position: relative;
+	position: relative
 }
 
 blockquote p {
 	font-style: italic;
 	font-size: 13px;
-	color: #333;
+	color: #333
 }
 
-/* --Loader------------------*/
 .loader {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 3;
+	z-index: 3
 }
 
 .spinner {
@@ -108,7 +1324,7 @@ blockquote p {
 	left: 50%;
 	top: 50%;
 	margin: -35px 0 0 -160px;
-	z-index: 20;
+	z-index: 20
 }
 
 .spinner:before {
@@ -118,7 +1334,7 @@ blockquote p {
 	right: -20px;
 	top: -20px;
 	bottom: -20px;
-	border: 1px solid var(--border-color2);
+	border: 1px solid var(--border-color2)
 }
 
 .double-bounce2 {
@@ -128,7 +1344,7 @@ blockquote p {
 	right: 100%;
 	bottom: 0;
 	z-index: 2;
-	background: #fff;
+	background: #fff
 }
 
 .page-load {
@@ -138,7 +1354,7 @@ blockquote p {
 	right: 0;
 	bottom: 0;
 	display: none;
-	z-index: 18;
+	z-index: 18
 }
 
 .pl-row {
@@ -147,7 +1363,7 @@ blockquote p {
 	overflow: hidden;
 	height: 100%;
 	position: relative;
-	z-index: 1;
+	z-index: 1
 }
 
 .pl-row span {
@@ -155,21 +1371,21 @@ blockquote p {
 	left: 0;
 	right: 0;
 	top: 0;
-	bottom: 100%;
+	bottom: 100%
 }
 
 .loader .pl-row span {
-	bottom: 0;
+	bottom: 0
 }
 
 .pl-row span.pl-row-anim {
 	z-index: 2;
-	background: var(--black-color);
+	background: var(--black-color)
 }
 
 .pl-row span.pl-row-anim2 {
 	z-index: 1;
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .pl-spinner {
@@ -187,20 +1403,19 @@ blockquote p {
 	transition: all .4s linear;
 	opacity: 0;
 	margin-block-start: 30px;
-	-webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.3, transparent), to(rgba(0, 0, 0, 0.2)));
+	-webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.3, transparent), to(rgba(0, 0, 0, .2)))
 }
 
 .act-loader {
 	margin-block-start: 0;
-	opacity: 1;
+	opacity: 1
 }
 
 .menumasc {
 	display: none;
-	z-index: 10;
+	z-index: 10
 }
 
-/* ------Cursor------------------------------------------------------------ */
 .element {
 	position: fixed;
 	left: 0;
@@ -208,19 +1423,19 @@ blockquote p {
 	width: 30px;
 	height: 30px;
 	pointer-events: none;
-	z-index: 10000;
+	z-index: 10000
 }
 
 .element-item {
 	position: fixed;
-	transform: translate(-50%, -50%) scale(1.0);
+	transform: translate(-50%, -50%) scale(1);
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
 	pointer-events: none;
 	opacity: 1;
 	box-sizing: border-box;
-	border: 1px solid #ccc;
+	border: 1px solid #ccc
 }
 
 .element-item:before {
@@ -234,26 +1449,25 @@ blockquote p {
 	background: #000;
 	border-radius: 50%;
 	z-index: -1;
-	transform: scale(1.0);
-	transition: all 500ms cubic-bezier(.19, 1, .22, 1) 0ms;
+	transform: scale(1);
+	transition: all .5s cubic-bezier(.19, 1, .22, 1) 0s
 }
 
 .element-item.white_blur {
-	border-color: rgba(255, 255, 255, .7);
+	border-color: rgba(255, 255, 255, .7)
 }
 
 .element-item.white_blur:before {
-	background: var(--main-color);
-
+	background: var(--main-color)
 }
 
 .element-item.elem_hover:before {
-	opacity: 0.2;
-	transform: scale(6.5);
+	opacity: .2;
+	transform: scale(6.5)
 }
 
 .element-item.elem_hover {
-	border-color: transparent;
+	border-color: transparent
 }
 
 .element-item:after {
@@ -270,56 +1484,56 @@ blockquote p {
 	line-height: 14px;
 	margin: -7px 0 0 -7px;
 	opacity: 0;
-	transition: all 500ms cubic-bezier(.19, 1, .22, 1) 0ms;
-	transform: scale(0);
+	transition: all .5s cubic-bezier(.19, 1, .22, 1) 0s;
+	transform: scale(0)
 }
 
 .element-item.loader_element:before {
 	border: 2px solid rgba(255, 255, 255, 0);
 	border-top-color: #fff;
 	opacity: 1;
-	background: none;
+	background: 0 0;
 	border-radius: 50%;
 	animation: spin33 1.4s cubic-bezier(.19, 1, .22, 1) infinite;
 	width: 44px;
 	height: 44px;
 	font-weight: 100;
 	line-height: 28px;
-	margin: -24px 0 0 -24px;
+	margin: -24px 0 0 -24px
 }
 
 @keyframes spin33 {
 	from {
-		transform: rotate(0deg);
+		transform: rotate(0)
 	}
 
 	to {
-		transform: rotate(360deg);
+		transform: rotate(360deg)
 	}
 }
 
 .element-item.slider_hover:before {
 	transform: scale(8.8);
-	background: #000;
+	background: #000
 }
 
 .element-item.close-icon:before {
 	transform: scale(8.8);
-	background: #000;
+	background: #000
 }
 
 .element-item.slider_hover {
 	border-color: transparent;
 	width: 60px;
-	height: 60px;
+	height: 60px
 }
 
 .element-item.slider_hover:after {
-	transform: scale(1.0);
+	transform: scale(1);
 	opacity: 1;
 	content: "\f07e";
 	font-size: 13px !important;
-	font-weight: 100;
+	font-weight: 100
 }
 
 .element-item.slider_linknext:after {
@@ -332,10 +1546,9 @@ blockquote p {
 	opacity: 1;
 	content: "\f00d";
 	color: #000;
-	line-height: 16px;
+	line-height: 16px
 }
 
-/* --Content Styles---------------*/
 #main {
 	height: 100%;
 	width: 100%;
@@ -343,7 +1556,7 @@ blockquote p {
 	top: 0;
 	left: 0;
 	z-index: 2;
-	opacity: 0;
+	opacity: 0
 }
 
 #main.vis-main {
@@ -359,38 +1572,38 @@ blockquote p {
 	top: 0;
 	right: 0;
 	z-index: 2;
-	width: 100%;
+	width: 100%
 }
 
 .container {
 	width: min(100% - 25px, 1700px);
 	margin-inline: auto;
 	position: relative;
-	z-index: 5;
+	z-index: 5
 }
 
 .content {
 	position: relative;
 	z-index: 4;
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .parallax-section_bg {
-	overflow: hidden;
+	overflow: hidden
 }
 
 .fl-wrap {
 	float: left;
 	width: 100%;
-	position: relative;
+	position: relative
 }
 
 .no-bg {
-	background: none !important;
+	background: 0 0 !important
 }
 
 .full-height {
-	height: 100%;
+	height: 100%
 }
 
 .bg {
@@ -403,13 +1616,13 @@ blockquote p {
 	background-attachment: scroll;
 	background-position: center;
 	background-repeat: repeat;
-	background-origin: content-box;
+	background-origin: content-box
 }
 
 .respimg,
 .single-slider img {
 	width: 100%;
-	height: auto;
+	height: auto
 }
 
 .overlay {
@@ -420,44 +1633,44 @@ blockquote p {
 	height: 100%;
 	background: #000;
 	opacity: .4;
-	z-index: 2;
+	z-index: 2
 }
 
 .border-box_item {
 	border-left: 1px solid var(--border-color);
 	border-right: 1px solid var(--border-color);
-	box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .border-box_item2 {
 	box-sizing: border-box;
 	border-left: 1px solid var(--border-color2);
-	border-right: 1px solid var(--border-color2);
+	border-right: 1px solid var(--border-color2)
 }
 
 .grid-column-container {
 	position: relative;
-	display: grid;
+	display: grid
 }
 
 .grid-3-column {
-	grid-template-columns: 33.333333% 33.333333% 33.333333%;
+	grid-template-columns: 33.333333% 33.333333% 33.333333%
 }
 
 .grid-2-column {
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 50% 50%
 }
 
 .grid-4-column {
-	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-columns: 25% 25% 25% 25%
 }
 
 .grid-sb-column {
-	grid-template-columns: 66.666666% 33.333333%;
+	grid-template-columns: 66.666666% 33.333333%
 }
 
 .grid-sb-column2 {
-	grid-template-columns: 33.333333% 66.666666%;
+	grid-template-columns: 33.333333% 66.666666%
 }
 
 .fs-wrapper,
@@ -467,7 +1680,7 @@ blockquote p {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .content-holder {
@@ -476,7 +1689,7 @@ blockquote p {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 1;
+	z-index: 1
 }
 
 .aside-column {
@@ -487,7 +1700,7 @@ blockquote p {
 	width: 90px;
 	z-index: 20;
 	background: #000;
-	border-right: 1px solid var(--border-color2);
+	border-right: 1px solid var(--border-color2)
 }
 
 .progress-bar-wrap {
@@ -496,7 +1709,7 @@ blockquote p {
 	left: 0;
 	right: 0;
 	height: 360px;
-	border-bottom: 1px solid var(--border-color2);
+	border-bottom: 1px solid var(--border-color2)
 }
 
 .progress-bar-container {
@@ -506,7 +1719,7 @@ blockquote p {
 	bottom: 90px;
 	width: 1px;
 	background: rgba(255, 255, 255, .17);
-	z-index: 1;
+	z-index: 1
 }
 
 .progress-bar {
@@ -515,10 +1728,9 @@ blockquote p {
 	width: 1px;
 	background: #fff;
 	top: 0;
-	height: 0;
+	height: 0
 }
 
-/*-- Header  ------------------*/
 .main-header {
 	position: fixed;
 	top: 0;
@@ -527,47 +1739,33 @@ blockquote p {
 	height: 100px;
 	background: #000;
 	z-index: 30;
-	border-bottom: 1px solid var(--border-color2);
+	border-bottom: 1px solid var(--border-color2)
 }
-
 
 .main-header .full-height {
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: center
 }
 
 .logo-holder {
 	float: left;
 	width: 270px;
 	height: 100%;
-	/* line-height: 90px; */
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .logo-holder img {
 	width: 250px;
 	height: 100%;
 	position: relative;
-	z-index: 2;
+	z-index: 2
 }
 
-/* .logo-holder:before {
-	content: '';
-	position: absolute;
-	top: 100%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 1;
-	background: var(--black-color2);
-	transition: all .2s linear;
-} */
-
 .logo-holder:hover:before {
-	top: 0;
+	top: 0
 }
 
 .aside-social {
@@ -578,12 +1776,12 @@ blockquote p {
 	padding: 90px 0;
 	border-top: 1px solid var(--border-color2);
 	border-bottom: 1px solid var(--border-color2);
-	background: rgba(255, 255, 255, .07);
+	background: rgba(255, 255, 255, .07)
 }
 
 .aside-social li {
 	float: left;
-	width: 100%;
+	width: 100%
 }
 
 .aside-social li a {
@@ -592,7 +1790,7 @@ blockquote p {
 	color: #fff;
 	text-transform: capitalize;
 	font-weight: 600;
-	font-size: 1.2rem;
+	font-size: 1.2rem
 }
 
 .nav-holder {
@@ -603,7 +1801,7 @@ blockquote p {
 	left: 0;
 	visibility: visible;
 	z-index: 20;
-	top: -10px;
+	top: -10px
 }
 
 .nav-holder nav {
@@ -612,13 +1810,13 @@ blockquote p {
 	border-right: 0;
 	float: left;
 	height: 100%;
-	padding: 0px 120px;
+	padding: 0 120px
 }
 
 .nav-holder nav li {
 	float: left;
 	position: relative;
-	height: 90px;
+	height: 90px
 }
 
 .nav-holder nav li ul {
@@ -632,13 +1830,13 @@ blockquote p {
 	z-index: 1;
 	padding: 10px 0;
 	background: rgba(0, 0, 0, .9);
-	transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out
 }
 
 .nav-holder nav li:hover>ul {
 	opacity: 1;
 	visibility: visible;
-	margin: 0;
+	margin: 0
 }
 
 .nav-holder nav li ul li ul {
@@ -647,24 +1845,24 @@ blockquote p {
 	top: -10px;
 	margin: 0;
 	max-width: 150px;
-	border-right: 1px solid var(--border-color2);
+	border-right: 1px solid var(--border-color2)
 }
 
 .main-header.top-header .nav-holder nav li ul li ul {
 	bottom: auto;
-	top: -10px;
+	top: -10px
 }
 
 .nav-holder nav li ul li:hover>ul {
 	opacity: 1;
 	visibility: visible;
-	margin-inline-end: 0px;
+	margin-inline-end: 0
 }
 
 .nav-holder nav li ul li {
 	float: none;
 	display: block;
-	height: auto;
+	height: auto
 }
 
 .nav-holder nav li a {
@@ -678,7 +1876,7 @@ blockquote p {
 	text-align: start;
 	color: #fff;
 	font-size: 1rem;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .nav-holder nav li a:before {
@@ -689,13 +1887,13 @@ blockquote p {
 	width: 0;
 	height: 4px;
 	background: #fff;
-	transition: all .2s linear;
+	transition: all .2s linear
 }
 
 .nav-holder nav li a.act-link:before,
-.nav-holder nav li a:hover:before,
-.nav-holder nav li a.act-sec:before {
-	width: 100%;
+.nav-holder nav li a.act-sec:before,
+.nav-holder nav li a:hover:before {
+	width: 100%
 }
 
 .nav-holder nav li ul a {
@@ -704,7 +1902,7 @@ blockquote p {
 	width: 100%;
 	text-align: start;
 	padding: 0 25px;
-	line-height: 40px;
+	line-height: 40px
 }
 
 .nav-holder nav li ul a:before {
@@ -719,18 +1917,8 @@ blockquote p {
 	margin-inline-end: 90px;
 	position: relative;
 	border-left: 1px solid var(--border-color2);
-	padding-inline-start: 50px;
+	padding-inline-start: 50px
 }
-
-/* .header-contacts:before {
-	content: '';
-	position: absolute;
-	width: 30px;
-	height: 1px;
-	background: rgba(255, 255, 255, .27);
-	top: 50%;
-	right: -60px;
-} */
 
 .header-contacts li {
 	float: left;
@@ -740,18 +1928,17 @@ blockquote p {
 	line-height: 90px;
 	font-weight: 600;
 	text-transform: capitalize;
-	letter-spacing: 1px;
+	letter-spacing: 1px
 }
 
 .header-contacts li a {
 	color: #fff;
-	margin-inline-start: 30px;
+	margin-inline-start: 30px
 }
 
-/*---  footer ---------*/
 .height-emulator {
 	position: relative;
-	z-index: 1;
+	z-index: 1
 }
 
 .main-footer {
@@ -772,7 +1959,7 @@ blockquote p {
 	right: 50%;
 	height: 90px;
 	background: rgba(255, 255, 255, .07);
-	z-index: 2;
+	z-index: 2
 }
 
 .main-footer:after {
@@ -783,15 +1970,14 @@ blockquote p {
 	right: 0;
 	top: 0;
 	background: rgba(255, 255, 255, .07);
-	z-index: 2;
+	z-index: 2
 }
 
 .footer-inner {
-	/* height: 600px; */
 	position: relative;
 	display: block;
 	background: var(--black-color);
-	z-index: 3;
+	z-index: 3
 }
 
 .footer-inner:before {
@@ -802,14 +1988,14 @@ blockquote p {
 	right: 33.333333%;
 	height: 1px;
 	background: var(--border-color2);
-	z-index: 2;
+	z-index: 2
 }
 
 .subcribe-form {
 	margin: 300px 0 0;
 	background: var(--black-color);
 	position: relative;
-	z-index: 3;
+	z-index: 3
 }
 
 .subcribe_title {
@@ -826,43 +2012,43 @@ blockquote p {
 	text-transform: capitalize;
 	font-weight: 800;
 	background: var(--black-color);
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 #subscribe {
 	top: -90px;
-	position: relative;
+	position: relative
 }
 
 .footer-inner_item {
 	border-left: 1px solid var(--border-color2);
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .footer-inner .footer-inner_item:first-child {
-	border: none;
+	border: none
 }
 
 .enteremail {
-	background: none;
+	background: 0 0;
 	border: none;
-	outline: none;
+	outline: 0;
 	width: 100%;
 	height: 90px;
 	line-height: 90px;
 	padding: 0 40px;
 	border-bottom: 1px solid var(--border-color2);
 	color: #fff;
-	font-family: var(--main-font);
+	font-family: var(--main-font)
 }
 
 .enteremail::-webkit-input-placeholder {
-	color: #fff;
+	color: #fff
 }
 
 .subscribe-button {
-	outline: none;
+	outline: 0;
 	border: none;
 	background: #fff;
 	width: 100%;
@@ -878,7 +2064,7 @@ blockquote p {
 	position: relative;
 	text-transform: capitalize;
 	font-family: var(--main-font);
-	-webkit-appearance: none;
+	-webkit-appearance: none
 }
 
 .subscribe-button i {
@@ -890,11 +2076,11 @@ blockquote p {
 	line-height: 90px;
 	border-left: 1px solid var(--border-color);
 	transition: all .3s linear;
-	text-align: center;
+	text-align: center
 }
 
 .subscribe-button:hover i {
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .subscribe-message {
@@ -902,7 +2088,7 @@ blockquote p {
 	bottom: 37px;
 	left: 120px;
 	right: 0;
-	z-index: 20;
+	z-index: 20
 }
 
 .sub-footer {
@@ -915,7 +2101,7 @@ blockquote p {
 	z-index: 5;
 	background: var(--black-color);
 	padding: 0 40px;
-	border-top: 1px solid var(--border-color2);
+	border-top: 1px solid var(--border-color2)
 }
 
 .policy-box {
@@ -923,7 +2109,7 @@ blockquote p {
 	font-size: 1.1em;
 	font-weight: 800;
 	color: #fff;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .to-top_btn {
@@ -936,16 +2122,16 @@ blockquote p {
 	border-left: 1px solid var(--border-color2);
 	font-size: 1.4em;
 	transition: all .3s linear;
-	color: #fff;
+	color: #fff
 }
 
 .to-top_btn:hover {
-	background: var(--black-color2);
+	background: var(--black-color2)
 }
 
-.footer-contacts,
-.footer-about {
-	margin-block-start: 90px;
+.footer-about,
+.footer-contacts {
+	margin-block-start: 90px
 }
 
 .footer-contacts li {
@@ -956,23 +2142,23 @@ blockquote p {
 	letter-spacing: 1px;
 	font-size: 1.1em;
 	font-weight: 600;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .footer-contacts li span {
 	display: inline-block;
 	margin-inline-end: 10px;
 	min-width: 90px;
-	color: rgba(255, 255, 255, .7);
+	color: rgba(255, 255, 255, .7)
 }
 
 .footer-contacts li a,
 .footer-social li a {
-	color: #fff;
+	color: #fff
 }
 
 .footer-social li a i {
-	font-size: 1.2rem;
+	font-size: 1.2rem
 }
 
 .footer-content-header {
@@ -983,7 +2169,7 @@ blockquote p {
 	text-transform: capitalize;
 	font-weight: 800;
 	font-family: var(--second-font);
-	position: relative;
+	position: relative
 }
 
 .footer-content-header:before {
@@ -993,12 +2179,12 @@ blockquote p {
 	left: -40px;
 	right: -40px;
 	height: 1px;
-	border-top: 1px solid var(--border-color2);
+	border-top: 1px solid var(--border-color2)
 }
 
 .footer-box {
 	padding: 30px 40px 0;
-	margin-block-end: 100px;
+	margin-block-end: 100px
 }
 
 .footer-social {
@@ -1010,17 +2196,17 @@ blockquote p {
 	line-height: 90px;
 	border-top: 1px solid var(--border-color2);
 	padding: 0 40px;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .footer-social li {
 	float: left;
 	margin-inline-end: 20px;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .footer-about p {
-	color: rgba(255, 255, 255, .7);
+	color: rgba(255, 255, 255, .7)
 }
 
 .footer-dec {
@@ -1030,7 +2216,7 @@ blockquote p {
 	width: 1px;
 	top: 0;
 	background: var(--border-color2);
-	z-index: 2;
+	z-index: 2
 }
 
 .footer-inner_item .arrow_dec_wrap {
@@ -1040,54 +2226,53 @@ blockquote p {
 }
 
 .ardw_white .arrow_dec_dot:before {
-	background: rgba(255, 255, 255, .3);
+	background: rgba(255, 255, 255, .3)
 }
 
-/*---  hero ---------*/
 .slideshow-container .bg {
 	transform: scale(1);
-	transition: all 8.5s linear;
+	transition: all 8.5s linear
 }
 
 .slideshow-container_wrap .swiper-slide-active .bg,
 .slideshow-container_wrap .swiper-slide-duplicate-active .bg {
-	transform: scale(1.1);
+	transform: scale(1.1)
 }
 
 .main-hero-carousel-wrap {
 	position: relative;
-	padding-block-end: 90px;
+	padding-block-end: 90px
 }
 
 .main-hero-carousel {
-	border-bottom: 1px solid var(--border-color2);
+	border-bottom: 1px solid var(--border-color2)
 }
 
 .main-hero-carousel .swiper-slide .bg {
 	width: 130%;
 	left: -15%;
-	transform: translateZ(0);
+	transform: translateZ(0)
 }
 
 .main-hero-carousel,
 .main-hero-carousel-item {
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .main-hero-carousel-item .overlay {
 	transition: all .4s ease-in-out;
-	opacity: .6;
+	opacity: .6
 }
 
 .main-hero-carousel .swiper-slide-active .main-hero-carousel-item .overlay {
-	opacity: .4;
+	opacity: .4
 }
 
 .main-hero-carousel .swiper-container {
 	width: 100%;
 	height: 100%;
-	margin: 0 auto;
+	margin: 0 auto
 }
 
 .main-hero-carousel-title {
@@ -1101,14 +2286,14 @@ blockquote p {
 	transition: all .4s ease-in-out;
 	opacity: 0;
 	visibility: hidden;
-	margin-block-start: 30px;
+	margin-block-start: 30px
 }
 
 .main-hero-carousel .swiper-slide-active .main-hero-carousel-title {
 	margin-block-start: 0;
 	opacity: 1;
-	transition-delay: 1.0s;
-	visibility: visible;
+	transition-delay: 1s;
+	visibility: visible
 }
 
 .carousle-item-dec {
@@ -1116,13 +2301,13 @@ blockquote p {
 	left: 50%;
 	top: 28px;
 	width: 1px;
-	height: 0px;
+	height: 0;
 	background: rgba(255, 255, 255, .2);
-	z-index: 20;
+	z-index: 20
 }
 
 .main-hero-carousel .swiper-slide-active .carousle-item-dec {
-	height: 100px;
+	height: 100px
 }
 
 .main-hero-carousel-item_link {
@@ -1140,13 +2325,13 @@ blockquote p {
 	font-size: .9em;
 	font-weight: 600;
 	z-index: 10;
-	transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out
 }
 
 .main-hero-carousel .swiper-slide-active .main-hero-carousel-item .main-hero-carousel-item_link {
 	bottom: 30px;
 	opacity: 1;
-	transition-delay: 1.0s
+	transition-delay: 1s
 }
 
 .main-hero-carousel-title h3 {
@@ -1157,18 +2342,18 @@ blockquote p {
 	position: relative;
 	text-align: center;
 	font-family: var(--second-font);
-	line-height: 50px;
+	line-height: 50px
 }
 
 .main-hero-carousel-title h3 a {
-	color: #fff;
+	color: #fff
 }
 
 .main-hero-carousel-title h4 {
 	padding: 20px 0 0;
 	font-size: 13px;
-	color: rgba(255, 255, 255, 0.8);
-	position: relative;
+	color: rgba(255, 255, 255, .8);
+	position: relative
 }
 
 .main-hero-carousel-title h3:before {
@@ -1179,18 +2364,18 @@ blockquote p {
 	height: 1px;
 	top: -25px;
 	margin-inline-start: -30px;
-	background: #fff;
+	background: #fff
 }
 
 .fs-holder {
 	position: relative;
 	overflow: hidden;
 	background: var(--black-color);
-	z-index: 10;
+	z-index: 10
 }
 
 .fslider-fw-item {
-	overflow: hidden;
+	overflow: hidden
 }
 
 .fs-slider-conrols_wrap {
@@ -1198,20 +2383,20 @@ blockquote p {
 	bottom: 0;
 	right: 0;
 	left: 0;
-	z-index: 20;
+	z-index: 20
 }
 
 .hero_section {
-	position: relative;
+	position: relative
 }
 
 .hero_section_content {
-	padding: 150px 0;
+	padding: 150px 0
 }
 
+.hero_section_content:before,
 .hero_section_dec:before,
-.hs2:after,
-.hero_section_content:before {
+.hs2:after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -1219,38 +2404,38 @@ blockquote p {
 	height: 89px;
 	border-top: 1px solid var(--border-color2);
 	background: rgba(0, 0, 0, .2);
-	bottom: 0;
+	bottom: 0
 }
 
-.hs2:before,
-.hero_section_content:before {
+.hero_section_content:before,
+.hs2:before {
 	right: 0;
-	z-index: -2;
+	z-index: -2
 }
 
 .hero_section_content:before {
-	background: none;
+	background: 0 0;
 	z-index: 2;
-	bottom: -89px;
+	bottom: -89px
 }
 
 .hs2:after {
 	bottom: auto;
 	top: 0;
 	right: 0;
-	border-bottom: 1px solid var(--border-color2);
+	border-bottom: 1px solid var(--border-color2)
 }
 
 .hs2:before {
 	-webkit-backdrop-filter: blur(4px);
-	backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px)
 }
 
 .hero_section_content {
 	position: relative;
 	background: rgba(0, 0, 0, .4);
 	width: 66.666666%;
-	padding: 120px 90px;
+	padding: 120px 90px
 }
 
 .hero_section_content:after {
@@ -1260,7 +2445,7 @@ blockquote p {
 	width: 90px;
 	top: 90px;
 	bottom: 90px;
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .hero-con_dec {
@@ -1268,7 +2453,7 @@ blockquote p {
 	left: 100%;
 	width: 100vw;
 	height: 100%;
-	top: 0;
+	top: 0
 }
 
 .hero-con_dec:after {
@@ -1279,7 +2464,7 @@ blockquote p {
 	bottom: 90px;
 	width: 90px;
 	background: var(--main-color);
-	z-index: 1;
+	z-index: 1
 }
 
 .hero-con_dec:before {
@@ -1290,7 +2475,7 @@ blockquote p {
 	height: 1px;
 	right: 0;
 	background: var(--border-color2);
-	z-index: 2;
+	z-index: 2
 }
 
 .hero-slider-wrapper {
@@ -1298,7 +2483,7 @@ blockquote p {
 	overflow: hidden;
 	position: relative;
 	padding: 0 90px;
-	z-index: 1;
+	z-index: 1
 }
 
 .hero_section .overlay {
@@ -1312,7 +2497,7 @@ blockquote p {
 	width: 66.666666%;
 	height: 90px;
 	line-height: 90px;
-	z-index: 5;
+	z-index: 5
 }
 
 .hero-promo-btn {
@@ -1326,7 +2511,7 @@ blockquote p {
 	text-align: start;
 	color: #fff;
 	background: rgba(0, 0, 0, .4);
-	border-right: 1px solid var(--border-color2);
+	border-right: 1px solid var(--border-color2)
 }
 
 .hero-promo-btn:before {
@@ -1337,7 +2522,7 @@ blockquote p {
 	margin-inline-start: 100px;
 	width: 100px;
 	height: 1px;
-	background: var(--border-color2);
+	background: var(--border-color2)
 }
 
 .hero-promo-btn i {
@@ -1350,7 +2535,7 @@ blockquote p {
 	margin-inline-end: 30px;
 	font-size: .8em;
 	text-align: center;
-	transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out
 }
 
 .hero-carousel_item {
@@ -1360,7 +2545,7 @@ blockquote p {
 	z-index: 3;
 	top: 50%;
 	transform: translateY(-50%);
-	overflow: hidden;
+	overflow: hidden
 }
 
 .single-hci {
@@ -1371,23 +2556,23 @@ blockquote p {
 	width: 66.666666%;
 	position: relative;
 	-webkit-backdrop-filter: blur(5px);
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px)
 }
 
-.single-hci:before,
-.single-hci:after {
+.single-hci:after,
+.single-hci:before {
 	content: '';
 	position: absolute;
 	top: 50%;
 	left: 100%;
 	height: 1px;
 	background: var(--border-color2);
-	width: 100vw;
+	width: 100vw
 }
 
 .single-hci:after {
 	left: auto;
-	right: 100%;
+	right: 100%
 }
 
 .hs_btn_wrap {
@@ -1397,7 +2582,7 @@ blockquote p {
 	width: 90px;
 	height: 180px;
 	margin-block-start: -90px;
-	z-index: 20;
+	z-index: 20
 }
 
 .hs_btn {
@@ -1410,11 +2595,11 @@ blockquote p {
 	color: #fff;
 	cursor: pointer;
 	font-size: 1.7em;
-	transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out
 }
 
 .hs_btn_wrap .hs_btn:first-child {
-	border-bottom: 1px solid var(--border-color2);
+	border-bottom: 1px solid var(--border-color2)
 }
 
 .hs_btn_wrap_preview {
@@ -1427,18 +2612,18 @@ blockquote p {
 	transition: all .3s ease-in-out;
 	opacity: 0;
 	visibility: hidden;
-	margin-block-start: 20px;
+	margin-block-start: 20px
 }
 
 .hs_btn:hover .hs_btn_wrap_preview {
 	opacity: 1;
 	visibility: visible;
-	margin-block-start: 0;
+	margin-block-start: 0
 }
 
 .hs_btn:hover {
 	color: #000;
-	background: #fff;
+	background: #fff
 }
 
 .hero-slider-container-zoom {
@@ -1454,11 +2639,11 @@ blockquote p {
 	background: var(--black-color);
 	border-right: 1px solid rgba(0, 0, 0, .2);
 	transition: all .4s ease-in-out;
-	color: #fff;
+	color: #fff
 }
 
 .hero-slider-container-zoom:hover {
-	background: var(--black-color2);
+	background: var(--black-color2)
 }
 
 .hero-carousel_item h2,
@@ -1469,11 +2654,11 @@ blockquote p {
 	line-height: 70px;
 	padding: 20px 0;
 	text-align: start;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .hero-carousel_item h2 {
-	font-size: 4.4em;
+	font-size: 4.4em
 }
 
 .hero-carousel_item h5,
@@ -1481,21 +2666,21 @@ blockquote p {
 	text-transform: uppercase;
 	font-weight: 600;
 	position: relative;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
-.hero-carousel_item h2 a,
 .hero-carousel_item h2,
+.hero-carousel_item h2 a,
 .hero-carousel_item h5,
 .hero-carousel_item p,
-.hero_section_content h4,
 .hero_section_content h2,
+.hero_section_content h4,
 .hhw_header {
-	color: #fff;
+	color: #fff
 }
 
-.hhw_header,
-.hero_section_content h4 {
+.hero_section_content h4,
+.hhw_header {
 	text-align: start
 }
 
@@ -1503,24 +2688,24 @@ blockquote p {
 	max-width: 550px;
 	line-height: 30px;
 	font-size: 13px;
-	text-align: start;
+	text-align: start
 }
 
 .hero_section_content .btn {
 	display: table;
-	margin-block-start: 40px;
+	margin-block-start: 40px
 }
 
 .hero-carousel_item p {
-	color: rgba(255, 255, 255, .8);
+	color: rgba(255, 255, 255, .8)
 }
 
 .hero-carousel_item .btn {
-	margin-block-start: 20px;
+	margin-block-start: 20px
 }
 
 .dark-section .content-item.hero_section {
-	background: none;
+	background: 0 0
 }
 
 .hero-slider-controls {
@@ -1531,11 +2716,11 @@ blockquote p {
 	height: 90px;
 	z-index: 10;
 	background: var(--black-color);
-	box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .hcmc {
-	border-left: 1px solid rgba(255, 255, 255, .2);
+	border-left: 1px solid rgba(255, 255, 255, .2)
 }
 
 .cbc_btn {
@@ -1549,15 +2734,15 @@ blockquote p {
 	background: var(--black-color);
 	color: #fff;
 	cursor: pointer;
-	font-size: 1.2em;
+	font-size: 1.2em
 }
 
 .carousel-btn_control-next {
-	right: 0;
+	right: 0
 }
 
 .carousel-btn_control-prev {
-	left: 0;
+	left: 0
 }
 
 .hc-pag_wrap {
@@ -1565,7 +2750,7 @@ blockquote p {
 	margin: 0 0 0 90px;
 	position: relative;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translateY(-50%)
 }
 
 .hc_counter {
@@ -1578,7 +2763,7 @@ blockquote p {
 	line-height: 90px;
 	color: #fff;
 	border-left: 1px solid rgba(255, 255, 255, .2);
-	box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .hc_counter div {
@@ -1586,11 +2771,11 @@ blockquote p {
 	width: 88px;
 	height: 90px;
 	border-left: 1px solid rgba(255, 255, 255, .2);
-	box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .hc_counter div:first-child {
-	border: none;
+	border: none
 }
 
 .hc_btn_wrap {
@@ -1598,7 +2783,7 @@ blockquote p {
 	right: 200px;
 	top: 50%;
 	transform: translateY(-50%);
-	width: 140px;
+	width: 140px
 }
 
 .hc_btn {
@@ -1606,7 +2791,7 @@ blockquote p {
 	width: 70px;
 	cursor: pointer;
 	font-size: 1.7em;
-	color: #fff;
+	color: #fff
 }
 
 .hero-con-aside {
@@ -1620,7 +2805,7 @@ blockquote p {
 	background: rgba(0, 0, 0, .4);
 	overflow: hidden;
 	-webkit-backdrop-filter: blur(4px);
-	backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px)
 }
 
 .strt_btn {
@@ -1638,27 +2823,27 @@ blockquote p {
 	border-bottom: 1px solid var(--border-color);
 	overflow: hidden;
 	font-size: 1.1em;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .fs-slider-conrols_wrap .strt_btn {
-	left: 66.666666%;
+	left: 66.666666%
 }
 
-.hcc_dec:before,
-.hcc_dec:after {
+.hcc_dec:after,
+.hcc_dec:before {
 	content: '';
 	position: absolute;
 	right: 0;
 	bottom: 100%;
 	height: 100vw;
 	background: var(--border-color2);
-	width: 1px;
+	width: 1px
 }
 
 .hcc_dec:after {
 	right: auto;
-	left: 0;
+	left: 0
 }
 
 .scroll-down-wrap {
@@ -1669,12 +2854,12 @@ blockquote p {
 	right: 0;
 	bottom: 0;
 	text-align: center;
-	border-left: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color)
 }
 
 .scroll-down-wrap i {
 	font-size: 1.4em;
-	color: #999;
+	color: #999
 }
 
 .mousey {
@@ -1687,7 +2872,7 @@ blockquote p {
 	border-radius: 6px;
 	padding: 0 6px;
 	border: 1px solid #ddd;
-	box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .scroller {
@@ -1702,22 +2887,22 @@ blockquote p {
 	animation-duration: 2.2s;
 	background: var(--black-color);
 	animation-timing-function: cubic-bezier(.15, .41, .69, .94);
-	animation-iteration-count: infinite;
+	animation-iteration-count: infinite
 }
 
 @keyframes scroll {
 	0% {
-		opacity: 0;
+		opacity: 0
 	}
 
 	10% {
 		transform: translateY(0);
-		opacity: 1;
+		opacity: 1
 	}
 
 	100% {
 		transform: translateY(10px);
-		opacity: 0;
+		opacity: 0
 	}
 }
 
@@ -1729,13 +2914,13 @@ blockquote p {
 	height: 90px;
 	top: 0;
 	background: var(--main-color);
-	z-index: 10;
+	z-index: 10
 }
 
 .hero-con-aside_dec3 {
 	top: auto;
 	bottom: 0;
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
 .slide-progress-wrap {
@@ -1746,7 +2931,7 @@ blockquote p {
 	right: 270px;
 	overflow: hidden;
 	background: rgba(255, 255, 255, .2);
-	z-index: 2;
+	z-index: 2
 }
 
 .slide-progress {
@@ -1755,7 +2940,7 @@ blockquote p {
 	left: 0;
 	width: 0;
 	top: 0;
-	background: #fff;
+	background: #fff
 }
 
 .hero-con-aside_dec {
@@ -1765,28 +2950,27 @@ blockquote p {
 	width: 1px;
 	bottom: 0;
 	background: var(--border-color2);
-	z-index: 2;
+	z-index: 2
 }
 
-/* --------- section --------------------------------------*/
 .content-section,
 .main_section_title_container {
 	position: relative;
-	z-index: 2;
+	z-index: 2
 }
 
 .main_section_title_container .overlay {
 	opacity: .3;
-	z-index: -1;
+	z-index: -1
 }
 
 .dark-section,
 .dark-section .content-item {
-	background: var(--black-color);
+	background: var(--black-color)
 }
 
 .content-section_item {
-	padding: 150px 0;
+	padding: 150px 0
 }
 
 .cs_dec:before {
@@ -1797,13 +2981,13 @@ blockquote p {
 	bottom: 90px;
 	top: 90px;
 	z-index: 1;
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .cs_dec3:before {
 	bottom: 180px;
 	border-bottom: 1px solid var(--border-color);
-	border-top: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color)
 }
 
 .cs_dec:after {
@@ -1815,44 +2999,44 @@ blockquote p {
 	bottom: 90px;
 	background: var(--gray-color);
 	border-bottom: 1px solid var(--border-color);
-	border-top: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color)
 }
 
 .cs_dec2:after {
-	top: 90px;
+	top: 90px
 }
 
 .main_section_title_container {
 	padding: 200px 0 200px 100px;
 	background: var(--black-color2);
-	border-left: 1px solid var(--border-color2);
+	border-left: 1px solid var(--border-color2)
 }
 
 .main_section_title_container.mstc_single {
-	padding: 120px 0 120px 100px;
+	padding: 120px 0 120px 100px
 }
 
 .white-bg_mstc .main_section_title_container {
-	border-color: var(--border-color);
+	border-color: var(--border-color)
 }
 
-.white-bg_mstc,
 .main_section_title.white-bg_mstc:before,
+.white-bg_mstc,
 .white-bg_mstc .main_section_title_container {
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .main_section_title.white-bg_mstc:before {
 	border-bottom: 1px solid var(--border-color);
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .main_section_title_container .bg-wrap {
-	z-index: -1;
+	z-index: -1
 }
 
 .no_bgmstc {
-	background: none;
+	background: 0 0
 }
 
 .main_section_title_container {
@@ -1868,7 +3052,7 @@ blockquote p {
 	top: 0;
 	bottom: 0;
 	left: 0;
-	z-index: 3;
+	z-index: 3
 }
 
 .bg-wrap .overlay {
@@ -1880,25 +3064,25 @@ blockquote p {
 	font-weight: 600;
 	text-align: start;
 	color: var(--main-color);
-	position: relative;
+	position: relative
 }
 
 .main_section_title_container h4 {
-	font-size: 1.0em;
+	font-size: 1em;
 	font-weight: 500;
 	text-align: start;
 	text-transform: capitalize;
 	color: var(--main-color);
-	opacity: .5;
+	opacity: .5
 }
 
 .white-bg_mstc .main_section_title_container h2,
 .white-bg_mstc .main_section_title_container h4 {
-	color: var(--black-color);
+	color: var(--black-color)
 }
 
 .no_bgmstc.main_section_title_container h4 {
-	opacity: 1;
+	opacity: 1
 }
 
 .white-bg_mstc .main_section_title_container h4 {
@@ -1910,7 +3094,7 @@ blockquote p {
 	position: relative;
 	width: 33.3333333%;
 	height: 33.3333333%;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .arrow_dec_dot:before {
@@ -1920,17 +3104,17 @@ blockquote p {
 	top: 2px;
 	bottom: 2px;
 	right: 2px;
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .arrow_dec_dot:nth-child(4):before,
 .arrow_dec_dot:nth-child(7):before,
 .arrow_dec_dot:nth-child(8):before {
-	display: none;
+	display: none
 }
 
 .arrow_dec_wrap {
-	position: absolute;
+	position: absolute
 }
 
 .arrow_dec {
@@ -1938,7 +3122,7 @@ blockquote p {
 	width: 44px;
 	height: 44px;
 	top: 0;
-	right: 0;
+	right: 0
 }
 
 .main_section_title_container .arrow_dec_wrap {
@@ -1949,26 +3133,26 @@ blockquote p {
 
 .content-item,
 .main_section_title_container .arrow_dec_wrap .arrow_dec_dot:before {
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .grid-column-content {
 	border-right: 1px solid var(--border-color);
 	padding: 90px 0;
-	position: relative;
+	position: relative
 }
 
 .grid-column-content.no_padc {
-	padding: 90px 0 0 0;
+	padding: 90px 0 0 0
 }
 
 .grid-column-container .grid-column-content:last-child {
-	border: none;
+	border: none
 }
 
-.grid-column-content_dec:before,
+.fw_pag_dec:after,
 .grid-column-content_dec2:after,
-.fw_pag_dec:after {
+.grid-column-content_dec:before {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -1978,36 +3162,36 @@ blockquote p {
 	background: var(--gray-color)
 }
 
-.grid-column-content_dec:before,
-.fw_pag_dec:after {
-	border-top: 1px solid var(--border-color);
+.fw_pag_dec:after,
+.grid-column-content_dec:before {
+	border-top: 1px solid var(--border-color)
 }
 
 .gcc_sinpr:before {
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
-.grid-column-content_dec2:after,
-.fw_pag_dec:after {
+.fw_pag_dec:after,
+.grid-column-content_dec2:after {
 	top: auto;
-	bottom: 0;
+	bottom: 0
 }
 
 .grid-column-content.gcc_notb:before {
-	border-top: none;
+	border-top: none
 }
 
 .fw_pag_dec:after {
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .single-slider-wrap {
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .ssw-fh {
-	margin: 0;
+	margin: 0
 }
 
 .single-slider-wrap .grid-item-holder:before {
@@ -2030,23 +3214,22 @@ blockquote p {
 	color: #fff;
 	cursor: pointer;
 	transition: all .2s linear;
-	margin-block-start: -35px;
+	margin-block-start: -35px
 }
 
 .ss-slider-cont-next {
-	right: 0;
+	right: 0
 }
 
 .ss-slider-cont-prev {
-	left: 0;
+	left: 0
 }
 
-.ss-slider-cont:hover,
-.btn:before {
-	background: var(--black-color2);
+.btn:before,
+.ss-slider-cont:hover {
+	background: var(--black-color2)
 }
 
-/*------ Button ----*/
 .btn {
 	background: var(--black-color);
 	color: var(--main-color);
@@ -2060,7 +3243,7 @@ blockquote p {
 	position: relative;
 	overflow: hidden;
 	letter-spacing: 2px;
-	text-align: start;
+	text-align: start
 }
 
 .btn i {
@@ -2071,7 +3254,7 @@ blockquote p {
 	height: 70px;
 	line-height: 70px;
 	text-align: center;
-	z-index: 2;
+	z-index: 2
 }
 
 .btn:before {
@@ -2081,21 +3264,20 @@ blockquote p {
 	right: 0;
 	height: 70px;
 	z-index: 1;
-	transition: all .2s linear;
+	transition: all .2s linear
 }
 
 .btn:hover:before {
-	width: 0;
+	width: 0
 }
 
 .btn span,
 .fixed-bar_item_btn span {
 	position: relative;
 	min-width: 300px;
-	display: block;
+	display: block
 }
 
-/*------ portfolio ----*/
 .fsc-holder {
 	bottom: 0;
 	position: absolute;
@@ -2104,7 +3286,7 @@ blockquote p {
 	right: 0;
 	background: var(--black-color);
 	z-index: 12;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .fw-carousel-wrap {
@@ -2112,38 +3294,38 @@ blockquote p {
 	overflow: hidden;
 	height: 65vh;
 	margin-block-end: 90px;
-	z-index: 2;
+	z-index: 2
 }
 
-.fw-carousel .swiper-container,
-.det-carousel .swiper-container {
+.det-carousel .swiper-container,
+.fw-carousel .swiper-container {
 	width: 100%;
 	height: 100%;
-	margin: 0 auto;
+	margin: 0 auto
 }
 
-.slider-wrap .swiper-slide img,
+.det-carousel .swiper-slide img,
 .fw-carousel .swiper-slide img,
-.det-carousel .swiper-slide img {
+.slider-wrap .swiper-slide img {
 	width: auto !important;
 	height: 100% !important;
 	position: relative;
-	z-index: 1;
+	z-index: 1
 }
 
-.slider-wrap .swiper-slide,
-.fw-carousel .swiper-slide,
 .center-carousel .swiper-slide,
-.det-carousel .swiper-slide {
+.det-carousel .swiper-slide,
+.fw-carousel .swiper-slide,
+.slider-wrap .swiper-slide {
 	width: auto !important;
 	height: 100% !important;
-	display: inherit !important;
+	display: inherit !important
 }
 
 .fw-carousel-wrap .fw-carousel img {
-	transform: scale(1.0);
-	transition: all 300ms linear;
-	transition-delay: 0.6s;
+	transform: scale(1);
+	transition: all .3s linear;
+	transition-delay: .6s
 }
 
 .photo-info-btn {
@@ -2153,7 +3335,7 @@ blockquote p {
 	height: 40px;
 	top: 50%;
 	margin-block-start: -12px;
-	cursor: pointer;
+	cursor: pointer
 }
 
 .pib_icon {
@@ -2161,14 +3343,14 @@ blockquote p {
 	height: 40px;
 	float: left;
 	position: relative;
-	top: -3px;
+	top: -3px
 }
 
 .sb-button_point {
 	height: 10px;
 	float: left;
 	width: 100%;
-	position: relative;
+	position: relative
 }
 
 .sb-button_point:before {
@@ -2181,11 +3363,11 @@ blockquote p {
 	border-radius: 50%;
 	background: #fff;
 	margin: -2px 0 0 -2px;
-	transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out
 }
 
 .photo-info-btn:hover .sb-button_point:nth-child(2):before {
-	margin-inline-start: 6px;
+	margin-inline-start: 6px
 }
 
 .photo-info-btn_tooltip {
@@ -2197,15 +3379,15 @@ blockquote p {
 	color: #fff;
 	letter-spacing: 1px;
 	font-weight: 700;
-	min-width: 150px;
+	min-width: 150px
 }
 
 .show-info {
 	position: absolute;
-	bottom: 0px;
+	bottom: 0;
 	right: 0;
 	left: 0;
-	z-index: 15;
+	z-index: 15
 }
 
 .tooltip-info {
@@ -2214,12 +3396,12 @@ blockquote p {
 	bottom: 0;
 	padding: 50px 30px 40px;
 	position: absolute;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .75) 100%);
 	opacity: 0;
 	margin-block-end: 0;
 	visibility: hidden;
 	z-index: 16;
-	transition: all .3s linear;
+	transition: all .3s linear
 }
 
 .show-info span {
@@ -2232,11 +3414,11 @@ blockquote p {
 	font-weight: 400;
 	margin: 0 30px 20px 0;
 	z-index: 30px;
-	position: relative;
+	position: relative
 }
 
 .show-info.show-info_act span {
-	display: none;
+	display: none
 }
 
 .tooltip-info h5 {
@@ -2247,21 +3429,21 @@ blockquote p {
 	text-transform: capitalize;
 	letter-spacing: 4px;
 	color: #fff;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
-.show-info:hover .tooltip-info,
-.show-info.show-info_act.vis-phot_det .tooltip-info {
+.show-info.show-info_act.vis-phot_det .tooltip-info,
+.show-info:hover .tooltip-info {
 	visibility: visible;
 	opacity: 1;
-	bottom: 0;
+	bottom: 0
 }
 
 .featured_works-header {
 	border-bottom: 1px solid var(--border-color2);
 	background: var(--black-color);
 	padding: 120px 33.333333% 100px 90px;
-	position: relative;
+	position: relative
 }
 
 .featured_works-header_dec {
@@ -2272,12 +3454,12 @@ blockquote p {
 	right: 0;
 	background: var(--black-color);
 	border-left: 1px solid var(--border-color2);
-	z-index: 3;
+	z-index: 3
 }
 
 .featured_works-header_container {
 	position: relative;
-	z-index: 5;
+	z-index: 5
 }
 
 .featured_works-header_dec:after {
@@ -2289,7 +3471,7 @@ blockquote p {
 	height: 90px;
 	border-top: 1px solid var(--border-color);
 	background: var(--main-color);
-	z-index: 3;
+	z-index: 3
 }
 
 .featured_works-header_dec:before {
@@ -2299,7 +3481,7 @@ blockquote p {
 	top: 0;
 	bottom: 0;
 	width: 1px;
-	background: var(--border-color2);
+	background: var(--border-color2)
 }
 
 .featured_works-header h2 {
@@ -2309,7 +3491,7 @@ blockquote p {
 	font-size: 3.4em;
 	text-transform: capitalize;
 	position: relative;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .featured_works-header h4 {
@@ -2322,13 +3504,13 @@ blockquote p {
 	z-index: 2;
 	max-width: 450px;
 	color: rgba(255, 255, 255, .8);
-	margin-block-start: 20px;
+	margin-block-start: 20px
 }
 
+.half-carousel,
 .half-carousel-conatiner,
-.half-carousel-item,
-.half-carousel {
-	position: relative;
+.half-carousel-item {
+	position: relative
 }
 
 .half-carousel-conatiner:before {
@@ -2339,7 +3521,7 @@ blockquote p {
 	right: 0;
 	width: 100vw;
 	border-top: 1px solid var(--border-color2);
-	z-index: -2;
+	z-index: -2
 }
 
 .half-carousel-conatiner:after {
@@ -2350,7 +3532,7 @@ blockquote p {
 	right: 0;
 	width: 100vw;
 	background: rgba(255, 255, 255, .07);
-	z-index: -3;
+	z-index: -3
 }
 
 .half-carousel-conatiner .swiper-container {
@@ -2358,44 +3540,44 @@ blockquote p {
 }
 
 .half-carousel {
-	width: 100vw;
+	width: 100vw
 }
 
 .half-carousel-item {
 	height: 55vh;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .half-carousel-item .overlay {
 	opacity: .6;
-	transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out
 }
 
 .half-carousel .swiper-slide-active .half-carousel-item .overlay {
 	opacity: .3
 }
 
-.half-carousel-item .grid-det_category,
 .half-carousel-item .arrow_dec_wrap,
+.half-carousel-item .grid-det_category,
 .half-carousel-item .half-carousel-content {
 	opacity: 0;
 	transition: all .4s ease-in-out;
-	visibility: hidden;
+	visibility: hidden
 }
 
-.half-carousel .swiper-slide-active .half-carousel-item .half-carousel-content,
 .half-carousel .swiper-slide-active .half-carousel-item .arrow_dec_wrap,
-.half-carousel .swiper-slide-active .half-carousel-item .grid-det_category {
+.half-carousel .swiper-slide-active .half-carousel-item .grid-det_category,
+.half-carousel .swiper-slide-active .half-carousel-item .half-carousel-content {
 	opacity: 1;
-	visibility: visible;
+	visibility: visible
 }
 
 .half-carousel .box-media-zoom {
-	top: -90px;
+	top: -90px
 }
 
 .half-carousel .swiper-slide-active .box-media-zoom {
-	top: 0;
+	top: 0
 }
 
 .half-carousel-content {
@@ -2405,7 +3587,7 @@ blockquote p {
 	bottom: 0;
 	z-index: 10;
 	padding: 0 50px 50px;
-	opacity: 0;
+	opacity: 0
 }
 
 .hc-counter {
@@ -2416,7 +3598,7 @@ blockquote p {
 	position: absolute;
 	top: 50px;
 	right: 40px;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .half-carousel-content h3 {
@@ -2424,25 +3606,25 @@ blockquote p {
 	text-align: start;
 	text-transform: capitalize;
 	font-weight: 800;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .half-carousel-content h3 a,
 .half-carousel-content p,
 .hc-counter {
-	color: #fff;
+	color: #fff
 }
 
 .half-carousel-content h3 a {
 	display: block;
-	min-height: 50px;
+	min-height: 50px
 }
 
 .half-carousel-item .grid-det_category {
 	bottom: auto;
 	left: 50px;
 	top: 50px;
-	z-index: 5;
+	z-index: 5
 }
 
 .half-carousel-item .grid-det_category a {
@@ -2451,7 +3633,7 @@ blockquote p {
 
 .half-carousel .bg {
 	width: 120%;
-	left: -10%;
+	left: -10%
 }
 
 .services-modal-bg .arrow_dec_wrap {
@@ -2464,28 +3646,27 @@ blockquote p {
 .half-carousel .arrow_dec_wrap .arrow_dec_dot:before,
 .hc_controls_link,
 .services-modal-bg .arrow_dec_wrap .arrow_dec_dot:before .arrow_dec_wrap .arrow_dec_dot:before {
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .hc_controls-wrap,
 .hc_controls_link {
-	height: 90px;
+	height: 90px
 }
 
 .hc_controls_link {
 	line-height: 90px;
-	background: var(--black-color);
+	background: var(--black-color)
 }
 
 .hc_controls_link a,
 .order-wrap_btn {
 	display: block;
 	text-transform: capitalize;
-
 	font-weight: 600;
 	color: #fff;
 	background: var(--black-color);
-	letter-spacing: 2px;
+	letter-spacing: 2px
 }
 
 .order-wrap_btn {
@@ -2498,13 +3679,13 @@ blockquote p {
 	font-family: var(--second-font);
 	top: 50%;
 	margin-block-start: -35px;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .hc_controls-wrap_container {
 	background: var(--black-color2);
 	overflow: hidden;
-	position: relative;
+	position: relative
 }
 
 .hcw_btn {
@@ -2516,7 +3697,7 @@ blockquote p {
 	cursor: pointer;
 	border-left: 1px solid var(--border-color2);
 	font-size: 1.3em;
-	color: #fff;
+	color: #fff
 }
 
 .content-nav_holder {
@@ -2525,14 +3706,14 @@ blockquote p {
 	position: relative;
 	background: var(--black-color);
 	height: 90px;
-	line-height: 90px;
+	line-height: 90px
 }
 
+.cn_all:before,
 .content-nav li a span,
 .content-nav-media,
-.pr_btn_dots,
-.cn_all:before {
-	transition: all .3s linear;
+.pr_btn_dots {
+	transition: all .3s linear
 }
 
 .cn_all {
@@ -2544,7 +3725,7 @@ blockquote p {
 	border: 1px solid var(--border-color2);
 	top: 0;
 	left: 50%;
-	margin-inline-start: -45px;
+	margin-inline-start: -45px
 }
 
 .cn_all:before {
@@ -2554,7 +3735,7 @@ blockquote p {
 	width: 1px;
 	background: rgba(255, 255, 255, .4);
 	height: 0;
-	bottom: 20px;
+	bottom: 20px
 }
 
 .cn_all:hover:before {
@@ -2577,13 +3758,13 @@ blockquote p {
 
 .cn_all:hover .pr_btn_dots {
 	transition-delay: 0s;
-	transform: rotate(90deg);
+	transform: rotate(90deg)
 }
 
 .content-nav li {
 	width: 50%;
 	float: left;
-	position: relative;
+	position: relative
 }
 
 .content-nav li a.ln,
@@ -2594,7 +3775,7 @@ blockquote p {
 	height: 90px;
 	line-height: 90px;
 	z-index: 10;
-	font-size: 1.1em;
+	font-size: 1.1em
 }
 
 .content-nav li a i {
@@ -2604,51 +3785,51 @@ blockquote p {
 	height: 90px;
 	line-height: 90px;
 	font-size: 1.3em;
-	background: var(--black-color2);
+	background: var(--black-color2)
 }
 
 .content-nav li a.ln {
 	text-align: start;
 	float: left;
-	padding-inline-start: 120px;
+	padding-inline-start: 120px
 }
 
 .content-nav li a.ln i {
 	left: 0;
 	border-right: 1px solid var(--border-color2);
-	text-align: center;
+	text-align: center
 }
 
 .content-nav li a.rn {
 	text-align: end;
 	float: right;
-	padding-inline-end: 120px;
+	padding-inline-end: 120px
 }
 
 .content-nav li a.rn i {
 	right: 0;
 	border-left: 1px solid var(--border-color2);
-	text-align: center;
+	text-align: center
 }
 
 .content-nav li a span {
-	font-size: 1.1em;
+	font-size: 1.1em
 }
 
 .content-nav li a.ln span {
-	padding: 25px;
+	padding: 25px
 }
 
 .content-nav li a.rn span {
-	padding: 25px;
+	padding: 25px
 }
 
 .content-nav li a.ln:hover span {
-	padding-inline-start: 45px;
+	padding-inline-start: 45px
 }
 
 .content-nav li a.rn:hover span {
-	padding-inline-end: 45px;
+	padding-inline-end: 45px
 }
 
 .content-nav-media {
@@ -2659,31 +3840,31 @@ blockquote p {
 	overflow: hidden;
 	z-index: 1;
 	opacity: 0;
-	visibility: hidden;
+	visibility: hidden
 }
 
 .content-nav li:hover .content-nav-media {
 	opacity: 1;
-	visibility: visible;
+	visibility: visible
 }
 
 .content-nav li:last-child .content-nav-media {
-	right: 90px;
+	right: 90px
 }
 
 .content-nav li:first-child .content-nav-media {
-	left: 90px;
+	left: 90px
 }
 
 .prdet_box {
 	height: 450px;
 	overflow: hidden;
 	position: relative;
-	margin-block-start: 30px;
+	margin-block-start: 30px
 }
 
 .pr-list {
-	margin: 30px 0 120px;
+	margin: 30px 0 120px
 }
 
 .pr-list ul {
@@ -2696,19 +3877,19 @@ blockquote p {
 	width: 50%;
 	float: left;
 	text-transform: capitalize;
-	font-weight: 800;
+	font-weight: 800
 }
 
 .pr-list ul li span {
 	color: #666;
 	display: block;
-	padding-block-end: 10px;
+	padding-block-end: 10px
 }
 
 .gallery-fw_wrap {
 	z-index: 4;
 	background: var(--black-color);
-	position: relative;
+	position: relative
 }
 
 .swiper-counter {
@@ -2720,18 +3901,18 @@ blockquote p {
 	width: 180px;
 	background: var(--main-color);
 	border: 1px solid var(--border-color);
-	overflow: hidden;
+	overflow: hidden
 }
 
 .swiper-counter div {
 	width: 88px;
 	height: 90px;
 	float: left;
-	font-weight: 800;
+	font-weight: 800
 }
 
 .swiper-counter div:last-child {
-	border-left: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color)
 }
 
 .hc-pag .swiper-pagination-bullet,
@@ -2741,7 +3922,7 @@ blockquote p {
 	display: inline-block;
 	margin: 0 10px;
 	position: relative;
-	transition: all .5s ease;
+	transition: all .5s ease
 }
 
 .hc-pag .swiper-pagination-bullet:after,
@@ -2756,13 +3937,13 @@ blockquote p {
 	box-sizing: border-box;
 	border: 1px solid #ccc;
 	border-radius: 100%;
-	transition: all 0.3s ease;
-	transform: scale(0.0);
+	transition: all .3s ease;
+	transform: scale(0)
 }
 
 .hc-pag .swiper-pagination-bullet.swiper-pagination-bullet-active:after,
 .team-carousel-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:after {
-	transform: scale(1.0);
+	transform: scale(1)
 }
 
 .team-carousel-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -2793,22 +3974,22 @@ blockquote p {
 	color: var(--main-color);
 	background: var(--black-color);
 	z-index: 15;
-	transition: all 200ms linear;
-	font-weight: 900;
+	transition: all .2s linear;
+	font-weight: 900
 }
 
 .hov_zoom:hover .box-media-zoom {
-	right: 0;
+	right: 0
 }
 
-.hov_zoom,
-.contitemaside {
-	overflow: hidden;
+.contitemaside,
+.hov_zoom {
+	overflow: hidden
 }
 
 .pb_container {
 	min-height: 50vh;
-	padding-block-end: 90px;
+	padding-block-end: 90px
 }
 
 .pb_container:before {
@@ -2818,7 +3999,7 @@ blockquote p {
 	left: 0;
 	right: 0;
 	height: 1px;
-	background: var(--border-color);
+	background: var(--border-color)
 }
 
 .pb_container:after {
@@ -2828,27 +4009,27 @@ blockquote p {
 	left: 50%;
 	height: 90px;
 	width: 1px;
-	background: var(--border-color);
+	background: var(--border-color)
 }
 
 .gallery-items,
 .gallery-items-container {
 	width: 100%;
-	position: relative;
+	position: relative
 }
 
 .gallery-items {
-	z-index: 2;
+	z-index: 2
 }
 
 .gallery-items-container.no_padgic {
-	padding: 0;
+	padding: 0
 }
 
 .contitemaside {
 	position: relative;
 	padding: 90px 0 0;
-	border-top: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color)
 }
 
 .contitemaside:before {
@@ -2860,13 +4041,13 @@ blockquote p {
 	height: 90px;
 	background: var(--main-color);
 	border-bottom: 1px solid var(--border-color);
-	z-index: 20;
+	z-index: 20
 }
 
 .fw_gic {
 	background: var(--black-color);
 	padding-block-end: 90px;
-	min-height: 100vh;
+	min-height: 100vh
 }
 
 .fw_gic:before {
@@ -2874,41 +4055,41 @@ blockquote p {
 	position: absolute;
 	left: 0;
 	right: 0;
-	height: 90px;
+	height: 90px
 }
 
 .onepage_folio {
 	padding: 0;
-	min-height: 50vh;
+	min-height: 50vh
 }
 
 .fw_gic:before {
 	top: 0;
-	border-bottom: 1px solid var(--border-color2);
+	border-bottom: 1px solid var(--border-color2)
 }
 
 .grid-item-holder {
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .grid-item-holder:before {
 	content: '';
 	background: rgba(0, 0, 0, .2);
-	z-index: 2;
+	z-index: 2
 }
 
 .vis-det-items .grid-item-holder:before {
-	bottom: 80px;
+	bottom: 80px
 }
 
 .grid-item-holder:hover:before {
 	background: rgba(0, 0, 0, 0);
-	transition: all .2s linear;
+	transition: all .2s linear
 }
 
 .grid-item-holder:hover img {
-	transform: scale(1.1);
+	transform: scale(1.1)
 }
 
 .gallery-item img {
@@ -2917,28 +4098,27 @@ blockquote p {
 	transition: all .6s linear;
 	transition-delay: .2s;
 	position: relative;
-	z-index: 1;
+	z-index: 1
 }
 
 .gallery-item {
 	position: relative;
 	width: 25%;
-	padding: 0;
+	padding: 0
 }
 
 .gallery-items.three_columns .gallery-item {
-	width: 33.333333333333%;
-
+	width: 33.333333333333%
 }
 
 .gallery-items.two_columns .gallery-item {
 	width: 50%;
-	padding: 45px;
+	padding: 45px
 }
 
 .single-gallery-grid {
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .single-gallery-grid .grid-item-holder:before {
@@ -2947,17 +4127,17 @@ blockquote p {
 
 .gallery-items.three_columns .gallery-item.gallery-item-second,
 .grid-sizer-second {
-	width: 66.666666%;
+	width: 66.666666%
 }
 
 .gallery-items.two_columns .gallery-item.gallery-item-second,
 .projects-list .gallery-item {
-	width: 100%;
+	width: 100%
 }
 
-.twocolumns_folio .gallery-item,
-.four-columns .gallery-item.gallery-item-second {
-	width: 50%;
+.four-columns .gallery-item.gallery-item-second,
+.twocolumns_folio .gallery-item {
+	width: 50%
 }
 
 .horizontal-grid-container {
@@ -2965,7 +4145,7 @@ blockquote p {
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 90px;
+	bottom: 90px
 }
 
 #portfolio_horizontal_container {
@@ -2973,7 +4153,7 @@ blockquote p {
 	float: left;
 	width: 100%;
 	position: relative;
-	z-index: 5;
+	z-index: 5
 }
 
 #portfolio_horizontal_container .portfolio_item {
@@ -2983,7 +4163,7 @@ blockquote p {
 	padding: 0;
 	overflow: hidden;
 	position: relative;
-	z-index: 1;
+	z-index: 1
 }
 
 #portfolio_horizontal_container.no-padding .portfolio_item {
@@ -2991,23 +4171,23 @@ blockquote p {
 }
 
 #portfolio_horizontal_container.one-ver-columns .portfolio_item {
-	padding-block-end: 0;
+	padding-block-end: 0
 }
 
 #portfolio_horizontal_container.two-ver-columns .portfolio_item {
-	height: 50%;
+	height: 50%
 }
 
 #portfolio_horizontal_container.two-ver-columns .portfolio_item.portfolio_item_second {
-	height: 100%;
+	height: 100%
 }
 
 #portfolio_horizontal_container.three-ver-columns .portfolio_item {
-	height: 33.3%;
+	height: 33.3%
 }
 
 .one-ver-columns {
-	height: 100%;
+	height: 100%
 }
 
 #portfolio_horizontal_container .portfolio_item img {
@@ -3016,7 +4196,7 @@ blockquote p {
 	position: relative;
 	z-index: 1;
 	height: 100%;
-	transform: translateZ(0);
+	transform: translateZ(0)
 }
 
 .grid-item-holder {
@@ -3024,12 +4204,12 @@ blockquote p {
 	width: 100%;
 	height: auto;
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
 }
 
 #portfolio_horizontal_container .portfolio_item .grid-item-holder {
 	width: auto;
-	height: 100%;
+	height: 100%
 }
 
 .grid-det {
@@ -3043,11 +4223,11 @@ blockquote p {
 	background: rgba(0, 0, 0, .6);
 	transition: all .3s linear;
 	opacity: 0;
-	visibility: hidden;
+	visibility: hidden
 }
 
 .vis-det-items .grid-det {
-	bottom: 80px;
+	bottom: 80px
 }
 
 .grid-det:before {
@@ -3058,7 +4238,7 @@ blockquote p {
 	width: 0;
 	height: 1px;
 	background: rgba(255, 255, 255, .3);
-	transition: all .3s linear;
+	transition: all .3s linear
 }
 
 .grid-det-item {
@@ -3072,7 +4252,7 @@ blockquote p {
 	padding-inline-start: 30px;
 	transition: all .3s linear;
 	opacity: 0;
-	visibility: hidden;
+	visibility: hidden
 }
 
 .vis-det-items .grid-det-item {
@@ -3085,7 +4265,7 @@ blockquote p {
 	opacity: 1;
 	visibility: visible;
 	z-index: 20;
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
 .pr_num {
@@ -3097,28 +4277,28 @@ blockquote p {
 	line-height: 80px;
 	border-left: 1px solid var(--border-color);
 	font-weight: 700;
-	z-index: 10;
+	z-index: 10
 }
 
 .vis-det-items .grid-det-item .pr_num {
-	border-right: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color)
 }
 
 .post-media .grid-det_category {
 	bottom: unset;
 	top: 20px;
 	left: 20px;
-	background: rgb(8 8 8 / 29%);
+	background: rgb(8 8 8 / 29%)
 }
 
 .post-media .grid-det_category a {
 	color: var(--main-color);
 	float: left;
-	margin-inline-end: 0px;
+	margin-inline-end: 0;
 	text-transform: capitalize;
 	font-weight: 500;
 	font-size: .8em;
-	letter-spacing: 2px;
+	letter-spacing: 2px
 }
 
 .grid-det_category {
@@ -3128,7 +4308,7 @@ blockquote p {
 	padding: 10px 20px;
 	border: 1px solid rgba(255, 255, 255, .2);
 	background: rgba(255, 255, 255, .1);
-	overflow: hidden;
+	overflow: hidden
 }
 
 .grid-det_category a {
@@ -3138,7 +4318,7 @@ blockquote p {
 	text-transform: capitalize;
 	font-weight: 500;
 	font-size: .8em;
-	letter-spacing: 2px;
+	letter-spacing: 2px
 }
 
 .grid-det .grid-det_category {
@@ -3147,26 +4327,26 @@ blockquote p {
 	left: 30px;
 	opacity: 0;
 	visibility: hidden;
-	transition: all .3s linear;
+	transition: all .3s linear
 }
 
 .grid-item-holder:hover .grid-det,
 .grid-item-holder:hover .grid-det .grid-det-item,
 .grid-item-holder:hover .grid-det_category {
 	opacity: 1;
-	visibility: visible;
+	visibility: visible
 }
 
 .grid-item-holder:hover .grid-det:before {
-	width: 70px;
+	width: 70px
 }
 
 .grid-item-holder:hover .grid-det .grid-det_category {
-	top: 50px;
+	top: 50px
 }
 
 .grid-item-holder:hover .grid-det .grid-det-item {
-	bottom: 30px;
+	bottom: 30px
 }
 
 .grid-det_link {
@@ -3176,36 +4356,36 @@ blockquote p {
 	font-size: 1.2em;
 	text-align: start;
 	line-height: 80px;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .vis-det-items .grid-det_link {
-	font-size: 1.1em;
+	font-size: 1.1em
 }
 
 .gi_dec {
-	z-index: 1;
+	z-index: 1
 }
 
-.gi_dec:before,
-.gi_dec:after {
+.gi_dec:after,
+.gi_dec:before {
 	content: '';
 	position: absolute;
-	background: var(--border-color2);
+	background: var(--border-color2)
 }
 
 .gi_dec:before {
 	height: 1px;
 	width: 100%;
 	top: 50%;
-	left: 0;
+	left: 0
 }
 
 .gi_dec:after {
 	height: 100%;
 	width: 1px;
 	top: 0;
-	left: 50%;
+	left: 50%
 }
 
 .grid-det_category a:hover {
@@ -3214,7 +4394,7 @@ blockquote p {
 
 .fw_gic2 {
 	padding: 0 0 0 450px;
-	border-bottom: 1px solid var(--border-color2);
+	border-bottom: 1px solid var(--border-color2)
 }
 
 .column-filters-wrap {
@@ -3226,7 +4406,7 @@ blockquote p {
 	background: var(--black-color);
 	z-index: 50;
 	border-right: 1px solid var(--border-color2);
-	border-bottom: 1px solid var(--border-color2);
+	border-bottom: 1px solid var(--border-color2)
 }
 
 .column-filters-wrap:before {
@@ -3236,7 +4416,7 @@ blockquote p {
 	top: 0;
 	bottom: 0;
 	width: 1px;
-	background: var(--border-color2);
+	background: var(--border-color2)
 }
 
 .fixed-filters-nav {
@@ -3245,21 +4425,21 @@ blockquote p {
 	bottom: 0;
 	left: 90px;
 	right: 0;
-	z-index: 100;
+	z-index: 100
 }
 
 .column-filters-item {
 	position: relative;
 	padding-block-end: 90px;
 	border-bottom: 1px solid var(--border-color2);
-	overflow: hidden;
+	overflow: hidden
 }
 
 .fixed-filters-nav .scroll-down-wrap {
 	right: auto;
 	left: 0;
 	z-index: 20;
-	border-left: none;
+	border-left: none
 }
 
 .inline-gallery-filters {
@@ -3269,7 +4449,7 @@ blockquote p {
 	box-sizing: border-box;
 	height: 90px;
 	line-height: 90px;
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
 .fixed-filters-nav .inline-gallery-filters {
@@ -3277,11 +4457,11 @@ blockquote p {
 	border-right: 1px solid var(--border-color);
 	padding: 0 90px;
 	float: left;
-	margin-inline-start: 90px;
+	margin-inline-start: 90px
 }
 
-.inline-gallery-filters a,
-.column-filters-item .gallery-filters a {
+.column-filters-item .gallery-filters a,
+.inline-gallery-filters a {
 	float: left;
 	font-weight: 600;
 	text-transform: capitalize;
@@ -3289,7 +4469,7 @@ blockquote p {
 	text-align: start;
 	box-sizing: border-box;
 	position: relative;
-	padding: 0 40px 0 0;
+	padding: 0 40px 0 0
 }
 
 .column-filters-item .gallery-filters a {
@@ -3300,15 +4480,15 @@ blockquote p {
 	color: #fff;
 	border-top: 1px solid var(--border-color2);
 	overflow: hidden;
-	background: var(--black-color);
+	background: var(--black-color)
 }
 
 .column-filters-item .gallery-filters a:first-child {
 	border: none
 }
 
-.column-filters-item a.gallery-filter-active,
-.column-filters-item .gallery-filters a:hover {
+.column-filters-item .gallery-filters a:hover,
+.column-filters-item a.gallery-filter-active {
 	background: var(--black-color2);
 	border-color: transparent
 }
@@ -3320,8 +4500,8 @@ blockquote p {
 	z-index: 2
 }
 
-.inline-gallery-filters a:before,
-.column-filters-item a:before {
+.column-filters-item a:before,
+.inline-gallery-filters a:before {
 	content: '';
 	position: absolute;
 	bottom: 24px;
@@ -3329,7 +4509,7 @@ blockquote p {
 	width: 0;
 	height: 5px;
 	background: var(--black-color);
-	transition: all .2s linear;
+	transition: all .2s linear
 }
 
 .column-filters-item a:before {
@@ -3337,15 +4517,15 @@ blockquote p {
 	bottom: 0;
 	height: 100%;
 	left: auto;
-	right: 0;
+	right: 0
 }
 
 .inline-gallery-filters a.gallery-filter-active:before {
-	width: 20px;
+	width: 20px
 }
 
 .column-filters-item a.gallery-filter-active:before {
-	width: 10px;
+	width: 10px
 }
 
 .fixed-inline-filter_counter {
@@ -3355,14 +4535,14 @@ blockquote p {
 	width: 33.333333%;
 	background: var(--black-color);
 	overflow: hidden;
-	border-top: 1px solid var(--border-color2);
+	border-top: 1px solid var(--border-color2)
 }
 
 .column-filters-item .fixed-inline-filter_counter {
 	width: 100%;
 	top: auto;
 	bottom: 0;
-	z-index: 10;
+	z-index: 10
 }
 
 .fixed-inline-filter_counter span {
@@ -3372,7 +4552,7 @@ blockquote p {
 	height: 90px;
 	line-height: 90px;
 	color: #fff;
-	font-weight: 600;
+	font-weight: 600
 }
 
 .order-wrap {
@@ -3380,7 +4560,7 @@ blockquote p {
 	border-top: 1px solid var(--border-color);
 	position: relative;
 	background: var(--main-color);
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
 .order-wrap:before {
@@ -3390,10 +4570,9 @@ blockquote p {
 	height: 1px;
 	background: var(--border-color);
 	width: 100%;
-	left: 0;
+	left: 0
 }
 
-/*--share----------------*/
 .share-button-wrap {
 	position: fixed;
 	bottom: 0;
@@ -3401,7 +4580,7 @@ blockquote p {
 	height: 90px;
 	width: 90px;
 	z-index: 21;
-	cursor: pointer;
+	cursor: pointer
 }
 
 .share-button_title {
@@ -3418,13 +4597,13 @@ blockquote p {
 	font-weight: 600;
 	text-transform: capitalize;
 	color: #fff;
-	transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out
 }
 
 .share-button-wrap:hover .share-button_title {
 	opacity: 1;
 	visibility: visible;
-	margin-block-start: 0;
+	margin-block-start: 0
 }
 
 .share-button {
@@ -3435,7 +4614,7 @@ blockquote p {
 	top: 50%;
 	right: 30px;
 	transform: scale(.9);
-	margin: -18px 0 0 0;
+	margin: -18px 0 0 0
 }
 
 .share-button span {
@@ -3449,15 +4628,15 @@ blockquote p {
 	background: var(--main-color)
 }
 
-.share-button:before,
-.share-button:after {
+.share-button:after,
+.share-button:before {
 	content: '';
 	position: absolute;
 	width: 7px;
 	height: 7px;
 	border-radius: 50%;
 	z-index: 1;
-	transition: all 0.2s ease-in-out;
+	transition: all .2s ease-in-out;
 	background: var(--main-color)
 }
 
@@ -3468,58 +4647,58 @@ blockquote p {
 
 .share-button:after {
 	left: 10px;
-	bottom: 9px;
+	bottom: 9px
 }
 
 .share-button:hover:before {
 	top: 12px;
-	left: 4px;
+	left: 4px
 }
 
 .share-button:hover:after {
 	bottom: 20px;
-	left: 4px;
+	left: 4px
 }
 
-.share-button span:before,
-.share-button span:after {
+.share-button span:after,
+.share-button span:before {
 	content: '';
 	position: absolute;
 	top: 3px;
 	left: -30px;
 	width: 30px;
 	height: 1px;
-	background: rgba(255, 255, 255, 0.3);
-	transition: all 0.2s ease-in-out;
+	background: rgba(255, 255, 255, .3);
+	transition: all .2s ease-in-out
 }
 
 .share-button span:before {
 	transform: rotate(34deg);
 	top: -3px;
-	left: -21px;
+	left: -21px
 }
 
 .share-button span:after {
 	transform: rotate(-23deg);
 	top: 8px;
-	left: -22px;
+	left: -22px
 }
 
 .share-button-wrap:hover .share-button:before {
 	top: 12px;
-	left: 4px;
+	left: 4px
 }
 
 .share-button-wrap:hover .share-button:after {
 	bottom: 20px;
-	left: 4px;
+	left: 4px
 }
 
-.share-button-wrap:hover .share-button span:before,
-.share-button-wrap:hover .share-button span:after {
+.share-button-wrap:hover .share-button span:after,
+.share-button-wrap:hover .share-button span:before {
 	transform: rotate(0);
 	top: 3px;
-	left: -26px;
+	left: -26px
 }
 
 .share-wrapper {
@@ -3534,17 +4713,17 @@ blockquote p {
 	opacity: 0;
 	visibility: hidden;
 	margin-block-end: 10px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, .2)
 }
 
 .share-wrapper_vis {
 	margin-block-end: 0;
 	opacity: 1;
-	visibility: visible;
+	visibility: visible
 }
 
 .share-container {
-	padding: 70px 50px 50px 70px;
+	padding: 70px 50px 50px 70px
 }
 
 .share-container a {
@@ -3554,38 +4733,37 @@ blockquote p {
 	color: #fff;
 	font-weight: 600;
 	position: relative;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .share-container a:before {
-	padding-inline-end: 6px;
+	padding-inline-end: 6px
 }
 
 .share-icon-facebook:before {
-	content: "01.";
+	content: "01."
 }
 
 .share-icon-twitter:before {
-	content: "03.";
+	content: "03."
 }
 
 .share-icon-tumblr:before {
-	content: "05.";
+	content: "05."
 }
 
 .share-icon-linkedin:before {
-	content: "04.";
+	content: "04."
 }
 
 .share-icon-pinterest:before {
-	content: "02.";
+	content: "02."
 }
 
-/*--services -----------------*/
 .toogle-item {
 	position: relative;
 	overflow: hidden;
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
 .toglle-header {
@@ -3600,7 +4778,7 @@ blockquote p {
 	font-size: 1.2em;
 	font-weight: 800;
 	position: relative;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .toglle-header span {
@@ -3610,32 +4788,32 @@ blockquote p {
 	border-left: 1px solid var(--border-color);
 	text-align: center;
 	font-size: 1.1em;
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .toglle-content {
 	padding: 50px 90px;
-	display: none;
+	display: none
 }
 
 .toogle-item_vis .toglle-header {
 	border-color: var(--border-color);
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .toogle-item_vis .toglle-header span i {
-	transform: rotate(-180deg);
+	transform: rotate(-180deg)
 }
 
 .toogle-item_vis .toglle-content {
-	display: block;
+	display: block
 }
 
 .ps-facts-wrapper {
 	position: relative;
 	overflow: hidden;
 	border: 1px solid var(--border-color);
-	margin-block-start: 30px;
+	margin-block-start: 30px
 }
 
 .ps-facts-item {
@@ -3644,37 +4822,36 @@ blockquote p {
 	position: relative;
 	border-left: 1px solid var(--border-color);
 	padding: 30px 20px;
-	text-align: start;
+	text-align: start
 }
 
 .ps-facts-item h4 {
 	font-weight: 800;
 	padding-block-end: 10px;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .ps-facts-item span {
 	font-weight: 600;
 	display: block;
 	position: relative;
-	padding-block-end: 10px;
+	padding-block-end: 10px
 }
 
 .ps-facts-item h5 {
-	font-size: 1.3em;
+	font-size: 1.3em
 }
 
 .ps-facts-wrapper .ps-facts-item:first-child {
-	border: none;
+	border: none
 }
 
-/*- blog----------------*/
 .post-wrap {
 	border-top: 1px solid var(--border-color)
 }
 
 .post-items {
-	position: relative;
+	position: relative
 }
 
 .post-items:before {
@@ -3691,7 +4868,7 @@ blockquote p {
 	width: 50%;
 	padding: 45px;
 	border-bottom: 1px solid var(--border-color);
-	overflow: hidden;
+	overflow: hidden
 }
 
 .post-item:hover {
@@ -3701,7 +4878,7 @@ blockquote p {
 .blog-search-wrap {
 	position: relative;
 	margin: 90px 0 0;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .blog-search-wrap input {
@@ -3715,11 +4892,11 @@ blockquote p {
 	font-size: 12px;
 	font-weight: 500;
 	text-transform: capitalize;
-	padding: 0 90px 0 50px;
+	padding: 0 90px 0 50px
 }
 
 .blog-search-wrap button {
-	outline: none;
+	outline: 0;
 	position: absolute;
 	top: 0;
 	height: 90px;
@@ -3730,21 +4907,21 @@ blockquote p {
 	right: 0;
 	font-size: 16px;
 	border: 1px solid var(--border-color);
-	border-right: none;
+	border-right: none
 }
 
 .post-item {
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .post-media {
-	overflow: hidden;
+	overflow: hidden
 }
 
 .post-media a {
 	position: relative;
-	display: block;
+	display: block
 }
 
 .post-tooltip {
@@ -3760,21 +4937,21 @@ blockquote p {
 	top: 50%;
 	left: 50%;
 	margin: -25px 0 0 -65px;
-	z-index: 5;
+	z-index: 5
 }
 
 .post-media .overlay,
 .post-tooltip {
 	opacity: 0;
-	transition: all 0.3s ease-in-out;
+	transition: all .3s ease-in-out
 }
 
 .post-media:hover .post-tooltip {
-	opacity: 1;
+	opacity: 1
 }
 
 .post-media:hover .overlay {
-	opacity: 0.4;
+	opacity: .4
 }
 
 .post-item_content {
@@ -3784,17 +4961,17 @@ blockquote p {
 
 .content_box_item {
 	padding: 70px 90px;
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
-.post-item_content h3,
-.content_box_item h3 {
+.content_box_item h3,
+.post-item_content h3 {
 	text-align: start;
 	font-size: 1.7em;
 	font-weight: 800;
 	padding-block-end: 20px;
 	text-transform: capitalize;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .post-item_content h3 {
@@ -3802,18 +4979,18 @@ blockquote p {
 	padding-block-end: 10px;
 	text-transform: capitalize;
 	font-weight: 600;
-	font-family: var(--main-font);
+	font-family: var(--main-font)
 }
 
 .post-opt-header {
 	text-align: start;
-	margin-block-end: 15px;
+	margin-block-end: 15px
 }
 
 .post-opt-header a {
 	margin: 0 10px 0 0;
 	text-transform: capitalize;
-	font-weight: 600;
+	font-weight: 600
 }
 
 .post-item_footer {
@@ -3821,7 +4998,7 @@ blockquote p {
 	border: 1px solid var(--border-color);
 	position: relative;
 	background: var(--main-color);
-	padding-inline-start: 50px;
+	padding-inline-start: 50px
 }
 
 .post-item_footer a {
@@ -3831,7 +5008,7 @@ blockquote p {
 	height: 70px;
 	line-height: 70px;
 	font-weight: 800;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .post-item_footer a i {
@@ -3842,7 +5019,7 @@ blockquote p {
 	width: 70px;
 	line-height: 70px;
 	border-left: 1px solid var(--border-color);
-	text-align: center;
+	text-align: center
 }
 
 .pagination {
@@ -3851,7 +5028,7 @@ blockquote p {
 	float: left;
 	z-index: 10;
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .pagination a {
@@ -3864,26 +5041,26 @@ blockquote p {
 	font-size: .9em;
 	color: #fff;
 	background: var(--black-color);
-	letter-spacing: 1px;
+	letter-spacing: 1px
 }
 
 .pagination a.current-page,
 .pagination a:hover {
-	color: #fff;
+	color: #fff
 }
 
 .pagination a i {
-	font-size: 12px;
+	font-size: 12px
 }
 
 .pagination a.current-page,
-.tagcloud a:hover,
-.pagination a:hover {
-	background: var(--black-color2);
+.pagination a:hover,
+.tagcloud a:hover {
+	background: var(--black-color2)
 }
 
 .fixed-bar-container_wrapper {
-	position: relative;
+	position: relative
 }
 
 .box-widget_title {
@@ -3896,7 +5073,7 @@ blockquote p {
 	line-height: 90px;
 	border-bottom: 1px solid var(--border-color);
 	position: relative;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .box-widget_title:before,
@@ -3908,21 +5085,21 @@ blockquote p {
 	height: 1px;
 	background: #ccc;
 	top: 50%;
-	right: 25px;
+	right: 25px
 }
 
 .box-widget_title span {
 	margin-inline-end: 10px;
-	color: #999;
+	color: #999
 }
 
 .box-widget_content {
-	padding: 50px;
+	padding: 50px
 }
 
 .tagcloud {
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .tagcloud a {
@@ -3930,19 +5107,18 @@ blockquote p {
 	margin: 0 10px 10px 0;
 	background: var(--black-color);
 	color: #fff;
-	padding: 10px 20px;
+	padding: 10px 20px
 }
 
 .tagclblog-search-wrapoud a {
 	display: inline-block;
 	margin: 0 5px 5px 0;
-	padding: 10px 15px;
+	padding: 10px 15px
 }
 
 .box-widget-item {
 	border-bottom: 1px solid var(--border-color);
-
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .categories_widget li {
@@ -3950,12 +5126,12 @@ blockquote p {
 	padding: 10px 0;
 	position: relative;
 	font-weight: 500;
-	font-size: 1.2em;
+	font-size: 1.2em
 }
 
 .categories_widget li a {
 	position: relative;
-	display: block;
+	display: block
 }
 
 .categories_widget li span {
@@ -3963,7 +5139,7 @@ blockquote p {
 	top: 50%;
 	right: 0;
 	color: #999;
-	transform: translateY(-50%);
+	transform: translateY(-50%)
 }
 
 .widget-posts {
@@ -3973,47 +5149,46 @@ blockquote p {
 .widget-posts li {
 	padding: 12px 0;
 	float: left;
-	width: 100%;
+	width: 100%
 }
 
 .widget-posts-media {
 	float: left;
-	width: 30%;
+	width: 30%
 }
 
 .widget-posts-descr {
 	float: left;
 	width: 70%;
 	padding: 20px 0 0 20px;
-	text-align: start;
-
+	text-align: start
 }
 
 .widget-posts-descr a {
 	font-weight: 800;
 	text-transform: capitalize;
 	color: #000;
-	font-size: 1.1em;
+	font-size: 1.1em
 }
 
 .widget-posts-date {
 	display: block;
 	margin-block-start: 10px;
 	color: #666;
-	font-weight: 600;
+	font-weight: 600
 }
 
 .post-media {
 	position: relative;
 	overflow: hidden;
 	height: 270px;
-	width: 100%;
+	width: 100%
 }
 
 .post-media a .respimg {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: cover
 }
 
 .ss-slider-pagination_wrap {
@@ -4023,13 +5198,13 @@ blockquote p {
 	bottom: 20px;
 	z-index: 10;
 	left: 0;
-	width: 100%;
+	width: 100%
 }
 
 .ss-slider-pagination {
 	position: relative;
 	display: inline-block;
-	bottom: 20px;
+	bottom: 20px
 }
 
 .ss-slider-pagination .swiper-pagination-bullet {
@@ -4041,7 +5216,7 @@ blockquote p {
 	opacity: 1;
 	width: 6px;
 	position: relative;
-	top: -2px;
+	top: -2px
 }
 
 .ss-slider-pagination .swiper-pagination-bullet:after {
@@ -4053,18 +5228,18 @@ blockquote p {
 	height: 22px;
 	margin: -11px 0 0 -11px;
 	box-sizing: border-box;
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, .2);
 	border-radius: 100%;
-	transition: all 0.3s ease;
-	transform: scale(0.0);
+	transition: all .3s ease;
+	transform: scale(0)
 }
 
 .ss-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:after {
-	transform: scale(1.0);
+	transform: scale(1)
 }
 
 .ss-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .post-item_single .post-header {
@@ -4073,18 +5248,18 @@ blockquote p {
 	padding: 35px 0 35px 50px;
 	background: var(--black-color);
 	display: flex;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .post-header span {
 	color: rgba(255, 255, 255, .9);
-	margin-inline-end: 10px;
+	margin-inline-end: 10px
 }
 
 .post-header a,
 .post-opt i {
 	color: #fff;
-	margin-inline-end: 10px;
+	margin-inline-end: 10px
 }
 
 .post-opt {
@@ -4096,7 +5271,7 @@ blockquote p {
 	right: 0;
 	top: 0;
 	border-left: 1px solid var(--border-color2);
-	background: var(--black-color2);
+	background: var(--black-color2)
 }
 
 .single-tagcloud {
@@ -4104,39 +5279,39 @@ blockquote p {
 	padding: 35px 50px;
 	display: flex;
 	text-transform: capitalize;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .single-tagcloud a {
 	display: inline-block;
 	margin: 0 5px 0 0;
-	color: rgba(255, 255, 255, .7);
+	color: rgba(255, 255, 255, .7)
 }
 
 .single-tagcloud a:hover {
-	color: #fff;
+	color: #fff
 }
 
 .single-tagcloud_title {
 	display: inline-block;
 	color: #fff;
-	margin-inline-end: 10px;
+	margin-inline-end: 10px
 }
 
 .post-item_single .post-item_content h3 {
 	font-size: 1.4em;
-	padding-block-end: 20px;
+	padding-block-end: 20px
 }
 
 .post-item_single {
 	margin: 0;
 	width: 100%;
 	padding: 0;
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .post-item_single .post-item_content {
-	padding: 60px;
+	padding: 60px
 }
 
 .comments-title,
@@ -4152,31 +5327,31 @@ blockquote p {
 	margin-block-end: 40px;
 	background: var(--main-color);
 	position: relative;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .reply-title {
 	margin: 40px 0 0 0;
-	border-top: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color)
 }
 
 .commnets-wrap {
-	padding: 0 50px;
+	padding: 0 50px
 }
 
 .comment-item {
 	border: 1px solid var(--border-color);
-	margin-block-end: 50px;
+	margin-block-end: 50px
 }
 
 .commnets-wrap.commnets-wrap_form {
 	padding-block-end: 50px;
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
 .comment-body {
 	padding-inline-start: 90px;
-	position: relative;
+	position: relative
 }
 
 .comment-author {
@@ -4185,13 +5360,13 @@ blockquote p {
 	top: 0;
 	width: 90px;
 	height: 100%;
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .comment-author img {
 	width: 90px;
 	height: 90px;
-	margin-block-end: 20px;
+	margin-block-end: 20px
 }
 
 .comment-author i {
@@ -4200,19 +5375,19 @@ blockquote p {
 	font-size: 1.4em;
 	left: 0;
 	right: 0;
-	text-align: center;
+	text-align: center
 }
 
 .comment-meta {
 	font-size: .9em;
 	text-transform: capitalize;
-	font-weight: 600;
+	font-weight: 600
 }
 
 .comment-meta span {
 	font-size: 1.4em;
 	font-weight: 800;
-	display: block;
+	display: block
 }
 
 .comment-header {
@@ -4220,19 +5395,19 @@ blockquote p {
 	line-height: 90px;
 	border-bottom: 1px solid var(--border-color);
 	padding: 0 50px;
-	position: relative;
+	position: relative
 }
 
 .comment_author {
 	font-size: 1.2em;
 	font-weight: 600;
 	text-align: start;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .commnet-content {
 	border-left: 1px solid var(--border-color);
-	position: relative;
+	position: relative
 }
 
 .comment-num {
@@ -4244,18 +5419,18 @@ blockquote p {
 	line-height: 90px;
 	background: var(--gray-color);
 	border-top: 1px solid var(--border-color);
-	border-left: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color)
 }
 
 .commnet-text {
-	padding: 50px 100px 50px 50px;
+	padding: 50px 100px 50px 50px
 }
 
 .commentform fieldset {
 	display: table;
 	width: 100%;
 	margin-block-start: 50px;
-	border: 1px solid var(--border-color);
+	border: 1px solid var(--border-color)
 }
 
 .commentform button,
@@ -4267,14 +5442,14 @@ blockquote p {
 	border: none;
 	background: var(--black-color);
 	color: #fff;
-	font-size: 1.0em;
+	font-size: 1em;
 	font-weight: 500;
 	text-transform: capitalize;
 	font-family: var(--main-font);
 	overflow: hidden;
 	display: block;
 	cursor: pointer;
-	outline: none;
+	outline: 0
 }
 
 .custom-form {
@@ -4291,12 +5466,12 @@ blockquote p {
 	width: 50%;
 	float: left;
 	border-bottom: 1px solid var(--border-color);
-	padding: 0 50px;
+	padding: 0 50px
 }
 
 .custom-form input:first-child,
 .custom-form textarea {
-	border-right: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color)
 }
 
 .custom-form textarea {
@@ -4307,86 +5482,85 @@ blockquote p {
 	height: 90px;
 	resize: vertical;
 	scrollbar-width: none;
-	-ms-overflow-style: none;
+	-ms-overflow-style: none
 }
 
 .custom-form textarea::-webkit-scrollbar {
-	width: 0px;
+	width: 0
 }
 
-.custom-form textarea:focus,
-.custom-form input[type="text"]:focus,
-.custom-form input[type=email]:focus {
-	background: var(--gray-color);
+.custom-form input[type=email]:focus,
+.custom-form input[type=text]:focus,
+.custom-form textarea:focus {
+	background: var(--gray-color)
 }
 
 .custom-form input::-webkit-input-placeholder,
 .custom-form textarea::-webkit-input-placeholder {
-	font-family: var(--main-font);
+	font-family: var(--main-font)
 }
 
 .custom-form input:-moz-placeholder,
 .custom-form textarea:-moz-placeholder {
-	font-family: var(--main-font);
+	font-family: var(--main-font)
 }
 
 .about-wrap {
 	padding: 90px 0;
-	position: relative;
+	position: relative
 }
 
-.about-wrap:before,
 .about-wrap:after,
+.about-wrap:before,
 .contacts_wrap:before {
 	content: '';
 	position: absolute;
 	height: 90px;
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .about-wrap:before {
 	top: 0;
 	width: 66.666666%;
 	right: 0;
-	border-left: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color)
 }
 
 .contacts_wrap:before {
 	top: 0;
 	left: 0;
 	width: 66.666666%;
-	border-right: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color)
 }
 
 .about-wrap:after {
 	bottom: 0;
 	width: 33.333333%;
 	left: 0;
-	border-right: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color)
 }
 
 .about_row {
 	grid-template-columns: 70% 30%;
 	padding: 90px;
 	border-bottom: 1px solid var(--border-color);
-	border-top: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color)
 }
 
 .about_row_hero {
 	padding: 0;
-	grid-template-columns: 66.666666% 33.333333%;
+	grid-template-columns: 66.666666% 33.333333%
 }
 
 .block_text {
 	padding: 0 90px 0 0;
-	text-align: start;
-
+	text-align: start
 }
 
 .about_row_hero .block_text {
 	padding: 90px;
 	border-right: 1px solid var(--border-color);
-	position: relative;
+	position: relative
 }
 
 .about_row_hero .block_text:before {
@@ -4398,7 +5572,7 @@ blockquote p {
 	height: 270px;
 	border: 1px solid var(--border-color);
 	border-right: none;
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .about_row_hero .block_text:after {
@@ -4409,7 +5583,7 @@ blockquote p {
 	width: 90px;
 	height: 90px;
 	border: 1px solid var(--border-color);
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .block_text h2 {
@@ -4419,12 +5593,12 @@ blockquote p {
 	line-height: 50px;
 	text-transform: capitalize;
 	padding-block-end: 30px;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .block_text .btn {
 	display: inline-block;
-	margin-block-start: 50px;
+	margin-block-start: 50px
 }
 
 .block_img {
@@ -4433,15 +5607,15 @@ blockquote p {
 
 .block_img_fs .fs-wrapper {
 	bottom: 90px;
-	right: -89px;
+	right: -89px
 }
 
 .block_img_fs .fs-wrapper .overlay {
 	opacity: .4
 }
 
-.block_img_fs .fs-wrapper:before,
-.block_img_fs .fs-wrapper:after {
+.block_img_fs .fs-wrapper:after,
+.block_img_fs .fs-wrapper:before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -4452,14 +5626,14 @@ blockquote p {
 	border-right: 1px solid var(--border-color);
 	border-bottom: 1px solid var(--border-color);
 	z-index: 5;
-	box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .block_img_fs .fs-wrapper:after {
 	bottom: auto;
 	top: 0;
 	right: auto;
-	left: 0;
+	left: 0
 }
 
 .block_img_fs .fs-wrapper .arrow_dec_wrap {
@@ -4475,7 +5649,7 @@ blockquote p {
 }
 
 .block_img_fs {
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .block_img_fs-let {
@@ -4486,7 +5660,7 @@ blockquote p {
 	line-height: 90px;
 	overflow: hidden;
 	bottom: 0;
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .block_img_fs-let div {
@@ -4495,7 +5669,7 @@ blockquote p {
 	left: 0;
 	right: 0;
 	text-transform: capitalize;
-	font-weight: 600;
+	font-weight: 600
 }
 
 .ab_title-logo {
@@ -4503,7 +5677,7 @@ blockquote p {
 	top: 50%;
 	left: 50%;
 	transform: translateY(-50%) translateX(-50%);
-	z-index: 20;
+	z-index: 20
 }
 
 .ab_title-logo span {
@@ -4519,7 +5693,7 @@ blockquote p {
 	overflow: hidden;
 	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .section-title_content {
@@ -4528,15 +5702,15 @@ blockquote p {
 	border-right: 1px solid var(--border-color);
 	position: relative;
 	z-index: 5;
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .st_dec2 .section-title_content {
-	padding: 210px 90px 120px;
+	padding: 210px 90px 120px
 }
 
-.section-title_content:before,
-.featured_works-header:before {
+.featured_works-header:before,
+.section-title_content:before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -4545,18 +5719,18 @@ blockquote p {
 	height: 90px;
 	border-left: 1px solid var(--border-color);
 	border-bottom: 1px solid var(--border-color);
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .st_dec2 .section-title_content:before {
 	width: 100%;
-	border-left: none;
+	border-left: none
 }
 
 .featured_works-header:before {
 	right: 33.333333%;
 	border-color: var(--border-color2);
-	background: rgba(255, 255, 255, .07);
+	background: rgba(255, 255, 255, .07)
 }
 
 .section-title_content:after {
@@ -4567,7 +5741,7 @@ blockquote p {
 	width: 90px;
 	height: 180px;
 	border: 1px solid var(--border-color);
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .section-title_content h2 {
@@ -4577,12 +5751,12 @@ blockquote p {
 	padding-block-end: 20px;
 	position: relative;
 	text-transform: capitalize;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .section-title_content_item {
 	position: relative;
-	z-index: 2;
+	z-index: 2
 }
 
 .section-title_content_dec {
@@ -4593,12 +5767,12 @@ blockquote p {
 	width: 100vw;
 	background: var(--gray-color);
 	border-bottom: 1px solid var(--border-color);
-	z-index: -1;
+	z-index: -1
 }
 
 .section-title {
 	border-bottom: 1px solid var(--border-color);
-	position: relative;
+	position: relative
 }
 
 .st_dec:before {
@@ -4608,7 +5782,7 @@ blockquote p {
 	right: 0;
 	left: 60%;
 	height: 100%;
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .st_dec:after {
@@ -4620,7 +5794,7 @@ blockquote p {
 	height: 90px;
 	background: var(--main-color);
 	border-top: 1px solid var(--border-color);
-	z-index: 3;
+	z-index: 3
 }
 
 .st_dec_item {
@@ -4631,7 +5805,7 @@ blockquote p {
 	height: 180px;
 	background: var(--main-color);
 	z-index: 5;
-	border: 1px solid var(--border-color);
+	border: 1px solid var(--border-color)
 }
 
 .parallax-section_wrap {
@@ -4641,7 +5815,7 @@ blockquote p {
 	top: 0;
 	bottom: 90px;
 	overflow: hidden;
-	z-index: 2;
+	z-index: 2
 }
 
 .parallax-section_wrap:before {
@@ -4652,7 +5826,7 @@ blockquote p {
 	left: 0;
 	bottom: 0;
 	background: var(--main-color);
-	z-index: 5;
+	z-index: 5
 }
 
 .parallax-section_wrap:after {
@@ -4667,7 +5841,7 @@ blockquote p {
 	border-right: 1px solid var(--border-color2);
 	border-left: 1px solid var(--border-color2);
 	-webkit-backdrop-filter: blur(2px);
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px)
 }
 
 .parallax-section_wrap .overlay {
@@ -4682,22 +5856,22 @@ blockquote p {
 	height: 90px;
 	background: var(--main-color);
 	z-index: 5;
-	border-left: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color)
 }
 
 .team-carousel {
-	border-top: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color)
 }
 
 .team-container {
 	padding: 90px 0;
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .team-carousel {
 	z-index: 2;
-	position: relative;
+	position: relative
 }
 
 .team-container:before {
@@ -4710,7 +5884,7 @@ blockquote p {
 	background: var(--main-color);
 	border: 1px solid var(--border-color);
 	border-bottom: none;
-	z-index: 1;
+	z-index: 1
 }
 
 .team-container:after {
@@ -4721,14 +5895,14 @@ blockquote p {
 	right: 0;
 	left: 0;
 	background: var(--border-color);
-	z-index: 1;
+	z-index: 1
 }
 
 .team-item {
 	padding: 50px 50px;
 	border-bottom: 1px solid var(--border-color);
 	overflow: hidden;
-	position: relative;
+	position: relative
 }
 
 .team-item_container h4 {
@@ -4738,7 +5912,7 @@ blockquote p {
 	height: 30px;
 	line-height: 30px;
 	text-transform: capitalize;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .team-item_container h5 {
@@ -4746,7 +5920,7 @@ blockquote p {
 	font-weight: 800;
 	font-family: var(--second-font);
 	text-transform: capitalize;
-	font-size: .9em;
+	font-size: .9em
 }
 
 .team-content {
@@ -4754,14 +5928,14 @@ blockquote p {
 	position: relative;
 	border: 1px solid var(--border-color);
 	border-top: none;
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .team-img {
 	position: relative;
 	overflow: hidden;
 	height: 550px;
-	border: 1px solid var(--border-color);
+	border: 1px solid var(--border-color)
 }
 
 .team-social {
@@ -4775,7 +5949,7 @@ blockquote p {
 	color: #fff;
 	text-transform: capitalize;
 	font-weight: 500;
-	transition: all .2s linear;
+	transition: all .2s linear
 }
 
 .team-social li {
@@ -4784,15 +5958,15 @@ blockquote p {
 	width: 20px;
 	font-size: 12px;
 	font-weight: 500;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .team-social li a {
-	color: #fff;
+	color: #fff
 }
 
 .team-img:hover .team-social {
-	bottom: 0;
+	bottom: 0
 }
 
 .team_num {
@@ -4804,7 +5978,7 @@ blockquote p {
 	line-height: 90px;
 	background: var(--main-color);
 	border-left: 1px solid var(--border-color);
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
 .team-carousel_controls {
@@ -4815,7 +5989,7 @@ blockquote p {
 	border-bottom: 1px solid var(--border-color);
 	height: 89px;
 	z-index: 20;
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .team-carousel-slider-pagination_wrap {
@@ -4825,7 +5999,7 @@ blockquote p {
 	padding: 0 90px;
 	display: inline-block;
 	border-left: 1px solid var(--border-color);
-	border-right: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color)
 }
 
 .tmc-button {
@@ -4841,27 +6015,26 @@ blockquote p {
 	background: var(--main-color);
 	border: 1px solid var(--border-color);
 	border-bottom: none;
-	border-top: none;
+	border-top: none
 }
 
 .tmc-button-next {
-	right: 0;
+	right: 0
 }
 
 .tmc-button-prev {
-	left: 0;
+	left: 0
 }
 
-.tmc-button:hover,
-.cc-button:hover {
-	background: var(--gray-color);
+.cc-button:hover,
+.tmc-button:hover {
+	background: var(--gray-color)
 }
 
-/*--clients-----------------------*/
 .client-item img {
 	width: 100%;
 	aspect-ratio: 6/2;
-	object-fit: contain;
+	object-fit: contain
 }
 
 .client-item {
@@ -4871,12 +6044,11 @@ blockquote p {
 	z-index: 2;
 	border-right: 1px solid var(--border-color);
 	display: block;
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
 .client-item:hover {
-
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .clients-carousel-wrap {
@@ -4884,7 +6056,7 @@ blockquote p {
 	padding: 0 180px 0 0;
 	box-sizing: border-box;
 	position: relative;
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .clients-carousel-wrap:before {
@@ -4898,7 +6070,7 @@ blockquote p {
 	height: 90px;
 	border-top: 1px solid var(--border-color);
 	bottom: 0;
-	z-index: -1;
+	z-index: -1
 }
 
 .cc-button {
@@ -4911,30 +6083,29 @@ blockquote p {
 	width: 90px;
 	cursor: pointer;
 	background: #fff;
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
 .cc-button-next {
 	right: 0;
-	border-left: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color)
 }
 
 .cc-button-prev {
-	right: 90px;
+	right: 90px
 }
 
-/*-- video----------*/
 .video-container {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	line-height: 0;
-	z-index: -1;
+	z-index: -1
 }
 
 .video-container video {
-	width: 100%;
+	width: 100%
 }
 
 .resp-video {
@@ -4943,48 +6114,47 @@ blockquote p {
 	padding-block-start: 30px;
 	height: 0;
 	overflow: hidden;
-	margin-block-end: 20px;
+	margin-block-end: 20px
 }
 
+.resp-video embed,
 .resp-video iframe,
-.resp-video object,
-.resp-video embed {
+.resp-video object {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100%
 }
 
-/*--testimonials------------------*/
 .testimonilas-carousel_wrap {
 	background: var(--main-color);
 	position: relative;
-	z-index: 5;
+	z-index: 5
 }
 
 .testimonilas-carousel {
 	width: 100vw;
 	position: relative;
 	padding: 90px 0;
-	overflow: hidden;
+	overflow: hidden
 }
 
-.testimonilas-carousel:before,
 .testimonilas-carousel:after,
-.testimonilas-carousel_wrap:before,
-.testimonilas-carousel_wrap:after {
+.testimonilas-carousel:before,
+.testimonilas-carousel_wrap:after,
+.testimonilas-carousel_wrap:before {
 	content: '';
 	position: absolute;
 	top: 50%;
 	left: 0;
 	right: 0;
 	height: 1px;
-	background: var(--border-color);
+	background: var(--border-color)
 }
 
 .testimonilas-carousel_wrap:before {
-	top: 90px;
+	top: 90px
 }
 
 .testimonilas-carousel_wrap:after {
@@ -4994,12 +6164,12 @@ blockquote p {
 	right: 0;
 	width: 33.333333%;
 	background: var(--gray-color);
-	border-left: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color)
 }
 
 .testimonilas-carousel:after {
 	top: auto;
-	bottom: 90px;
+	bottom: 90px
 }
 
 .testi-item {
@@ -5007,9 +6177,9 @@ blockquote p {
 	background: var(--main-color);
 	transition: all .3s ease-in;
 	overflow: hidden;
-	transform: scale(1.0);
+	transform: scale(1);
 	position: relative;
-	z-index: 2;
+	z-index: 2
 }
 
 .testi-header {
@@ -5018,7 +6188,7 @@ blockquote p {
 	overflow: hidden;
 	background: #fff;
 	border-bottom: 1px solid var(--border-color);
-	padding-inline-start: 120px;
+	padding-inline-start: 120px
 }
 
 .testi-avatar {
@@ -5031,12 +6201,12 @@ blockquote p {
 	height: 90px;
 	overflow: hidden;
 	padding: 15px 0 0 0;
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .testi-avatar img {
 	width: 60px;
-	height: 60px;
+	height: 60px
 }
 
 .testi-header h3 {
@@ -5044,26 +6214,26 @@ blockquote p {
 	font-weight: 800;
 	text-transform: capitalize;
 	line-height: 90px;
-	font-size: 1.1em;
+	font-size: 1.1em
 }
 
 .testi-number {
 	position: absolute;
 	right: 50px;
 	top: 35px;
-	font-weight: 800;
+	font-weight: 800
 }
 
 .testi-date {
 	position: absolute;
 	bottom: 45px;
 	left: 50px;
-	font-weight: 800;
+	font-weight: 800
 }
 
 .testimonilas-text {
 	text-align: start;
-	padding: 50px 50px 90px;
+	padding: 50px 50px 90px
 }
 
 .testi-link {
@@ -5072,7 +6242,7 @@ blockquote p {
 	font-weight: 800;
 	right: 40px;
 	bottom: 45px;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .testi_carousel-controls {
@@ -5082,7 +6252,7 @@ blockquote p {
 	right: 0;
 	height: 90px;
 	z-index: 10;
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .testi_carousel-controls:before {
@@ -5092,7 +6262,7 @@ blockquote p {
 	width: 40px;
 	height: 1px;
 	background: #ccc;
-	top: 50%;
+	top: 50%
 }
 
 .testi-slider-pagination_wrap {
@@ -5103,14 +6273,14 @@ blockquote p {
 	top: 50%;
 	transform: translateY(-50%);
 	border-right: 1px solid var(--border-color);
-	margin-inline-end: 20px;
+	margin-inline-end: 20px
 }
 
 .testi-slider-pagination {
 	top: 50%;
 	transform: translateY(-50%);
 	float: left;
-	position: relative;
+	position: relative
 }
 
 .testi-slider-pagination .swiper-pagination-bullet {
@@ -5136,15 +6306,15 @@ blockquote p {
 	border: 1px solid var(--border-color);
 	border-radius: 100%;
 	transition: all .3s ease;
-	transform: scale(0.0);
+	transform: scale(0)
 }
 
 .testi-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active:after {
-	transform: scale(1.0);
+	transform: scale(1)
 }
 
 .testi-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-	background: var(--black-color);
+	background: var(--black-color)
 }
 
 .tc-button {
@@ -5155,27 +6325,26 @@ blockquote p {
 	width: 40px;
 	font-size: 1.4em;
 	cursor: pointer;
-	z-index: 20;
+	z-index: 20
 }
 
-/*--facts-------------------------------------*/
 .inline-facts-wrap {
 	border-left: 1px solid var(--border-color2);
 	position: relative;
 	overflow: hidden;
 	padding: 90px 0;
-	border-bottom: 1px solid var(--border-color2);
+	border-bottom: 1px solid var(--border-color2)
 }
 
 .inline-facts-wrap:first-child {
-	border-left: none;
+	border-left: none
 }
 
 .inline-facts {
 	text-align: start;
 	padding: 0 90px;
 	position: relative;
-	z-index: 10;
+	z-index: 10
 }
 
 .inline-facts:after {
@@ -5187,7 +6356,7 @@ blockquote p {
 	font-size: 1.2em;
 	font-weight: 100;
 	color: #fff;
-	display: block;
+	display: block
 }
 
 .inline-facts:before {
@@ -5197,14 +6366,14 @@ blockquote p {
 	top: 50px;
 	width: 100px;
 	height: 1px;
-	background: var(--border-color2);
+	background: var(--border-color2)
 }
 
 .num {
-	font-size: 4.0em;
+	font-size: 4em;
 	font-weight: 800;
 	color: #fff;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .inline-facts h6 {
@@ -5212,30 +6381,30 @@ blockquote p {
 	color: #fff;
 	font-weight: 500;
 	letter-spacing: 2px;
-	padding-block-start: 10px;
+	padding-block-start: 10px
 }
 
-.section-title_content h2:before,
 .featured_works-header h2:before,
+.hero-carousel_item h5:before,
 .main_section_title_container h2:before,
-.hero-carousel_item h5:before {
+.section-title_content h2:before {
 	content: '';
 	position: absolute;
 	left: 0;
 	top: -32px;
 	width: 50px;
 	height: 1px;
-	background: rgba(255, 255, 255, .4);
+	background: rgba(255, 255, 255, .4)
 }
 
 .section-title_content h2:before {
-	background: var(--black-color);
+	background: var(--black-color)
 }
 
 .offer-box-wrap {
 	padding-block-end: 90px;
 	position: relative;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .offer-box-wrap:before {
@@ -5248,7 +6417,7 @@ blockquote p {
 	background: var(--gray-color);
 	border: 1px solid var(--border-color);
 	border-right: none;
-	z-index: 10;
+	z-index: 10
 }
 
 .offer-box {
@@ -5256,20 +6425,20 @@ blockquote p {
 	text-align: start;
 	border-left: 1px solid var(--border-color);
 	position: relative;
-	transition: all .4s linear;
+	transition: all .4s linear
 }
 
 .offer-box:hover {
-	background: #f9f9f9;
+	background: #f9f9f9
 }
 
 .offer-box_item {
 	position: relative;
-	z-index: 4;
+	z-index: 4
 }
 
 .offer_container .offer-box:first-child {
-	border: none;
+	border: none
 }
 
 .offer-box_num {
@@ -5285,7 +6454,7 @@ blockquote p {
 	border-left: 1px solid var(--border-color);
 	border-bottom: 1px solid var(--border-color);
 	background: var(--main-color);
-	z-index: 20;
+	z-index: 20
 }
 
 .offer-box i {
@@ -5298,7 +6467,7 @@ blockquote p {
 	line-height: 60px;
 	border: 1px solid var(--border-color);
 	text-align: center;
-	background: var(--main-color);
+	background: var(--main-color)
 }
 
 .offer-box h4 {
@@ -5306,7 +6475,7 @@ blockquote p {
 	font-weight: 800;
 	margin-block-end: 30px;
 	text-transform: capitalize;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .offer-box_btn {
@@ -5321,11 +6490,11 @@ blockquote p {
 	text-transform: capitalize;
 	z-index: 12;
 	font-weight: 600;
-	letter-spacing: 2px;
+	letter-spacing: 2px
 }
 
 .home_services_list {
-	border-top: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color)
 }
 
 .home_services_list .hidden-works-item {
@@ -5336,7 +6505,7 @@ blockquote p {
 	position: relative;
 	text-align: start;
 	padding: 0 130px;
-	box-sizing: content-box;
+	box-sizing: content-box
 }
 
 .home_services_list .home_services_list_item:last-child .hidden-works-item {
@@ -5352,13 +6521,13 @@ blockquote p {
 	border-left: 1px solid var(--border-color);
 	text-align: center;
 	font-size: 1.2em;
-	transition: all .2s linear;
+	transition: all .2s linear
 }
 
 .home_services_list a:hover:before {
 	background: var(--black-color);
 	content: '\f105';
-	color: #fff;
+	color: #fff
 }
 
 .home_services_list a span {
@@ -5369,12 +6538,12 @@ blockquote p {
 	height: 90px;
 	line-height: 90px;
 	border-right: 1px solid var(--border-color);
-	text-align: center;
+	text-align: center
 }
 
 .home_services_list a strong {
 	font-size: 1.4em;
-	font-weight: 600;
+	font-weight: 600
 }
 
 .home_services_btn_wrap {
@@ -5383,7 +6552,7 @@ blockquote p {
 	top: 1px;
 	bottom: 0;
 	width: 33.333333%;
-	background: var(--black-color);
+	background: var(--black-color)
 }
 
 .home_services_btn_wrap a {
@@ -5396,7 +6565,7 @@ blockquote p {
 	background: var(--black-color);
 	color: #fff;
 	text-transform: capitalize;
-	z-index: 2;
+	z-index: 2
 }
 
 .hsbw_bg {
@@ -5405,7 +6574,7 @@ blockquote p {
 	right: -90px;
 	bottom: 0;
 	top: 90px;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .hsbw_bg .overlay {
@@ -5420,7 +6589,7 @@ blockquote p {
 	width: 90px;
 	height: 90px;
 	background: var(--main-color);
-	z-index: 5;
+	z-index: 5
 }
 
 .hsbw_bg .arrow_dec_wrap {
@@ -5430,20 +6599,20 @@ blockquote p {
 	transform: rotate(180deg)
 }
 
-.st-dec,
-.fcc_dec {
+.fcc_dec,
+.st-dec {
 	position: absolute;
 	top: 0;
 	left: -90px;
 	width: 90px;
 	height: 90px;
 	background: var(--main-color);
-	z-index: 15;
+	z-index: 15
 }
 
-.st-dec2,
-.fcc_dec {
-	background: var(--black-color);
+.fcc_dec,
+.st-dec2 {
+	background: var(--black-color)
 }
 
 .st-dec3 {
@@ -5452,11 +6621,11 @@ blockquote p {
 	top: auto;
 	right: -89px;
 	border-left: 1px solid var(--border-color);
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
 .fcc_dec {
-	top: calc(100% - 90px);
+	top: calc(100% - 90px)
 }
 
 .services-wrapper {
@@ -5464,23 +6633,23 @@ blockquote p {
 	overflow: hidden;
 	padding: 90px;
 	position: relative;
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
-.services-wrapper:before,
-.order-wrap:after {
+.order-wrap:after,
+.services-wrapper:before {
 	content: '';
 	position: absolute;
 	left: 50%;
 	top: 0;
 	bottom: 0;
 	width: 1px;
-	background: var(--border-color);
+	background: var(--border-color)
 }
 
 .services-container {
 	position: relative;
-	margin-block-end: 45px;
+	margin-block-end: 45px
 }
 
 .services-container:before {
@@ -5490,7 +6659,7 @@ blockquote p {
 	left: -90px;
 	right: -90px;
 	height: 1px;
-	background: var(--border-color);
+	background: var(--border-color)
 }
 
 .services-modal-bg {
@@ -5499,7 +6668,7 @@ blockquote p {
 	left: 0;
 	width: 50%;
 	height: 100%;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .services-modal-bg .overlay {
@@ -5508,17 +6677,17 @@ blockquote p {
 
 .smc-rs .services-modal-bg {
 	left: auto;
-	right: 0;
+	right: 0
 }
 
 .services-modal_content {
 	position: relative;
 	overflow: hidden;
-	z-index: 2;
+	z-index: 2
 }
 
 .services-wrapper .services-container:last-child {
-	margin-block-end: 0;
+	margin-block-end: 0
 }
 
 .serv-post {
@@ -5527,34 +6696,34 @@ blockquote p {
 	padding: 70px 90px;
 	width: 50%;
 	background: var(--gray-color);
-	border: 1px solid var(--border-color);
+	border: 1px solid var(--border-color)
 }
 
 .smc-rs .serv-post {
-	float: left;
+	float: left
 }
 
 .serv-title {
-	font-size: 2.0em;
+	font-size: 2em;
 	font-weight: 800;
 	text-align: start;
 	padding-block-end: 50px;
 	text-transform: capitalize;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .ser-list {
 	overflow: hidden;
 	margin-block-start: 30px;
 	border-top: 1px solid var(--border-color);
-	padding-block-start: 30px;
+	padding-block-start: 30px
 }
 
 .ser-list li {
 	float: left;
 	margin-inline-end: 30px;
 	text-transform: capitalize;
-	font-weight: 800;
+	font-weight: 800
 }
 
 .serv_price {
@@ -5566,7 +6735,7 @@ blockquote p {
 	background: var(--black-color);
 	margin-block-start: 50px;
 	letter-spacing: 2px;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .serv_numder {
@@ -5581,32 +6750,31 @@ blockquote p {
 	font-weight: 600;
 	background: var(--main-color);
 	border-bottom: 1px solid var(--border-color);
-	border-left: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color)
 }
 
 .smc-rs .serv_numder {
-	border-left: none;
+	border-left: none
 }
 
-/*------  team------------------------------------------------------*/
 .fixed-bar-content {
 	border-top: 1px solid var(--border-color);
 	position: relative;
 	margin-block-start: 90px;
-	padding: 0 0 90px;
+	padding: 0 0 90px
 }
 
 .no-dec_fbcon {
 	border-top: 1px solid var(--border-color);
-	border-right: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color)
 }
 
 .grid-column-sb {
-	position: relative;
+	position: relative
 }
 
-.grid-column-sb_dec:before,
-.grid-column-sb_dec:after {
+.grid-column-sb_dec:after,
+.grid-column-sb_dec:before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -5614,18 +6782,18 @@ blockquote p {
 	left: 0;
 	height: 90px;
 	background: var(--main-color);
-	border-top: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color)
 }
 
 .grid-column-sb_dec:after {
 	bottom: auto;
 	top: 0;
-	border: none;
+	border: none
 }
 
-.grid-column-sb_dec2:before,
-.grid-column-sb_dec2:after {
-	background: var(--gray-color);
+.grid-column-sb_dec2:after,
+.grid-column-sb_dec2:before {
+	background: var(--gray-color)
 }
 
 .grid-column-sb_dec_item {
@@ -5635,18 +6803,18 @@ blockquote p {
 	bottom: 90px;
 	width: 1px;
 	background: var(--border-color);
-	z-index: 1;
+	z-index: 1
 }
 
 .fixed-bar_item_container {
-	position: relative;
+	position: relative
 }
 
 .fixed-bar_item {
 	background: var(--main-color);
 	position: relative;
 	z-index: 10;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .fixed-bar_item_btn {
@@ -5662,12 +6830,12 @@ blockquote p {
 	text-transform: capitalize;
 	font-weight: 600;
 	color: #fff;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .fixed-bar_item_btn {
 	padding: 0 90px 0 50px;
-	text-align: start;
+	text-align: start
 }
 
 .fixed-bar_item_btn i {
@@ -5679,17 +6847,17 @@ blockquote p {
 	line-height: 90px;
 	background: var(--black-color2);
 	text-align: center;
-	border-left: 1px solid var(--border-color2);
+	border-left: 1px solid var(--border-color2)
 }
 
 .fixed-bar_item_btn i {
-	border-color: var(--border-color2);
+	border-color: var(--border-color2)
 }
 
 .awwards-list,
 .process-list {
 	text-align: start;
-	margin-block-start: 50px;
+	margin-block-start: 50px
 }
 
 .about_row_hero .awwards-list,
@@ -5697,11 +6865,11 @@ blockquote p {
 	margin-block-start: 30px;
 	padding: 30px 0;
 	border-top: 1px solid var(--border-color);
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
 .about_row_hero .process-list {
-	padding: 50px 0 20px;
+	padding: 50px 0 20px
 }
 
 .awwards-list h6,
@@ -5710,13 +6878,13 @@ blockquote p {
 	margin-block-end: 20px;
 	font-weight: 800;
 	text-transform: capitalize;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .awwards-list ul,
 .process-list ul {
 	display: block;
-	overflow: hidden;
+	overflow: hidden
 }
 
 .awwards-list li,
@@ -5727,8 +6895,8 @@ blockquote p {
 	padding: 13px 0;
 	text-transform: capitalize;
 	font-weight: 400;
-	letter-spacing: 0.1rem;
-	font-size: 1.3rem;
+	letter-spacing: .1rem;
+	font-size: 1.3rem
 }
 
 .awwards-list li span {
@@ -5736,13 +6904,13 @@ blockquote p {
 	color: #666;
 	min-width: 100px;
 	display: table;
-	font-family: var(--main-font);
+	font-family: var(--main-font)
 }
 
 .process-list li {
 	position: relative;
 	overflow: hidden;
-	padding-inline-end: 30px;
+	padding-inline-end: 30px
 }
 
 .process-list li span {
@@ -5752,7 +6920,7 @@ blockquote p {
 	border: 1px solid var(--border-color);
 	background: var(--main-color);
 	position: relative;
-	z-index: 2;
+	z-index: 2
 }
 
 .process-list li:before {
@@ -5763,33 +6931,32 @@ blockquote p {
 	height: 1px;
 	background: var(--border-color);
 	top: 50%;
-	z-index: 1;
+	z-index: 1
 }
 
 .process-list li:last-child:before {
 	display: none
 }
 
-/*------  contact------------------------------------------------------*/
 .contacts-content {
 	position: relative;
 	z-index: 2;
 	background: var(--main-color);
-	border-top: 1px solid var(--border-color);
+	border-top: 1px solid var(--border-color)
 }
 
 .contacts_wrap {
 	position: relative;
 	display: grid;
 	grid-template-columns: 66.666666% 33.333333%;
-	padding-block-start: 90px;
+	padding-block-start: 90px
 }
 
 .contacts_title_wrap {
 	position: relative;
 	border-left: 1px solid var(--border-color);
 	border-top: 1px solid var(--border-color);
-	box-sizing: border-box;
+	box-sizing: border-box
 }
 
 .contacts_title_wrap:before,
@@ -5800,7 +6967,7 @@ blockquote p {
 	top: 0;
 	bottom: 0;
 	width: 1px;
-	background: var(--border-color);
+	background: var(--border-color)
 }
 
 .contacts_title_wrap:after {
@@ -5810,14 +6977,14 @@ blockquote p {
 	top: -90px;
 	height: 90px;
 	width: 100%;
-	border-right: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color)
 }
 
 .contacts_title {
 	padding: 60px 50px;
 	background: var(--main-color);
 	position: relative;
-	z-index: 2;
+	z-index: 2
 }
 
 .contacts_title_wrap h4 {
@@ -5827,34 +6994,34 @@ blockquote p {
 	text-align: start;
 	font-weight: 800;
 	text-transform: capitalize;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .contact-form .comments-title {
 	margin-block-end: 0;
 	border: none;
-	font-size: 1.4em;
+	font-size: 1.4em
 }
 
 .map-wrapper {
 	height: 546px;
 	overflow: hidden;
-	position: relative;
+	position: relative
 }
 
 .map_container {
-	position: relative;
+	position: relative
 }
 
 .cont_num {
 	text-align: start;
 	padding-block-end: 20px;
 	font-size: 1.3em;
-	font-weight: 600;
+	font-weight: 600
 }
 
 .contacts-wrap {
-	position: relative;
+	position: relative
 }
 
 .contact-item {
@@ -5863,15 +7030,15 @@ blockquote p {
 	position: relative;
 	background: var(--main-color);
 	border-bottom: 1px solid var(--border-color);
-	border-left: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color)
 }
 
 .contact-item:hover {
-	background: var(--gray-color);
+	background: var(--gray-color)
 }
 
 .contacts-wrap .contact-item:first-child {
-	border-left: none;
+	border-left: none
 }
 
 .contact-item:before {
@@ -5882,19 +7049,19 @@ blockquote p {
 	width: 50px;
 	height: 50px;
 	border-left: 1px solid var(--border-color);
-	border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color)
 }
 
 .contact-form {
 	border-top: 1px solid var(--border-color);
 	position: relative;
-	z-index: 3;
+	z-index: 3
 }
 
+.contact-form button,
 .contact-form input,
-.contact-form textarea,
-.contact-form button {
-	width: 100%;
+.contact-form textarea {
+	width: 100%
 }
 
 .contact-form .custom-form input:first-child {
@@ -5903,15 +7070,14 @@ blockquote p {
 
 .contact-form textarea {
 	padding: 35px 50px 20px 50px;
-	height: 192px;
+	height: 192px
 }
 
-.contact-item span,
-.contact-item a {
+.contact-item a,
+.contact-item span {
 	text-align: start;
-
 	font-weight: 800;
-	text-transform: capitalize;
+	text-transform: capitalize
 }
 
 .contact-item a {
@@ -5920,13 +7086,13 @@ blockquote p {
 	font-size: 1.2em;
 	text-transform: capitalize;
 	font-weight: 800;
-	line-height: 1px;
+	line-height: 1px
 }
 
 .contact-item span {
 	color: #666;
 	display: block;
-	width: 100%;
+	width: 100%
 }
 
 #message {
@@ -5939,35 +7105,35 @@ blockquote p {
 	font-weight: 500;
 	font-size: 1.1em;
 	text-align: start;
-	background: var(--black-color);
+	background: var(--black-color)
 }
 
-#message p,
-#message {
-	color: #fff;
+#message,
+#message p {
+	color: #fff
 }
 
 #message p strong {
-	color: aqua
+	color: #0ff
 }
 
 .main-social_wrap {
 	overflow: hidden;
 	height: 90px;
-	line-height: 90px;
+	line-height: 90px
 }
 
 .main-social li {
 	display: inline-block;
 	border-right: 1px solid var(--border-color);
-	font-size: 1.0em;
+	font-size: 1em;
 	text-transform: capitalize;
 	font-weight: 800;
-	width: 189px;
+	width: 189px
 }
 
 .main-social li:first-child {
-	border-left: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color)
 }
 
 .gallery-filter_btn {
@@ -5978,7 +7144,7 @@ blockquote p {
 	position: relative;
 	top: 50%;
 	z-index: 10;
-	transform: translateY(-50%);
+	transform: translateY(-50%)
 }
 
 .error-wrap h2 {
@@ -5988,73 +7154,72 @@ blockquote p {
 	letter-spacing: 20px;
 	height: 1px;
 	margin-block-end: 180px;
-	font-family: var(--second-font);
+	font-family: var(--second-font)
 }
 
 .error-wrap p {
 	text-align: center;
 	color: #fff;
-	margin-block-end: 20px;
+	margin-block-end: 20px
 }
 
 .nav-button_container {
-	display: none;
+	display: none
 }
 
-/*-- Responsive --*/
 @media only screen and (max-width: 1600px) {
 	.logo-holder {
-		width: 200px;
+		width: 200px
 	}
 
 	.header-contacts {
 		border-left: none;
 		padding-inline-start: 0;
-		margin-inline-end: 30px;
+		margin-inline-end: 30px
 	}
 
 	.nav-holder nav {
-		padding: 0px 60px;
+		padding: 0 60px
 	}
 
 	.header-contacts li {
 		margin-inline-start: 10px;
-		letter-spacing: 0;
+		letter-spacing: 0
 	}
 
 	.header-contacts:before {
-		display: none;
+		display: none
 	}
 
 	.nav-holder nav li a {
-		padding: 0 10px;
+		padding: 0 10px
 	}
 
 	.column-filters-wrap {
-		width: 350px;
+		width: 350px
 	}
 
 	.fw_gic2 {
-		padding: 0 0 0 350px;
+		padding: 0 0 0 350px
 	}
 
 	.pl-spinner {
-		font-size: 4.0em;
+		font-size: 4em
 	}
 }
 
 @media only screen and (max-height: 1020px) {
 	.aside-social {
-		padding: 30px 0;
+		padding: 30px 0
 	}
 
 	.progress-bar-wrap {
-		height: 260px;
+		height: 260px
 	}
 
 	.progress-bar-container {
 		top: 30px;
-		bottom: 30px;
+		bottom: 30px
 	}
 }
 
@@ -6066,7 +7231,7 @@ blockquote p {
 		top: 0;
 		right: 0;
 		border-left: 1px solid var(--border-color2);
-		display: block;
+		display: block
 	}
 
 	.nav-button {
@@ -6076,7 +7241,7 @@ blockquote p {
 		left: 50%;
 		cursor: pointer;
 		top: 50%;
-		margin: -7px 0 0 -14px;
+		margin: -7px 0 0 -14px
 	}
 
 	.nav-button span {
@@ -6088,25 +7253,25 @@ blockquote p {
 		position: relative;
 		overflow: hidden;
 		z-index: 2;
-		transition: all 0.3s ease-in;
-		transform: rotate(0deg);
+		transition: all .3s ease-in;
+		transform: rotate(0);
 		top: 0;
-		left: 0;
+		left: 0
 	}
 
-	.nav-button .ncs,
-	.nav-button .nbs {
-		transition: all 0.2s ease-in;
+	.nav-button .nbs,
+	.nav-button .ncs {
+		transition: all .2s ease-in
 	}
 
 	.nav-button .ncs {
-		float: right;
+		float: right
 	}
 
 	.nav-button.cmenu .nbs {
 		transform: rotate(-45deg);
 		top: -8px;
-		transition-delay: 0.1s;
+		transition-delay: .1s
 	}
 
 	.nav-button.cmenu .ncs {
@@ -6115,7 +7280,7 @@ blockquote p {
 
 	.nav-button.cmenu .nos {
 		transform: rotate(45deg);
-		top: 1px;
+		top: 1px
 	}
 
 	.main-menu {
@@ -6130,13 +7295,13 @@ blockquote p {
 		opacity: 0;
 		transition: all .4s ease-in-out;
 		border-left: 1px solid var(--border-color2);
-		border-bottom: 1px solid var(--border-color2);
+		border-bottom: 1px solid var(--border-color2)
 	}
 
 	.vismobmenu {
 		opacity: 1;
 		right: 0;
-		visibility: visible;
+		visibility: visible
 	}
 
 	.menusb {
@@ -6144,14 +7309,14 @@ blockquote p {
 		float: left;
 		position: relative;
 		width: 100%;
-		overflow: hidden;
+		overflow: hidden
 	}
 
 	.main-menu .menusb ul {
 		display: block;
 		float: left;
 		position: relative;
-		width: 100%;
+		width: 100%
 	}
 
 	.menusb li {
@@ -6160,13 +7325,13 @@ blockquote p {
 		width: 100%;
 		position: relative;
 		overflow: hidden;
-		padding: 0 20px;
+		padding: 0 20px
 	}
 
 	.menusb li i {
 		position: absolute;
 		right: 18px;
-		top: 12px;
+		top: 12px
 	}
 
 	.menusb li i:before {
@@ -6183,17 +7348,17 @@ blockquote p {
 		font-size: 12px;
 		color: #fff;
 		line-height: 20px;
-		text-align: start;
+		text-align: start
 	}
 
 	.menusb a.back {
-		padding-inline-start: 24px;
+		padding-inline-start: 24px
 	}
 
 	.menusb a.back:before {
 		font-family: Font Awesome\ 5 Pro;
 		content: "\f177";
-		font-size: 14px;
+		font-size: 14px
 	}
 
 	.main-menu nav ul {
@@ -6201,15 +7366,15 @@ blockquote p {
 	}
 
 	.header-contacts {
-		margin-inline-end: 120px;
+		margin-inline-end: 120px
 	}
 
 	.fixed-filters-nav .inline-gallery-filters {
-		padding: 0 40px;
+		padding: 0 40px
 	}
 
 	.gallery-items.three_columns .gallery-item {
-		width: 50%;
+		width: 50%
 	}
 }
 
@@ -6218,18 +7383,18 @@ blockquote p {
 	.content-holder,
 	.main-footer,
 	.page-load {
-		left: 0;
+		left: 0
 	}
 
 	.pl-spinner {
-		font-size: 3.5em;
+		font-size: 3.5em
 	}
 
 	.share-button-wrap {
 		bottom: auto;
 		left: auto;
 		right: 0;
-		top: 0;
+		top: 0
 	}
 
 	.share-wrapper {
@@ -6238,262 +7403,262 @@ blockquote p {
 		width: 300px;
 		top: 90px;
 		right: 0;
-		border-left: 1px solid rgba(255, 255, 255, 0.2);
+		border-left: 1px solid rgba(255, 255, 255, .2)
 	}
 
 	.nav-button_container {
-		right: 90px;
-		border-right: 1px solid var(--border-color2);
+		right: 0;
+		border-right: 1px solid var(--border-color2)
 	}
 
-	.header-contacts,
+	.about_row_hero .block_text:after,
+	.about_row_hero .block_text:before,
+	.adw_vs,
 	.aside-column,
+	.block_img,
+	.contitemaside:before,
+	.element,
+	.featured_works-header_dec,
+	.footer-content-header:before,
+	.footer-inner:before,
+	.footer-inner_item .arrow_dec_wrap,
+	.fw_pag_dec:after,
+	.grid-column-content_dec2:after,
+	.grid-column-content_dec:before,
+	.grid-column-sb_dec:after,
+	.grid-column-sb_dec:before,
+	.hc_counter,
+	.header-contacts,
 	.height-emulator,
-	.main_section_title_container:before,
-	.inline-facts:before,
+	.hero-con-aside,
+	.hero-con-aside_dec2,
+	.hero_section_content:after,
+	.hero_section_content:before,
+	.hs2:after,
+	.hs_btn_wrap_preview,
 	.inline-facts-container:before,
+	.inline-facts:before,
+	.main-header:after,
+	.main-header:before,
+	.main_section_title_container .arrow_dec_wrap,
+	.main_section_title_container:before,
+	.main_section_title_container_dec,
+	.share-button_title,
+	.single-video_con_dec:after,
+	.single-video_con_dec:before,
+	.st_dec:after,
 	.st_dec:before,
 	.st_dec_item,
-	.st_dec:after,
-	.featured_works-header_dec,
-	.hero-con-aside,
-	.main-header:before,
-	.main-header:after,
-	.hero-con-aside_dec2,
-	.hero_section_content:before,
-	.hero_section_content:after,
-	.hs2:after,
-	.video_section_wrap_dec,
 	.video_section_wrap:before,
-	.video_section_wrap_dec:before,
-	.adw_vs,
-	.main_section_title_container_dec,
-	.grid-column-content_dec:before,
-	.grid-column-content_dec2:after,
-	.fw_pag_dec:after,
-	.main_section_title_container .arrow_dec_wrap,
-	.single-video_con_dec:before,
-	.single-video_con_dec:after,
-	.contitemaside:before,
-	.about_row_hero .block_text:before,
-	.about_row_hero .block_text:after,
-	.block_img,
-	.grid-column-sb_dec:before,
-	.grid-column-sb_dec:after,
-	.footer-inner:before,
-	.share-button_title,
-	.footer-inner_item .arrow_dec_wrap,
-	.hc_counter,
-	.hs_btn_wrap_preview,
-	.element,
-	.footer-content-header:before {
-		display: none;
+	.video_section_wrap_dec,
+	.video_section_wrap_dec:before {
+		display: none
 	}
 
 	.bg-wrap {
 		right: 0;
-		min-width: 100%;
+		min-width: 100%
 	}
 
 	.container,
+	.hero-promo-wrap,
+	.hero-slider-wrapper,
+	.hero_section_content,
+	.home_services_btn_wrap,
+	.offer-box_btn,
+	.section-title_content,
 	.sub-footer,
 	.testimonilas-carousel,
-	.home_services_btn_wrap,
-	.section-title_content,
-	.hero-slider-wrapper,
-	.hero-promo-wrap,
-	.video_section_wrap,
-	.hero_section_content,
-	.offer-box_btn {
-		width: 100%;
+	.video_section_wrap {
+		width: 100%
 	}
 
 	.section-title_content {
-		padding: 120px 40px 90px;
+		padding: 120px 40px 90px
 	}
 
 	.main_section_title_container {
-		padding: 120px 40px;
+		padding: 120px 40px
 	}
 
 	.featured_works-header {
-		padding: 120px 40px 100px 40px;
+		padding: 120px 40px 100px 40px
 	}
 
 	.testi-slider-pagination_wrap {
 		position: relative;
 		padding: 0 50px;
-		margin-inline-end: 20px;
+		margin-inline-end: 20px
 	}
 
 	.hc-pag_wrap {
-		margin: 0 0 0 30px;
+		margin: 0 0 0 30px
 	}
 
+	.contact-item,
+	.contacts_wrap,
 	.facts-title-wrap,
-	.inline-facts-container,
+	.footer-inner .grid-column-container,
+	.gallery-filter_btn,
 	.grid-column-container,
 	.home_services_btn_wrap,
 	.home_services_btn_wrap a,
-	.footer-inner .grid-column-container,
+	.inline-facts-container,
+	.team-header-wrap {
+		display: block
+	}
+
+	.footer-social,
+	.main-footer {
+		position: relative
+	}
+
+	.about_row_hero .block_text,
 	.contacts_wrap,
-	.contact-item,
-	.team-header-wrap,
-	.gallery-filter_btn {
-		display: block;
-	}
-
-	.main-footer,
-	.footer-social {
-		position: relative;
-	}
-
+	.contitemaside,
 	.footer-box,
 	.footer-social,
 	.grid-column-content,
-	.team-header,
-	.contitemaside,
-	.no-dec_fbcon .fixed-bar-content,
-	.about_row_hero .block_text,
 	.map_container,
-	.contacts_wrap {
-		padding: 0;
+	.no-dec_fbcon .fixed-bar-content,
+	.team-header {
+		padding: 0
 	}
 
 	.footer-social {
 		bottom: 0;
 		padding: 0 40px;
 		border: none;
-		margin-block-start: -80px;
+		margin-block-start: -80px
 	}
 
-	.footer-contacts,
 	.footer-about,
+	.footer-contacts,
 	.footer-content-header {
-		margin-block-start: 0;
+		margin-block-start: 0
 	}
 
 	.subcribe-form {
-		margin-block-start: 110px;
+		margin-block-start: 110px
 	}
 
 	.post-items {
-		margin-block-start: 90px;
+		margin-block-start: 90px
 	}
 
 	.single-slider-wrap {
-		margin-block-start: 0;
+		margin-block-start: 0
 	}
 
 	.footer-box {
 		border-top: 1px solid var(--border-color2);
-		padding: 70px 40px;
+		padding: 70px 40px
 	}
 
 	.subcribe-form {
-		padding-block-end: 90px;
+		padding-block-end: 90px
 	}
 
 	.footer-content-header {
-		margin-block-end: 30px;
+		margin-block-end: 30px
 	}
 
-	.inline-facts-wrap,
-	.about_row_hero .block_text {
+	.about_row_hero .block_text,
+	.inline-facts-wrap {
 		border-left: none;
 		margin-block-end: 0
 	}
 
 	.inline-facts {
 		padding: 0 0 0 50px;
-		display: table;
+		display: table
 	}
 
 	.facts-title h2,
+	.featured_works-header h2,
 	.main_section_title_container h2,
-	.section-title_content h2,
-	.featured_works-header h2 {
+	.section-title_content h2 {
 		font-size: 2.4em;
-		line-height: 44px;
+		line-height: 44px
 	}
 
 	.featured_works-header h4 {
-		margin-block-start: 14px;
+		margin-block-start: 14px
 	}
 
 	.block_text h2 {
 		line-height: 40px;
-		font-size: 2.8em;
+		font-size: 2.8em
 	}
 
 	.inline-facts:after {
-		left: 0;
+		left: 0
 	}
 
-	.home_services_btn_wrap,
-	.home_services_btn_wrap a,
 	.hero-slider-controls,
 	.hero_section_content,
+	.home_services_btn_wrap,
+	.home_services_btn_wrap a,
 	.post-header {
-		position: relative;
+		position: relative
 	}
 
 	.home_services_btn_wrap a {
 		text-align: start;
-		padding-inline-start: 130px;
+		padding-inline-start: 130px
 	}
 
-	.home_services_btn_wrap a,
-	.home_services_btn_wrap,
-	.border-box_item,
-	.offer-box,
-	.section-title_content,
 	.about_row_hero .block_text,
-	.video_section_wrap,
+	.border-box_item,
+	.contitemaside,
 	.grid-column-content,
-	.single-video_con_dec,
+	.home_services_btn_wrap,
+	.home_services_btn_wrap a,
 	.inline-gallery-filters a,
 	.inline-gallery-filters a.gallery-filter-active,
-	.contitemaside,
+	.load-more-holder,
 	.no-dec_fbcon,
 	.no-dec_fbcon .fixed-bar-content,
-	.load-more-holder {
-		border: none;
-	}
-
 	.offer-box,
-	.blog-search-wrap {
-		border-top: 1px solid var(--border-color);
+	.section-title_content,
+	.single-video_con_dec,
+	.video_section_wrap {
+		border: none
 	}
 
-	.header-inner,
-	.contact-item {
-		border-bottom: 1px solid var(--border-color);
+	.blog-search-wrap,
+	.offer-box {
+		border-top: 1px solid var(--border-color)
+	}
+
+	.contact-item,
+	.header-inner {
+		border-bottom: 1px solid var(--border-color)
 	}
 
 	.half-carousel-item {
-		height: 400px;
+		height: 400px
 	}
 
 	.hero-slider-controls,
 	.hero_section_content {
-		right: 0;
+		right: 0
 	}
 
 	.hero-slider-wrapper {
-		padding: 0 40px;
+		padding: 0 40px
 	}
 
 	.hero-carousel_item h2,
 	.hero_section_content h2 {
-		font-size: 3.0em;
-		line-height: 60px;
+		font-size: 3em;
+		line-height: 60px
 	}
 
 	.hero-promo-btn {
 		float: left;
 		text-align: start;
-		padding-inline-start: 90px;
+		padding-inline-start: 90px
 	}
 
 	.hero-promo-btn i {
@@ -6503,49 +7668,49 @@ blockquote p {
 	.hero_section_content {
 		top: 0;
 		background: rgba(0, 0, 0, .2);
-		padding: 120px 90px 210px;
+		padding: 120px 90px 210px
 	}
 
 	.hs2 {
-		height: auto;
+		height: auto
 	}
 
 	.about_row,
-	.team-header-wrap,
 	.inline-facts-wrap,
-	.offer-box {
-		padding: 40px;
+	.offer-box,
+	.team-header-wrap {
+		padding: 40px
 	}
 
 	.block_img {
-		margin-block-start: 40px;
+		margin-block-start: 40px
 	}
 
 	.team-header {
-		margin-block-start: 20px;
+		margin-block-start: 20px
 	}
 
 	.video_section_wrap {
-		padding: 120px 40px;
+		padding: 120px 40px
 	}
 
 	.fixed-bar-content {
 		margin-block-start: 0;
-		padding: 0;
+		padding: 0
 	}
 
 	.custom-form button {
-		background: var(--black-color2);
+		background: var(--black-color2)
 	}
 
 	.contact-item {
-		padding: 30px 40px;
+		padding: 30px 40px
 	}
 
 	.post-item_content {
 		padding: 30px 40px;
 		border-left: 1px solid var(--border-color);
-		border-right: 1px solid var(--border-color);
+		border-right: 1px solid var(--border-color)
 	}
 
 	.post-item {
@@ -6553,41 +7718,41 @@ blockquote p {
 	}
 
 	.post-wrap .post-item:last-child {
-		margin-block-end: 50px;
+		margin-block-end: 50px
 	}
 
-	.post-item_content h3,
-	.content_box_item h3 {
-		font-size: 2.0em;
+	.content_box_item h3,
+	.post-item_content h3 {
+		font-size: 2em
 	}
 
 	.post-wrap {
-		border-top: none;
+		border-top: none
 	}
 
 	.hc_controls-wrap_container {
-		height: 90px;
+		height: 90px
 	}
 
-	.section-title_content:before,
-	.featured_works-header:before {
-		right: 0;
+	.featured_works-header:before,
+	.section-title_content:before {
+		right: 0
 	}
 
 	.single-hci {
 		padding: 50px;
 		border: none;
 		width: 100%;
-		-webkit-backdrop-filter: blur(0px);
-		backdrop-filter: blur(0px);
+		-webkit-backdrop-filter: blur(0);
+		backdrop-filter: blur(0)
 	}
 
 	.fixed-filters-nav {
-		left: 0;
+		left: 0
 	}
 
 	.fixed-inline-filter_counter {
-		width: 180px;
+		width: 180px
 	}
 
 	.gallery-filter_btn {
@@ -6602,18 +7767,18 @@ blockquote p {
 		text-align: start;
 		text-transform: capitalize;
 		cursor: pointer;
-		z-index: 3;
+		z-index: 3
 	}
 
 	.inline-filters-nav .gallery-filter_btn {
 		width: calc(100% - 180px);
 		left: 0;
-		padding-inline-start: 30px;
+		padding-inline-start: 30px
 	}
 
 	.inline-filters-nav {
 		position: relative;
-		z-index: 100;
+		z-index: 100
 	}
 
 	.fixed-filters-nav .inline-gallery-filters,
@@ -6629,53 +7794,53 @@ blockquote p {
 		line-height: inherit;
 		border-top: 1px solid var(--border-color2);
 		display: none;
-		margin-inline-start: 0;
+		margin-inline-start: 0
 	}
 
 	.inline-filters-nav .inline-gallery-filters {
 		bottom: auto;
-		top: 100%;
+		top: 100%
 	}
 
-	.inline-gallery-filters a,
-	.inline-filters-nav .inline-gallery-filters a {
+	.inline-filters-nav .inline-gallery-filters a,
+	.inline-gallery-filters a {
 		width: 100%;
 		background: var(--black-color);
 		padding: 10px 0;
 		color: #fff;
 		text-align: start;
-		position: relative;
+		position: relative
 	}
 
 	.inline-gallery-filters a.gallery-filter-active {
 		opacity: .5;
-		background: none;
+		background: 0 0
 	}
 
 	.load-more-holder {
-		height: 120px;
+		height: 120px
 	}
 
 	.services-modal-bg {
 		position: relative;
-		height: 350px;
+		height: 350px
 	}
 
 	.serv-post,
 	.services-modal-bg {
 		float: left;
-		width: 100%;
+		width: 100%
 	}
 
 	.services-modal-wrap_item {
 		top: 0;
 		transform: translateY(0);
-		margin-block-start: 140px;
+		margin-block-start: 140px
 	}
 
 	.fw_gic2,
 	.fw_gic3 {
-		padding: 0;
+		padding: 0
 	}
 
 	.main-social li {
@@ -6683,7 +7848,7 @@ blockquote p {
 		border: none;
 		display: inline-block;
 		margin: 0 10px;
-		width: auto;
+		width: auto
 	}
 
 	.main-social li:first-child {
@@ -6695,33 +7860,33 @@ blockquote p {
 		width: 100%;
 		margin: 0;
 		height: 90px;
-		line-height: 90px;
+		line-height: 90px
 	}
 
 	.pagination a {
 		width: auto;
 		padding: 0 10px;
 		display: inline-block;
-		float: none;
+		float: none
 	}
 
 	.blog-search-wrap {
 		border: none;
-		margin: 90px 0 0;
+		margin: 90px 0 0
 	}
 
 	.content_box_item {
-		padding: 40px 30px;
+		padding: 40px 30px
 	}
 
 	.content,
 	section {
-		overflow: hidden;
+		overflow: hidden
 	}
 
 	.half-carousel,
 	.post-item {
-		width: 100%;
+		width: 100%
 	}
 
 	.hs_btn_wrap {
@@ -6729,20 +7894,20 @@ blockquote p {
 		width: 182px;
 		height: 90px;
 		margin-block-start: -90px;
-		border-left: 1px solid var(--border-color2);
+		border-left: 1px solid var(--border-color2)
 	}
 
 	.hs_btn_wrap .hs_btn:first-child {
 		border-bottom: none;
-		border-right: 1px solid var(--border-color2);
+		border-right: 1px solid var(--border-color2)
 	}
 
 	.st_dec2 .section-title_content {
-		padding: 210px 50px 50px;
+		padding: 210px 50px 50px
 	}
 
 	.order-wrap {
-		height: 90px;
+		height: 90px
 	}
 
 	.order-wrap_btn {
@@ -6751,65 +7916,65 @@ blockquote p {
 		width: 100%;
 		display: block;
 		top: 0;
-		margin-block-start: 0;
+		margin-block-start: 0
 	}
 
 	.column-filters-wrap {
 		width: 100%;
-		position: relative;
+		position: relative
 	}
 
 	.fw_gic2 {
-		padding: 0;
+		padding: 0
 	}
 
 	.column-filters-item .gallery-filters a {
 		padding: 0 30px;
 		height: 70px;
-		line-height: 70px;
+		line-height: 70px
 	}
 
 	.fw-carousel-wrap {
-		height: 50vh;
+		height: 50vh
 	}
 }
 
 @media only screen and (max-width: 768px) {
 	.half-carousel-item {
-		height: 350px;
+		height: 350px
 	}
 
-	.half-carousel .arrow_dec_wrap,
-	.post-opt,
-	.content-nav-media,
 	.cn_all,
+	.content-nav-media,
+	.fixed-filters-nav .scroll-down-wrap,
+	.fw-carousel-wrap .cbc_btn,
+	.fwcwh-mob-hidden,
+	.half-carousel .arrow_dec_wrap,
+	.header-contacts,
+	.header-page_title,
+	.header-page_title_onepage,
 	.nav-container:after,
 	.nav-decor,
-	.header-page_title,
-	.header-contacts,
-	.header-page_title_onepage,
-	.testi_carousel-controls:before,
-	.slide-progress-wrap,
+	.post-opt,
 	.process-list li:before,
-	.fixed-filters-nav .scroll-down-wrap,
-	.fwcwh-mob-hidden,
-	.fw-carousel-wrap .cbc_btn {
+	.slide-progress-wrap,
+	.testi_carousel-controls:before {
 		display: none
 	}
 
 	.gallery-filter_btn {
 		padding: 0 0 0 30px;
 		width: calc(100% - 180px);
-		left: 0;
+		left: 0
 	}
 
 	.hero_section_content {
-		padding: 120px 40px 210px;
+		padding: 120px 40px 210px
 	}
 
 	.content-nav_holder {
 		height: auto;
-		line-height: normal;
+		line-height: normal
 	}
 
 	.content-nav li {
@@ -6819,59 +7984,59 @@ blockquote p {
 	}
 
 	.content-nav li a.ln {
-		border-bottom: 1px solid var(--border-color2);
+		border-bottom: 1px solid var(--border-color2)
 	}
 
+	.content-nav li a,
 	.gallery-items.three_columns .gallery-item,
 	.gallery-items.three_columns .gallery-item.gallery-item-second,
-	.twocolumns_folio .gallery-item,
-	.pr-list ul li,
-	.content-nav li a,
+	.gallery-items.two_columns .gallery-item,
 	.hero-promo-btn,
 	.post-opt,
-	.gallery-items.two_columns .gallery-item {
+	.pr-list ul li,
+	.twocolumns_folio .gallery-item {
 		width: 100%
 	}
 
 	.services-modal-wrap_item {
-		margin-block-start: 90px;
+		margin-block-start: 90px
 	}
 
 	.team-item {
-		padding: 30px;
+		padding: 30px
 	}
 
 	.team-img {
-		height: 400px;
+		height: 400px
 	}
 
 	.team-info {
-		padding: 0 30px;
+		padding: 0 30px
 	}
 
 	.ti_close {
 		top: 36px;
-		right: 30px;
+		right: 30px
 	}
 
 	.hero_section_content {
-		padding: 120px 30px 180px;
+		padding: 120px 30px 180px
 	}
 
 	.hero_section_content h2 {
-		font-size: 3.0em;
+		font-size: 3em
 	}
 
+	.commentform.custom-form button,
 	.commentform.custom-form input,
-	.commentform.custom-form textarea,
-	.commentform.custom-form button {
+	.commentform.custom-form textarea {
 		padding: 0 30px;
-		width: 100%;
+		width: 100%
 	}
 
 	.commentform.custom-form textarea {
 		padding-block-start: 30px;
-		height: 180px;
+		height: 180px
 	}
 
 	.content-nav li a.ln,
@@ -6880,31 +8045,31 @@ blockquote p {
 	}
 
 	.content-nav li a.ln {
-		padding-inline-start: 100px;
+		padding-inline-start: 100px
 	}
 
 	.content-nav li a.rn {
 		text-align: start;
-		float: left;
+		float: left
 	}
 
 	.fixed-bar_item {
-		padding: 30px;
+		padding: 30px
 	}
 
 	.pr-list ul li {
 		text-align: start;
-		padding: 18px 0;
+		padding: 18px 0
 	}
 
 	.grid-column-content.no_padc {
-		padding: 0;
+		padding: 0
 	}
 
 	.contacts_title_wrap h4 {
 		padding-block-end: 10px;
 		margin-block-end: 10px;
-		font-size: 2.2em;
+		font-size: 2.2em
 	}
 
 	.to-top_btn {
@@ -6913,99 +8078,99 @@ blockquote p {
 		width: 100%;
 		text-align: start;
 		padding-inline-start: 50px;
-		border-left: none;
+		border-left: none
 	}
 
 	.half-carousel-content h3 {
-		font-size: 2.0em;
+		font-size: 2em
 	}
 
 	.half-carousel-content h3 a {
-		min-height: 40px;
+		min-height: 40px
 	}
 
 	.half-carousel-content {
-		padding: 0 20px 20px;
+		padding: 0 20px 20px
 	}
 
 	.half-carousel-item .grid-det_category {
 		left: 20px;
-		top: 20px;
+		top: 20px
 	}
 
 	.services-wrapper {
-		padding: 50px;
+		padding: 50px
 	}
 
 	.awwards-list li,
 	.ps-facts-item {
-		width: 50%;
+		width: 50%
 	}
 
 	.ps-facts-item {
 		border-left: none;
-		border-top: 1px solid var(--border-color);
+		border-top: 1px solid var(--border-color)
 	}
 
 	.process-list li {
 		width: 100%;
-		padding-inline-end: 0;
+		padding-inline-end: 0
 	}
 
 	.grid-det_link {
-		font-size: 1.0em;
+		font-size: 1em
 	}
 
 	#portfolio_horizontal_container,
 	.horizontal-grid-wrap {
 		float: left;
 		width: 100%;
-		position: relative;
+		position: relative
 	}
 
 	#portfolio_horizontal_container .portfolio_item,
 	#portfolio_horizontal_container .portfolio_item .grid-item-holder,
 	#portfolio_horizontal_container .portfolio_item .grid-item-holder img {
 		width: 100%;
-		height: auto !important;
+		height: auto !important
 	}
 
 	.horizontal-grid-container {
-		overflow: auto;
+		overflow: auto
 	}
 
-	.fw-carousel .swiper-container,
 	.fw-carousel,
+	.fw-carousel .swiper-container,
 	.fw-carousel-wrap {
-		height: auto !important;
+		height: auto !important
 	}
 
 	.fw-carousel-wrap {
 		height: auto;
-		margin-block-end: 0;
+		margin-block-end: 0
 	}
 
-	.fw-carousel .swiper-slide img,
-	.fw-carousel .swiper-slide {
+	.fw-carousel .swiper-slide,
+	.fw-carousel .swiper-slide img {
 		width: 100% !important;
 		height: auto !important;
-		display: block;
+		display: block
 	}
 
 	.fw-carousel .swiper-wrapper {
 		height: inherit !important;
-		display: block;
+		display: block
 	}
 
-	.fw-carousel .swiper-container,
 	.fw-carousel,
+	.fw-carousel .swiper-container,
 	.fw-carousel-wrap,
 	.no-mob-hidden {
-		height: auto !important;
+		height: auto !important
 	}
 
 	.fw-carousel .swiper-container {
-		position: relative;
+		position: relative
 	}
 
 	.show-info.show-info_act span {
@@ -7013,80 +8178,80 @@ blockquote p {
 	}
 
 	.tooltip-info {
-		padding: 50px 30px 50px;
+		padding: 50px 30px 50px
 	}
 
 	.hc-counter {
 		top: 0;
 		margin: -30px 0 0 0;
-		right: 30px;
+		right: 30px
 	}
 
 	.main-hero-carousel-title h3 {
 		font-size: 1.8em;
-		line-height: 40px;
+		line-height: 40px
 	}
 }
 
 @media only screen and (max-width: 540px) {
 	.nav-button-container {
-		width: calc(100% - 90px);
+		width: calc(100% - 90px)
 	}
 
 	.nav-button-wrap {
-		left: 30px;
+		left: 30px
 	}
 
 	.menu-button-text {
-		margin-inline-start: 15px;
+		margin-inline-start: 15px
 	}
 
 	.nav-wrapper {
-		right: 0;
+		right: 0
 	}
 
 	.nav-wrap {
-		padding: 70px 30px;
+		padding: 70px 30px
 	}
 
-	.testi-link,
-	.home_services_list a span,
-	.hc_controls-wrap_container .swiper-counter,
-	.preice-item .arrow_dec_wrap,
-	.comment-num,
-	.progress-indicator,
-	.comment-meta,
 	.comment-author i,
-	.commnet-text i {
-		display: none;
+	.comment-meta,
+	.comment-num,
+	.commnet-text i,
+	.hc_controls-wrap_container .swiper-counter,
+	.home_services_list a span,
+	.preice-item .arrow_dec_wrap,
+	.progress-indicator,
+	.testi-link {
+		display: none
 	}
 
 	.btn {
 		width: 100%;
 		padding: 0 40px;
-		text-align: start;
+		text-align: start
 	}
 
 	.hc_btn_wrap {
-		right: 10px;
+		right: 10px
 	}
 
 	.hero-slider-container {
-		padding: 90px 0 0 0;
+		padding: 90px 0 0 0
 	}
 
 	.hero-carousel_item h2 {
 		font-size: 2.8em;
-		line-height: 42px;
+		line-height: 42px
 	}
 
 	.hero-promo-btn {
-		padding-inline-start: 40px;
+		padding-inline-start: 40px
 	}
 
 	.about-img-hotifer {
 		position: relative;
-		width: 100%;
+		width: 100%
 	}
 
 	.toglle-header {
@@ -7096,7 +8261,7 @@ blockquote p {
 	}
 
 	.toglle-content {
-		padding: 40px;
+		padding: 40px
 	}
 
 	.toglle-header span {
@@ -7106,31 +8271,31 @@ blockquote p {
 		width: auto;
 		right: 40px;
 		border-left: none;
-		background: none;
+		background: 0 0
 	}
 
 	.ss-slider-cont {
 		width: 40px;
 		height: 40px;
 		line-height: 40px;
-		margin-block-start: -20px;
+		margin-block-start: -20px
 	}
 
 	.single-tagcloud {
 		background: var(--black-color);
-		padding: 35px 20px;
+		padding: 35px 20px
 	}
 
 	.comment-body {
-		padding-inline-start: 0;
+		padding-inline-start: 0
 	}
 
 	.comment-header {
-		padding: 0 10px 0 120px;
+		padding: 0 10px 0 120px
 	}
 
 	.commnet-text {
-		padding: 30px;
+		padding: 30px
 	}
 
 	.comment-author {
@@ -7138,95 +8303,95 @@ blockquote p {
 		top: 90px;
 		width: 100%;
 		height: 90px;
-		background: none;
+		background: 0 0
 	}
 
 	.comment-author img {
 		position: absolute;
 		left: 0;
-		top: -90px;
+		top: -90px
 	}
 
 	.single-tagcloud {
-		display: block;
+		display: block
 	}
 
 	.single-tagcloud_title {
 		display: block;
 		width: 100%;
 		text-align: center;
-		margin: 0 0 20px 0;
+		margin: 0 0 20px 0
 	}
 
 	.home_services_list .hidden-works-item {
-		padding: 0 40px;
+		padding: 0 40px
 	}
 
 	.post-item {
-		padding: 0;
+		padding: 0
 	}
 
 	.post-item_content,
 	.post-item_single .post-item_content {
-		padding: 40px;
+		padding: 40px
 	}
 
 	.post-item_content h3 {
-		font-size: 1.6em;
+		font-size: 1.6em
 	}
 
 	.comments-title,
-	.reply-title,
-	.commnets-wrap {
-		padding: 0 40px;
+	.commnets-wrap,
+	.reply-title {
+		padding: 0 40px
 	}
 
 	.comment_author {
-		font-size: 1.3em;
+		font-size: 1.3em
 	}
 
 	.commnet-content {
-		border-left: none;
+		border-left: none
 	}
 
 	.services-wrapper {
-		padding: 0;
+		padding: 0
 	}
 
 	.serv-post {
-		padding: 30px;
+		padding: 30px
 	}
 
 	.testimonilas-text {
-		padding: 50px 30px 90px;
+		padding: 50px 30px 90px
 	}
 
 	.awwards-list li,
 	.ps-facts-item {
-		width: 100%;
+		width: 100%
 	}
 
 	.main-social_wrap {
 		height: auto;
-		line-height: normal;
+		line-height: normal
 	}
 
 	.main-social_wrap li {
-		padding: 30px 0;
+		padding: 30px 0
 	}
 
 	.error-wrap h2 {
 		font-size: 8.7em;
 		letter-spacing: 2px;
-		margin-block-end: 140px;
+		margin-block-end: 140px
 	}
 
 	.pl-spinner {
-		font-size: 1.5em;
+		font-size: 1.5em
 	}
 
 	.logo-holder {
-		width: 150px;
+		width: max-content;
 	}
 }
 
@@ -7234,7 +8399,7 @@ blockquote p {
 	.bg {
 		background-attachment: scroll !important;
 		-webkit-background-size: cover;
-		background-position: center;
+		background-position: center
 	}
 }
 
@@ -7256,16 +8421,16 @@ section.img-ad {
 	opacity: 0;
 	visibility: hidden;
 	transform: translateY(20px);
-	transition: all 0.3s ease-in-out;
+	transition: all .3s ease-in-out
 }
 
 section.img-ad h3 {
 	font-size: 1rem;
-	padding: 3px;
+	padding: 3px
 }
 
 section.img-ad img {
 	object-fit: cover;
 	width: 100%;
-	height: 100%;
+	height: 100%
 }
