@@ -10,27 +10,43 @@
     <meta name="keywords" content="real estate, development, construction, property, Almira">
     <meta name="author" content="asksyntax.com">
 
-    <!-- Open Graph meta tags for social media sharing -->
     <meta property="og:title" content="Almira Development - Home">
     <meta property="og:description" content="Professional real estate development and construction services">
-    <meta property="og:image" content="images/og.jpg">
-    <meta property="og:image:width" content="1280">
-    <meta property="og:image:height" content="672">
-    <meta property="og:url" content="">
+    <meta property="og:image" content="images/og.webp">
+    <meta property="og:url" content="https://alaa-rassheed.github.io/almira/">
 
-    <!-- Twitter Card meta tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Almira Development - Home">
     <meta name="twitter:description" content="Professional real estate development and construction services">
-    <meta name="twitter:image" content="images/oge.jpg">
+    <meta name="twitter:image" content="images/og.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Saira:wght@400;600&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Saira:wght@400;600&display=swap"
+            rel="stylesheet">
+    </noscript>
 
     <title>Almira Development - Home</title>
-    <link type="text/css" rel="stylesheet" href="css/plugins.min.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <!-- Add Apple touch icon -->
-    <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link type="text/css" rel="stylesheet" href="css/plugins.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/fancybox.css" media="print" onload="this.media='all'">
+    <link type="text/css" rel="stylesheet" href="css/style.min.css">
+
+    <style>
+        body {
+            overflow: hidden;
+            font-family: 'Saira', Arial, sans-serif;
+        }
+
+        /* Critical CSS */
+    </style>
 </head>
+
 
 <body>
     <!-- loader -->
@@ -49,13 +65,13 @@
                 <div class="swiper-container full-height">
                     <div class="swiper-wrapper lightgallery">
                         <div class="swiper-slide">
-                            <div class="bg" data-bg="images/folio/24.jpg"></div>
+                            <div class="bg" data-bg="images/folio/24.webp"></div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="bg" data-bg="images/folio/26.jpg"></div>
+                            <div class="bg" data-bg="images/folio/26.webp"></div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="bg" data-bg="images/folio/27.jpg"></div>
+                            <div class="bg" data-bg="images/folio/27.webp"></div>
                         </div>
                     </div>
                 </div>
@@ -73,7 +89,11 @@
             <div class="container">
                 <div class="full-height">
                     <a href="index.html" class="logo-holder ajax">
-                        <img src="images/logo.png" alt="">
+                        <picture>
+                            <source srcset="images/logo.png" type="image/png">
+                            <img loading="lazy" src="images/logo.png" alt="">
+                        </picture>
+
                     </a>
                     <!--  navigation -->
                     <div class="nav-holder main-menu">
@@ -92,13 +112,13 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="javascript:;" class="ajax">Last News</a>
+                                    <a href="blogs.html" class="ajax">Last News</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:;" class="ajax">Previous Work</a>
+                                    <a href="portfolio.html" class="ajax">Previous Work</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:;" class="ajax">Contact us</a>
+                                    <a href="contact.html" class="ajax">Contact us</a>
                                 </li>
                             </ul>
                         </nav>
@@ -137,7 +157,7 @@
                                 <!-- swiper-slide-->
                                 <div class="swiper-slide">
                                     <div class="fslider-fw-item fl-wrap">
-                                        <div class="bg" data-bg="images/bg/16.jpg" data-swiper-parallax="20%"></div>
+                                        <div class="bg" data-bg="images/bg/16.webp" data-swiper-parallax="20%"></div>
                                         <div class="overlay"></div>
                                         <div class="hero-carousel_item">
                                             <div class="container">
@@ -158,7 +178,7 @@
                                 <!-- swiper-slide-->
                                 <div class="swiper-slide">
                                     <div class="fslider-fw-item fl-wrap">
-                                        <div class="bg" data-bg="images/bg/26.jpg" data-swiper-parallax="20%"></div>
+                                        <div class="bg" data-bg="images/bg/26.webp" data-swiper-parallax="20%"></div>
                                         <div class="overlay"></div>
                                         <div class="hero-carousel_item">
                                             <div class="container">
@@ -259,7 +279,7 @@
                                         <!-- block_img -->
                                         <div class="block_img block_img_fs">
                                             <div class="fs-wrapper">
-                                                <div class="bg" data-bg="images/bg/15.jpg"></div>
+                                                <div class="bg" data-bg="images/bg/15.webp"></div>
                                                 <div class="overlay"></div>
                                                 <div class="arrow_dec_wrap">
                                                     <div class="arrow_dec"></div>
@@ -305,7 +325,7 @@
                                                 <div class="swiper-slide">
                                                     <div class="half-carousel-item hov_zoom">
                                                         <div class="fs-wrapper">
-                                                            <div class="bg" data-bg="images/folio/5.jpg"></div>
+                                                            <div class="bg" data-bg="images/folio/5.webp"></div>
                                                             <div class="overlay"></div>
                                                         </div>
                                                         <div class="grid-det_category">
@@ -330,7 +350,7 @@
                                                 <div class="swiper-slide">
                                                     <div class="half-carousel-item hov_zoom">
                                                         <div class="fs-wrapper">
-                                                            <div class="bg" data-bg="images/folio/8.jpg"></div>
+                                                            <div class="bg" data-bg="images/folio/8.webp"></div>
                                                             <div class="overlay"></div>
                                                         </div>
                                                         <div class="grid-det_category">
@@ -393,7 +413,7 @@
                                     <div class="parallax-section_wrap">
                                         <div class="fs-wrapper">
                                             <div class="overlay"></div>
-                                            <div class="bg" data-bg="images/folio/1.jpg"></div>
+                                            <div class="bg" data-bg="images/folio/1.webp"></div>
                                         </div>
                                         <span class="ps-dec-line"></span>
                                     </div>
@@ -408,7 +428,13 @@
                                             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post-item">
                                                 <div class="post-media">
                                                     <a href="javascript:;" class="ajax">
-                                                        <img src="images/bg/1.webp" class="respimg" alt="">
+                                                        <picture>
+                                                            <source srcset="images/bg/1.webp" type="image/webp">
+                                                            <source srcset="images/bg/1.jpeg" type="image/jpeg">
+                                                            <img loading="lazy" src="images/bg/1.webp" class="respimg"
+                                                                alt="">
+                                                        </picture>
+
                                                         <div class="overlay"></div>
                                                         <span class="post-tooltip">Read more</span>
                                                     </a>
@@ -433,7 +459,13 @@
                                             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post-item">
                                                 <div class="post-media">
                                                     <a href="javascript:;" class="ajax">
-                                                        <img src="images/bg/26.jpg" class="respimg" alt="">
+                                                        <picture>
+                                                            <source srcset="images/bg/26.webp" type="image/webp">
+                                                            <source srcset="images/bg/26.jpeg" type="image/jpeg">
+                                                            <img loading="lazy" src="images/bg/26.webp" class="respimg"
+                                                                alt="">
+                                                        </picture>
+
                                                         <div class="overlay"></div>
                                                         <span class="post-tooltip">Read more</span>
                                                     </a>
@@ -458,7 +490,13 @@
                                             <div class="col-lg-4 col-md-6 col-sm-6 col-12 post-item">
                                                 <div class="post-media">
                                                     <a href="javascript:;" class="ajax">
-                                                        <img src="images/bg/16.jpg" class="respimg" alt="">
+                                                        <picture>
+                                                            <source srcset="images/bg/16.webp" type="image/webp">
+                                                            <source srcset="images/bg/16.jpeg" type="image/jpeg">
+                                                            <img loading="lazy" src="images/bg/16.webp" class="respimg"
+                                                                alt="">
+                                                        </picture>
+
                                                         <div class="overlay"></div>
                                                         <span class="post-tooltip">Read more</span>
                                                     </a>
@@ -501,7 +539,7 @@
                                 <div class="parallax-section_wrap">
                                     <div class="fs-wrapper">
                                         <div class="overlay"></div>
-                                        <div class="bg" data-bg="images/folio/5.jpg"></div>
+                                        <div class="bg" data-bg="images/folio/5.webp"></div>
                                     </div>
                                     <span class="ps-dec-line"></span>
                                 </div>
@@ -514,7 +552,12 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 post-item">
                                         <div class="post-media">
                                             <a href="javascript:;" class="ajax">
-                                                <img src="images/bg/1.webp" class="respimg" alt="">
+                                                <picture>
+                                                    <source srcset="images/bg/1.webp" type="image/webp">
+                                                    <source srcset="images/bg/1.jpeg" type="image/jpeg">
+                                                    <img loading="lazy" src="images/bg/1.webp" class="respimg" alt="">
+                                                </picture>
+
                                                 <div class="grid-det_category text-center">
                                                     <a href="javascript:;">18/11/2024 </a>
                                                 </div>
@@ -542,7 +585,11 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 post-item">
                                         <div class="post-media">
                                             <a href="javascript:;" class="ajax">
-                                                <img src="images/bg/26.jpg" class="respimg" alt="">
+                                                <picture>
+                                                    <source srcset="images/bg/26.webp" type="image/webp">
+                                                    <source srcset="images/bg/26.jpeg" type="image/jpeg">
+                                                    <img loading="lazy" src="images/bg/26.webp" class="respimg" alt="">
+                                                </picture>
                                                 <div class="grid-det_category text-center">
                                                     <a href="javascript:;">18/11/2024 </a>
                                                 </div>
@@ -570,7 +617,11 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 post-item">
                                         <div class="post-media">
                                             <a href="javascript:;" class="ajax">
-                                                <img src="images/bg/16.jpg" class="respimg" alt="">
+                                                <picture>
+                                                    <source srcset="images/bg/16.webp" type="image/webp">
+                                                    <source srcset="images/bg/16.jpeg" type="image/jpeg">
+                                                    <img loading="lazy" src="images/bg/16.webp" class="respimg" alt="">
+                                                </picture>
                                                 <div class="grid-det_category text-center">
                                                     <a href="javascript:;">18/11/2024 </a>
                                                 </div>
@@ -617,7 +668,7 @@
                                 <div class="parallax-section_wrap">
                                     <div class="fs-wrapper">
                                         <div class="overlay"></div>
-                                        <div class="bg" data-bg="images/folio/5.jpg"></div>
+                                        <div class="bg" data-bg="images/folio/5.webp"></div>
                                     </div>
                                     <span class="ps-dec-line"></span>
                                 </div>
@@ -630,7 +681,11 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 post-item">
                                         <div class="post-media">
                                             <a href="javascript:;" class="ajax">
-                                                <img src="images/bg/1.webp" class="respimg" alt="">
+                                                <picture>
+                                                    <source srcset="images/bg/1.webp" type="image/webp">
+                                                    <source srcset="images/bg/1.jpeg" type="image/jpeg">
+                                                    <img loading="lazy" src="images/bg/1.webp" class="respimg" alt="">
+                                                </picture>
                                                 <div class="overlay"></div>
                                                 <span class="post-tooltip">Read more</span>
                                             </a>
@@ -655,7 +710,11 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 post-item">
                                         <div class="post-media">
                                             <a href="javascript:;" class="ajax">
-                                                <img src="images/bg/26.jpg" class="respimg" alt="">
+                                                <picture>
+                                                    <source srcset="images/bg/26.webp" type="image/webp">
+                                                    <source srcset="images/bg/26.jpeg" type="image/jpeg">
+                                                    <img loading="lazy" src="images/bg/26.webp" class="respimg" alt="">
+                                                </picture>
                                                 <div class="overlay"></div>
                                                 <span class="post-tooltip">Read more</span>
                                             </a>
@@ -680,7 +739,11 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 post-item">
                                         <div class="post-media">
                                             <a href="javascript:;" class="ajax">
-                                                <img src="images/bg/16.jpg" class="respimg" alt="">
+                                                <picture>
+                                                    <source srcset="images/bg/16.webp" type="image/webp">
+                                                    <source srcset="images/bg/16.jpeg" type="image/jpeg">
+                                                    <img loading="lazy" src="images/bg/16.webp" class="respimg" alt="">
+                                                </picture>
                                                 <div class="overlay"></div>
                                                 <span class="post-tooltip">Read more</span>
                                             </a>
@@ -727,16 +790,27 @@
                                     <div class="half-carousel">
                                         <div class="swiper-container">
                                             <div class="swiper-wrapper">
-                                                <!--half-carousel-item   -->
+                                                <!--half-carousel-item-->
                                                 <div class="swiper-slide">
                                                     <div class="half-carousel-item hov_zoom">
                                                         <div class="fs-wrapper">
-                                                            <div class="bg" data-bg="images/folio/5.jpg"></div>
+                                                            <div class="bg" data-bg="images/folio/5.webp"></div>
                                                             <div class="overlay"></div>
                                                         </div>
-                                                        <a href="images/folio/5.jpg"
-                                                            class="box-media-zoom  single-popup-image"><i
-                                                                class="fal fa-plus"></i></a>
+                                                        <!-- Fancybox trigger with gallery grouping -->
+                                                        <a data-fancybox="gallery" class="box-media-zoom"
+                                                            href="images/folio/5.webp">
+                                                            <i class="fal fa-plus"></i>
+                                                        </a>
+
+                                                        <!-- Additional images for Fancybox gallery -->
+                                                        <a data-fancybox="gallery" href="images/folio/6.webp"
+                                                            data-thumb="images/folio/6.webp"></a>
+                                                        <a data-fancybox="gallery" href="images/folio/7.webp"
+                                                            data-thumb="images/folio/7.webp"></a>
+                                                        <a data-fancybox="gallery" href="images/folio/8.webp"
+                                                            data-thumb="images/folio/8.webp"></a>
+
                                                         <div class="grid-det_category">
                                                             <a href="#">Biet El watan</a>
                                                         </div>
@@ -753,35 +827,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!--half-carousel-item end -->
+                                                <!--half-carousel-item end-->
 
-                                                <!--half-carousel-item   -->
-                                                <div class="swiper-slide">
-                                                    <div class="half-carousel-item hov_zoom">
-                                                        <div class="fs-wrapper">
-                                                            <div class="bg" data-bg="images/folio/8.jpg"></div>
-                                                            <div class="overlay"></div>
-                                                        </div>
-                                                        <a href="images/folio/8.jpg"
-                                                            class="box-media-zoom   single-popup-image"><i
-                                                                class="fal fa-plus"></i></a>
-                                                        <div class="grid-det_category">
-                                                            <a href="#">Second District</a>
-                                                        </div>
-                                                        <div class="half-carousel-content">
-                                                            <div class="hc-counter">02.</div>
-                                                            <h3>
-                                                                <a href="javascript:;" class="ajax">
-                                                                    Project B141 in Beit Al Watan, Second District
-                                                                </a>
-                                                            </h3>
-                                                            <p>
-                                                                Beit Al Watan area is your ideal choice for...
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--half-carousel-item end -->
                                             </div>
                                         </div>
                                     </div>
@@ -830,7 +877,7 @@
                         </div>
                         <div class="fs-wrapper parallax-section_bg">
                             <div class="overlay"></div>
-                            <div class="bg" data-bg="images/bg/17.jpg"></div>
+                            <div class="bg" data-bg="images/bg/17.webp"></div>
                         </div>
                         <!-- container end -->
                     </section>
@@ -845,7 +892,11 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 post-item">
                                         <div class="post-media">
                                             <a href="javascript:;" class="ajax">
-                                                <img src="images/bg/1.webp" class="respimg" alt="">
+                                                <picture>
+                                                    <source srcset="images/bg/1.webp" type="image/webp">
+                                                    <source srcset="images/bg/1.jpeg" type="image/jpeg">
+                                                    <img loading="lazy" src="images/bg/1.webp" class="respimg" alt="">
+                                                </picture>
                                                 <div class="overlay"></div>
                                                 <span class="post-tooltip">Read more</span>
                                             </a>
@@ -870,7 +921,11 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 post-item">
                                         <div class="post-media">
                                             <a href="javascript:;" class="ajax">
-                                                <img src="images/bg/26.jpg" class="respimg" alt="">
+                                                <picture>
+                                                    <source srcset="images/bg/26.webp" type="image/webp">
+                                                    <source srcset="images/bg/26.jpeg" type="image/jpeg">
+                                                    <img loading="lazy" src="images/bg/26.webp" class="respimg" alt="">
+                                                </picture>
                                                 <div class="overlay"></div>
                                                 <span class="post-tooltip">Read more</span>
                                             </a>
@@ -895,7 +950,11 @@
                                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 post-item">
                                         <div class="post-media">
                                             <a href="javascript:;" class="ajax">
-                                                <img src="images/bg/16.jpg" class="respimg" alt="">
+                                                <picture>
+                                                    <source srcset="images/bg/16.webp" type="image/webp">
+                                                    <source srcset="images/bg/16.jpeg" type="image/jpeg">
+                                                    <img loading="lazy" src="images/bg/16.webp" class="respimg" alt="">
+                                                </picture>
                                                 <div class="overlay"></div>
                                                 <span class="post-tooltip">Read more</span>
                                             </a>
@@ -1020,9 +1079,13 @@
     </div>
     <!-- Main end -->
     <!--  scripts  -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/scripts.js"></script>
+    <script defer src="js/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+    </script>
+    <script defer src="js/plugins.js"></script>
+    <script defer src="js/fancybox.umd.js"></script>
+    <script defer src="js/scripts.min.js"></script>
 </body>
 
 </html>

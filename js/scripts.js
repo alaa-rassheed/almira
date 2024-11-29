@@ -86,30 +86,30 @@ function initEcrait() {
         }
     });
     //   lightGallery--------
-    function initlightgallery() {
-        $(".image-popup , .single-popup-image").lightGallery({
-            selector: "this",
-            cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
-            download: false,
-            counter: false
-        });
-        $(".lightgallery").lightGallery({
-            selector: ".lightgallery a.popup-image , .lightgallery  a.popgal",
-            cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
-            download: false,
-            loop: true,
-            counter: false
-        });
-        $('#html5-videos').lightGallery({
-            selector: 'this',
-            counter: false,
-            download: false,
-            zoom: false
-        });
-        var vid_src = $(".popup_video").data("videolink");
-        $(".lg-video-object").find("source").attr("src", vid_src);
-    }
-    initlightgallery();
+    // function initlightgallery() {
+    //     $(".image-popup , .single-popup-image").lightGallery({
+    //         selector: "this",
+    //         cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
+    //         download: false,
+    //         counter: false
+    //     });
+    //     $(".lightgallery").lightGallery({
+    //         selector: ".lightgallery a.popup-image , .lightgallery  a.popgal",
+    //         cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
+    //         download: false,
+    //         loop: true,
+    //         counter: false
+    //     });
+    //     $('#html5-videos').lightGallery({
+    //         selector: 'this',
+    //         counter: false,
+    //         download: false,
+    //         zoom: false
+    //     });
+    //     var vid_src = $(".popup_video").data("videolink");
+    //     $(".lg-video-object").find("source").attr("src", vid_src);
+    // }
+    // initlightgallery();
     //   Isotope-------
     function n() {
         if ($(".gallery-items").length) {
@@ -725,43 +725,6 @@ function initEcrait() {
         }, 800);
         return false;
     });
-    //   Contact form------------------
-    $("#contactform").submit(function () {
-        const a = $(this).attr("action");
-        $("#message").slideUp(750, function () {
-            $("#message").hide();
-            $("#submit").attr("disabled", "disabled");
-            $.post(a, {
-                name: $("#name").val(),
-                email: $("#email").val(),
-                comments: $("#comments").val()
-            }, function (a) {
-                document.getElementById("message").innerHTML = a;
-                $("#message").slideDown("slow");
-                $("#submit").removeAttr("disabled");
-                if (null != a.match("success")) $("#contactform").slideDown("slow");
-            });
-        });
-        return false;
-    });
-    $("#contactform input, #contactform textarea").keyup(function () {
-        $("#message").slideUp(1500);
-    });
-    //   mailchimp------------------
-    $("#subscribe").ajaxChimp({
-        language: "eng",
-        url: "https://gmail.us1.list-manage.com/subscribe/post?u=1fe818378d5c129b210719d80&amp;id=a2792f681b"
-    });
-    $.ajaxChimp.translations.eng = {
-
-        submit: "Submitting...",
-        0: '<i class="fal fa-check"></i> We will be in touch soon!',
-        1: '<i class="fal fa-exclamation-circle"></i> You must enter a valid e-mail address.',
-        2: '<i class="fal fa-exclamation-circle"></i> E-mail address is not valid.',
-        3: '<i class="fal fa-exclamation-circle"></i> E-mail address is not valid.',
-        4: '<i class="fal fa-exclamation-circle"></i> E-mail address is not valid.',
-        5: '<i class="fal fa-exclamation-circle"></i> E-mail address is not valid.'
-    };
     $(".toglle-header").on("click", function () {
         $(this).parent(".toogle-item").find(".toglle-content").slideToggle(200);
         $(this).parent(".toogle-item").delay(200).toggleClass("toogle-item_vis");
@@ -837,23 +800,6 @@ function initEcrait() {
             }
         }
         videoint();
-    }
-    //  Map init------------------	
-    if ($("#map-single").length > 0) {
-        var latlog = $('#map-single').data('latlog'),
-            popupTextit = $('#map-single').data('popuptext'),
-            map = L.map('map-single').setView(latlog, 10);
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-            attribution: ''
-        }).addTo(map);
-        var greenIcon = L.icon({
-            iconUrl: 'images/marker.png',
-            iconSize: [40, 40],
-            popupAnchor: [0, -26]
-        });
-        L.marker(latlog, {
-            icon: greenIcon
-        }).addTo(map).bindPopup(popupTextit);
     }
     //   cursor ------------------
     $(".dark-section , .aside-column , .main-header , .main-footer  , .fs-holder , .gallery-item , .column-filters-wrap").on({
@@ -1151,7 +1097,7 @@ function initHalfCarousel(elementId) {
                 1068: {
                     slidesPerView: 1,
                 },
-            }
+            },
         });
 
         const totalSlides2 = $(elementId + " .half-carousel .swiper-slide:not(.swiper-slide-duplicate) .half-carousel-item").length;
@@ -1162,8 +1108,21 @@ function initHalfCarousel(elementId) {
             const curnum2 = $(elementId + ' .current');
             curnum2.html('0' + csli2).shuffleLetters({});
         });
+
+        // Manually bind Fancybox to only the original slides
+        $(elementId + " .swiper-slide:not(.swiper-slide-duplicate) a[data-fancybox='gallery']").each(function () {
+            $(this).attr('data-fancybox-origin', 'true'); // Mark as original
+        });
+
+        // Initialize Fancybox for original slides only
+        Fancybox.bind("[data-fancybox='gallery'][data-fancybox-origin='true']", {
+            Thumbs: {
+                autoStart: true,
+            },
+        });
     }
 }
+
 
 // Initialize multiple carousels
 $(document).ready(function () {
