@@ -86,30 +86,30 @@ function initEcrait() {
         }
     });
     //   lightGallery--------
-    // function initlightgallery() {
-    //     $(".image-popup , .single-popup-image").lightGallery({
-    //         selector: "this",
-    //         cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
-    //         download: false,
-    //         counter: false
-    //     });
-    //     $(".lightgallery").lightGallery({
-    //         selector: ".lightgallery a.popup-image , .lightgallery  a.popgal",
-    //         cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
-    //         download: false,
-    //         loop: true,
-    //         counter: false
-    //     });
-    //     $('#html5-videos').lightGallery({
-    //         selector: 'this',
-    //         counter: false,
-    //         download: false,
-    //         zoom: false
-    //     });
-    //     var vid_src = $(".popup_video").data("videolink");
-    //     $(".lg-video-object").find("source").attr("src", vid_src);
-    // }
-    // initlightgallery();
+    function initlightgallery() {
+        $(".image-popup , .single-popup-image").lightGallery({
+            selector: "this",
+            cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
+            download: false,
+            counter: false
+        });
+        $(".lightgallery").lightGallery({
+            selector: ".lightgallery a.popup-image , .lightgallery  a.popgal",
+            cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
+            download: false,
+            loop: true,
+            counter: false
+        });
+        $('#html5-videos').lightGallery({
+            selector: 'this',
+            counter: false,
+            download: false,
+            zoom: false
+        });
+        var vid_src = $(".popup_video").data("videolink");
+        $(".lg-video-object").find("source").attr("src", vid_src);
+    }
+    initlightgallery();
     //   Isotope-------
     function n() {
         if ($(".gallery-items").length) {
@@ -729,7 +729,7 @@ function initEcrait() {
         $(this).parent(".toogle-item").find(".toglle-content").slideToggle(200);
         $(this).parent(".toogle-item").delay(200).toggleClass("toogle-item_vis");
     });
-    $(".shuffleLetter , .header-social a , .share-container a , .footer-contacts a , .main-social a , .commentform button , .custom-form button   , .box_gallery-filters a strong   , .shb_init span , .offer-box_btn , .half-carousel-content h3 a , .hc_controls_link a , .team-social li a  , .home_services_btn_wrap a   , .testi-link  , .order-wrap_btn , .column-filters-item a").on({
+    $(".shuffleLetter , .header-social a , .footer-contacts a , .main-social a , .commentform button , .custom-form button   , .box_gallery-filters a strong   , .shb_init span , .offer-box_btn , .half-carousel-content h3 a , .hc_controls_link a , .team-social li a  , .home_services_btn_wrap a   , .testi-link  , .order-wrap_btn , .column-filters-item a").on({
         mouseenter: function () {
             $(this).shuffleLetters({});
         }
@@ -849,10 +849,6 @@ function initEcrait() {
         mouseleave: function () {
             $(".element-item").removeClass("close-icon");
         }
-    });
-    // Share   ------------------
-    $(".share-container").share({
-        networks: ['facebook', 'pinterest', 'twitter', 'linkedin', 'tumblr']
     });
     var swra = $(".share-wrapper"),
         clsh = $(".close-share-btn"),
@@ -1067,6 +1063,7 @@ document.addEventListener('gesturestart', function (e) {
 function readyFunctions() {
     initEcrait();
 }
+
 // Function to initialize half carousel
 function initHalfCarousel(elementId) {
     if ($(elementId + " .half-carousel-conatiner").length > 0) {
