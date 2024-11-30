@@ -1062,6 +1062,11 @@ document.addEventListener('gesturestart', function (e) {
 //   Init All Functions------------------
 function readyFunctions() {
     initEcrait();
+
+    // First carousel
+    initHalfCarousel('#slider1');
+    // Second carousel
+    initHalfCarousel('#slider2');
 }
 
 // Function to initialize half carousel
@@ -1120,14 +1125,6 @@ function initHalfCarousel(elementId) {
     }
 }
 
-
-// Initialize multiple carousels
-$(document).ready(function () {
-    // First carousel
-    initHalfCarousel('#slider1');
-    // Second carousel
-    initHalfCarousel('#slider2');
-});
 
 // Handle ad visibility
 const adSection = document.querySelector('.img-ad');
